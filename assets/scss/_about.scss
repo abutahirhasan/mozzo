@@ -1,0 +1,376 @@
+//About Section
+.thumb2-wrap {
+	.thumb2-inne {
+		display: flex;
+		align-items: center;
+		gap: 52px;
+		.thumb-small {
+			overflow: hidden;
+			max-width: 300px;
+			transition: all 0.4s;
+			img {
+				overflow: hidden;
+				width: 100%;
+				transition: all 0.4s;
+			}
+			&:hover {
+				img {
+					transform: scale(1.05);
+				}
+			}
+		}
+		.about-textcircle {
+			.boxes {
+				padding-top: 20px;
+				.exprience {
+					font-family: $heading-font;
+					font-size: 70px;
+					font-weight: 300;
+					color: $theme-color;
+					margin-bottom: 24px;
+					.year {
+						font-size: 20px;
+						font-family: $body-font;
+						color: #070a01;
+						opacity: 0.52;
+						margin-bottom: -20px;
+					}
+				}
+			}
+		}
+		@include breakpoint(max-xxl) {
+			gap: 24px;
+		}
+		@include breakpoint(max-sm) {
+			flex-wrap: wrap;
+			.thumb-small {
+				max-width: 100%;
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+			.about-textcircle {
+				margin: 0 auto;
+			}
+		}
+	}
+	.thumb1 {
+		transition: all 0.4s;
+		overflow: hidden;
+		img {
+			transition: all 0.4s;
+			overflow: hidden;
+		}
+		&:hover {
+			img {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
+.about-thumb1 {
+	transition: all 0.4s;
+	overflow: hidden;
+	img {
+		transition: all 0.4s;
+		overflow: hidden;
+	}
+	&:hover {
+		img {
+			transform: scale(1.05);
+		}
+	}
+}
+.about-shape-left {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+.about-shape-right {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: -1;
+}
+//About Section
+
+//About Section2
+.about-section2 {
+	z-index: 1;
+	.container {
+		max-width: 1424px;
+		margin: 0 auto;
+	}
+	.about-ele1 {
+		position: absolute;
+		right: -10px;
+		top: -70px;
+		z-index: -1;
+	}
+	.about-ele2 {
+		position: absolute;
+		bottom: 20px;
+		left: -50px;
+		z-index: -1;
+	}
+}
+.about-content2 {
+	z-index: 1;
+	.about-insurance-area {
+		display: flex;
+		gap: 70px;
+		.about-insurance-list {
+			.about-insurance-item {
+				.icon {
+					width: 60px;
+					min-width: 60px;
+					height: 60px;
+				}
+				h4 {
+					text-wrap: nowrap;
+				}
+				p {
+					max-width: 140px;
+					line-height: 16px;
+				}
+			}
+		}
+		.about2-small-thumb {
+			width: 450px;
+			border-radius: 12px;
+			img {
+				width: 100%;
+				border-radius: 12px;
+			}
+		}
+		@include breakpoint(max-xxl) {
+			gap: 24px;
+			.about-insurance-list {
+				.about-insurance-item {
+					.icon {
+						width: 50px;
+						min-width: 50px;
+						height: 50px;
+					}
+					h4 {
+						text-wrap: nowrap;
+					}
+					p {
+						max-width: 140px;
+						line-height: 16px;
+					}
+				}
+			}
+			.about2-small-thumb {
+				width: 450px;
+				border-radius: 12px;
+				img {
+					width: 100%;
+					border-radius: 12px;
+				}
+			}
+		}
+		@include breakpoint(max-xs) {
+			flex-wrap: wrap;
+			.about2-small-thumb {
+				width: 100%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+//About Section2
+
+//About Section3
+.about-section3 {
+	z-index: 1;
+	.about-birds-left {
+		position: absolute;
+		top: 144px;
+		left: 0;
+		animation: updowns 2s linear infinite;
+	}
+	.about-shadow-right {
+		position: absolute;
+		right: 0;
+		bottom: 120px;
+		z-index: -1;
+		@include breakpoint(max-xl) {
+			opacity: 0.4;
+		}
+	}
+}
+//About Section3
+
+//About Section 4
+.about-wrapper4 {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	justify-content: space-between;
+	.about-content-version3 {
+		max-width: 530px;
+		.theme-btn {
+			background: $bg-color;
+			color: $black;
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+	.line {
+		width: 2px;
+		height: 400px;
+		background: #d9d9d9;
+	}
+	.about-thumbv4 {
+		max-width: 520px;
+		img {
+			width: 100%;
+		}
+	}
+	@include breakpoint(max-lg) {
+		flex-wrap: wrap;
+		.line {
+			display: none;
+		}
+		.about-thumbv4 {
+			margin: 0 auto;
+		}
+		.about-content-version3 {
+			order: 1;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
+}
+
+//Suit Facilites
+.suit-facilites-section {
+	background: #091018;
+	padding-bottom: 120px;
+	position: relative;
+	z-index: 1;
+	.shadow-ele1 {
+		position: absolute;
+		right: -20%;
+		top: -30%;
+		z-index: -1;
+		width: 1000px;
+		height: 1000px;
+	}
+	.shadow-ele2 {
+		position: absolute;
+		left: -20%;
+		bottom: -40%;
+		z-index: -1;
+		width: 1000px;
+		height: 1000px;
+	}
+}
+.suit-facilites-thumb-inner {
+	.thumb-big2 {
+		position: absolute;
+		bottom: -120px;
+		right: 0;
+		.luxuries-vid {
+			width: 55px;
+			height: 55px;
+			background: $white;
+			i {
+				color: $black;
+				font-size: 19px;
+			}
+		}
+	}
+	@include breakpoint(max-xl) {
+		.thumb-big {
+			max-width: 520px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.thumb-big2 {
+			max-width: 320px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	@include breakpoint(max-xs) {
+		.thumb-big2 {
+			max-width: 320px;
+			img {
+				width: 100%;
+			}
+		}
+		.thumb-big {
+			width: 100%;
+			max-width: 100%;
+			img {
+				width: 100%;
+			}
+		}
+		.offtext {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			max-width: 70px;
+			height: 150px;
+			object-fit: contain;
+		}
+	}
+}
+
+//City View Section
+.city-view2-section {
+	background: $white;
+	padding: 100px 0;
+	.city-view-content-wrap {
+		background: $white;
+		.city-view-content {
+			max-width: 550px;
+		}
+	}
+}
+
+//About Section 05
+.about-section05 {
+	z-index: 1;
+	.about5-cl1 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: 0;
+		animation: updowns 8s linear infinite;
+		z-index: -1;
+	}
+	.about5-cl2 {
+		position: absolute;
+		top: -50px;
+		right: -80px;
+		z-index: -1;
+	}
+}
+
+
+.img-hover{
+	overflow: hidden;
+	img{
+		overflow: hidden;
+		transition: all 0.4s;
+	}
+	&:hover{
+		img{
+			transform: scale(1.1);
+		}
+	}
+}

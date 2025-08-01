@@ -1,0 +1,150 @@
+.footer-widget-wrapper {
+	padding: 100px 0 80px;
+	.single-footer-widget {
+		.widget-head {
+			margin-bottom: 28px;
+		}
+		.social-cmn {
+			a {
+				width: 40px;
+				height: 40px;
+				background: #20221a;
+				i {
+					color: $white;
+					font-size: 14px;
+				}
+			}
+		}
+		.footer-content {
+			p {
+				margin-bottom: 24px;
+			}
+			.adjust-form {
+				margin-bottom: 30px;
+				input {
+					height: 45px;
+					padding: 6px 16px;
+					border-radius: 0;
+					border: unset;
+					font-size: 14px;
+					width: 100%;
+					font-weight: 500;
+					color: $black;
+					&::placeholder {
+						color: $black;
+					}
+				}
+				button {
+					width: 55px;
+					min-width: 55px;
+					height: 45px;
+				}
+			}
+		}
+		.important-link {
+			li {
+				a {
+					color: $text-color;
+					font-size: 16px;
+					&:hover {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		.adredd-info {
+			li {
+				a {
+					color: $text-color;
+					font-size: 16px;
+					line-height: 23px;
+				}
+				&:hover {
+					a {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+		@include breakpoint(max-lg) {
+			.widget-head {
+				margin-bottom: 18px;
+			}
+			.footer-content {
+				p {
+					margin-bottom: 20px;
+				}
+				.adjust-form {
+					margin-bottom: 24px;
+				}
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		padding: 80px 0 70px;
+	}
+}
+
+.footer-bottom {
+	border-top: 1px solid #32353f;
+	padding: 30px 0;
+	@include breakpoint(max-xl) {
+		padding: 22px 0;
+	}
+}
+
+//Footer Style 02
+.footer-style2 {
+	.single-footer-widget {
+		.social-cmn {
+			a {
+				background: $white;
+                border: 1px solid $black;
+				i {
+					color: $black;
+				}
+                &:hover{
+                    border-color: $theme-color;
+                }
+			}
+		}
+		.footer-content {
+			.adjust-form {
+				input {
+                    background: $black;
+					color: $white;
+					&::placeholder {
+						color: $white;
+					}
+				}
+			}
+		}
+		.important-link {
+			li {
+				a {
+					color: $black;
+				}
+			}
+		}
+		.adredd-info {
+			li {
+                svg{
+                    path{
+                        stroke: $black;
+                    }
+                }
+				a {
+					color: $black;
+				}
+				&:hover {
+					a {
+						color: $theme-color;
+					}
+				}
+			}
+		}
+	}
+    .footer-bottom{
+        border-color: #ebebeb;
+    }
+}

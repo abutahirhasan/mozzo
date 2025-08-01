@@ -1,0 +1,134 @@
+
+:root {
+    
+    --body: #fff;
+    --black: #070A01;
+    --black2: #353844;
+    --white: #fff;
+    --theme: #F5B245;
+    --theme2: #0077B1;
+    --theme3: #DA3C3C;
+    --theme4: #0162FD;
+    --header: #01030D;
+    --header2: #161616;
+    --ratting: #febb02;
+    --text: #ACADB5;
+    --text2: #f5f5f5;
+    --text3: #e2dfeb;
+    --border: #e2dfeb;
+    --bg:#F9DABB;
+    --bg2:#F8F5F0;
+    --bg3:#FFFDFB;
+    --bg4:#1C210C;
+    --bg5:#EEEEEE;
+    --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
+    
+}
+
+// Theme Color - Defualt Colors
+$black: var(--black);
+$black2: var(--black2);
+$white: var(--white);
+$theme-color: var(--theme);
+$theme-color-2: var(--theme2);
+$theme-color-3: var(--theme3);
+$theme-color-4: var(--theme4);
+$ratting-color: var(--ratting);
+$text-color: var(--text);
+$text-color-2: var(--text2);
+$header-color: var(--header);
+$header-color-2: var(--header2);
+$border-color: var(--border);
+$body-bg: var(--body-bg);
+$bg-color: var(--bg);
+$shadow: var(--box-shadow);
+$bg2: var(--bg2);
+$bg3: var(--bg3);
+$bg4: var(--bg4);
+$bg5: var(--bg5);
+
+
+
+
+//Default Color Custom
+.bg2{
+    background: $bg2;
+}
+.bg3{
+    background: $bg3;
+}
+.bg4{
+    background: $bg4;
+}
+.bg5{
+    background: $bg5;
+}
+.black-clr{
+    color: $black;
+}
+.black2-clr{
+    color: $black2;
+}
+.black-bg{
+    background: $black;
+}
+.white-clr{
+    color: $white;
+}
+.white-bg{
+    background: $white;
+}
+.theme-clr{
+    color: $theme-color;
+}
+.theme-bg{
+    background: $theme-color;
+}
+.theme2-clr{
+    color: $theme-color-2;
+}
+.theme2-bg{
+    background: $theme-color-2;
+}
+.theme3-clr{
+    color: $theme-color-3;
+}
+.theme3-bg{
+    background: $theme-color-3;
+}
+.ratting-clr{
+    color: $ratting-color;
+}
+.ratting-bg{
+    background: $ratting-color;
+}
+.text-clr{
+    color: $text-color;
+}
+.text-bg{
+    background: $text-color;
+}
+.text2-clr{
+    color: $text-color-2;
+}
+.text2-bg{
+    background: $text-color-2;
+}
+.cmn-clr{
+    color: $text-color;
+}
+.cmn-bg{
+    background: $bg-color;
+}
+.section-bg{
+    background: $bg-color;
+}
+.border-clr{
+    color: $border-color;
+}
+.cmn-border{
+    border: 1px solid $border-color;
+}
+.border-bg{
+    background: $border-color;
+}
