@@ -86,20 +86,20 @@
     ==================================
 ============== */
 /* @import */
-@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Dancing+Script:wght@400..700&family=Kalnia:wght@100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Baloo+Bhai+2:wght@400..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Reggae+One&display=swap");
 :root {
   --body: #fff;
-  --black: #070A01;
+  --black: #111;
   --black2: #353844;
   --white: #fff;
-  --theme: #F5B245;
-  --theme2: #0077B1;
-  --theme3: #DA3C3C;
+  --theme: #FF5200;
+  --theme2: #FBBC00;
+  --theme3: #EA0000;
   --theme4: #0162FD;
   --header: #01030D;
   --header2: #161616;
   --ratting: #febb02;
-  --text: #ACADB5;
+  --text: #4B4B4B;
   --text2: #f5f5f5;
   --text3: #e2dfeb;
   --border: #e2dfeb;
@@ -223,19 +223,45 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 .heading-font {
-  font-family: "Kalnia", serif;
+  font-family: "Outfit", sans-serif;
+}
+
+.heading-font-bhalo {
+  font-family: "Baloo Bhai 2", sans-serif;
+}
+
+.heading-font-edensor {
+  font-family: "Edensor", sans-serif;
+}
+
+.heading-font-afasad {
+  font-family: "Afacad", sans-serif;
+}
+
+.heading-font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.heading-font-regge {
+  font-family: "Cormorant Garamond", serif;
 }
 
 .sub-font {
-  font-family: "Dancing Script", cursive;
+  font-family: "Outfit", sans-serif;
 }
 
 .body-font {
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
+@font-face {
+  font-family: "Edensor";
+  src: url("../fonts/Edensor-FREE.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 body {
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
@@ -273,7 +299,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Kalnia", serif;
+  font-family: "Outfit", sans-serif;
   margin: 0px;
   font-style: normal;
   padding: 0;
@@ -377,6 +403,7 @@ a {
 p {
   margin: 0px;
   transition: all 0.4s ease-in-out;
+  color: var(--text);
 }
 
 span {
@@ -388,26 +415,6 @@ span {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.fs-32 {
-  font-size: 32px;
-  line-height: 132%;
-}
-@media (max-width: 1199px) {
-  .fs-32 {
-    font-size: 28px;
-  }
-}
-@media (max-width: 991px) {
-  .fs-32 {
-    font-size: 24px;
-  }
-}
-@media (max-width: 767px) {
-  .fs-32 {
-    font-size: 22px;
-  }
 }
 
 .theme-btn {
@@ -559,7 +566,7 @@ span {
   padding-top: 20px;
 }
 .thumb2-wrap .thumb2-inne .about-textcircle .boxes .exprience {
-  font-family: "Kalnia", serif;
+  font-family: "Outfit", sans-serif;
   font-size: 70px;
   font-weight: 300;
   color: var(--theme);
@@ -567,7 +574,7 @@ span {
 }
 .thumb2-wrap .thumb2-inne .about-textcircle .boxes .exprience .year {
   font-size: 20px;
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #070a01;
   opacity: 0.52;
   margin-bottom: -20px;
@@ -2092,7 +2099,7 @@ span {
 .custom-accordion .accordion-item .accordion-header .accordion-button {
   font-size: 24px;
   font-weight: 600;
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
   padding: 0 0;
   outline: none;
 }
@@ -2606,7 +2613,7 @@ span {
   color: var(--black);
   padding: 16px 0;
   text-align: left;
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
   position: relative;
   text-transform: uppercase;
   transition: all 0.4s ease-in-out;
@@ -2840,7 +2847,7 @@ span {
   line-height: 12px;
   padding: 3px;
   font-weight: 600;
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .header-1 {
@@ -2963,7 +2970,7 @@ span {
   }
 }
 .header-1 .header-logo {
-  width: 90px;
+  width: 165px;
   display: block;
 }
 .header-1 .header-logo img {
@@ -3183,6 +3190,13 @@ span {
 }
 .blar-comming img {
   filter: blur(4px);
+}
+
+.bars__one {
+  transition: all 0.4s;
+}
+.bars__one:hover {
+  border-color: var(--theme3) !important;
 }
 
 ::-webkit-scrollbar {
@@ -3540,6 +3554,11 @@ span {
 .fs-19 {
   font-size: 19px;
 }
+@media (max-width: 767px) {
+  .fs-19 {
+    font-size: 16px;
+  }
+}
 
 .fs-20 {
   font-size: 20px;
@@ -3551,8 +3570,282 @@ span {
   }
 }
 
+.fs-22 {
+  font-size: 22px;
+  line-height: 32px;
+}
+@media (max-width: 1199px) {
+  .fs-22 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-22 {
+    font-size: 18px;
+  }
+}
+
+.fs-24 {
+  font-size: 24px;
+  line-height: 38px;
+}
+@media (max-width: 1199px) {
+  .fs-24 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-24 {
+    font-size: 20px;
+  }
+}
+
+.fs-26 {
+  font-size: 26px;
+  line-height: 38px;
+}
+@media (max-width: 1199px) {
+  .fs-26 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-26 {
+    font-size: 22px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-26 {
+    font-size: 20px;
+  }
+}
+
+.fs-28 {
+  font-size: 28px;
+  line-height: 38px;
+}
+@media (max-width: 1199px) {
+  .fs-28 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-28 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-28 {
+    font-size: 22px;
+  }
+}
+
+.fs-30 {
+  font-size: 30px;
+  line-height: 42px;
+}
+@media (max-width: 1199px) {
+  .fs-30 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-30 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-30 {
+    font-size: 22px;
+  }
+}
+
+.fs-32 {
+  font-size: 32px;
+  line-height: 132%;
+}
+@media (max-width: 1199px) {
+  .fs-32 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 991px) {
+  .fs-32 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .fs-32 {
+    font-size: 22px;
+  }
+}
+
 .fw-500 {
   font-weight: 500;
+}
+
+.border-white {
+  border: 1px solid var(--white);
+}
+
+.w-4px {
+  width: 4px;
+}
+
+.w-8px {
+  width: 8px;
+}
+
+.w-12px {
+  width: 12px;
+}
+
+.w-16px {
+  width: 16px;
+}
+
+.w-20px {
+  width: 20px;
+}
+
+.w-24px {
+  width: 24px;
+}
+
+.w-28px {
+  width: 28px;
+}
+
+.w-32px {
+  width: 32px;
+}
+
+.w-36px {
+  width: 36px;
+}
+
+.w-40px {
+  width: 40px;
+}
+
+.w-44px {
+  width: 44px;
+}
+
+.w-48px {
+  width: 48px;
+}
+
+.w-52px {
+  width: 52px;
+}
+
+.w-56px {
+  width: 56px;
+}
+
+.w-60px {
+  width: 60px;
+}
+
+.w-64px {
+  width: 64px;
+}
+
+.w-68px {
+  width: 68px;
+}
+
+.w-72px {
+  width: 72px;
+}
+
+.w-76px {
+  width: 76px;
+}
+
+.w-80px {
+  width: 80px;
+}
+
+.h-4px {
+  height: 4px;
+}
+
+.h-8px {
+  height: 8px;
+}
+
+.h-12px {
+  height: 12px;
+}
+
+.h-16px {
+  height: 16px;
+}
+
+.h-20px {
+  height: 20px;
+}
+
+.h-24px {
+  height: 24px;
+}
+
+.h-28px {
+  height: 28px;
+}
+
+.h-32px {
+  height: 32px;
+}
+
+.h-36px {
+  height: 36px;
+}
+
+.h-40px {
+  height: 40px;
+}
+
+.h-44px {
+  height: 44px;
+}
+
+.h-48px {
+  height: 48px;
+}
+
+.h-52px {
+  height: 52px;
+}
+
+.h-56px {
+  height: 56px;
+}
+
+.h-60px {
+  height: 60px;
+}
+
+.h-64px {
+  height: 64px;
+}
+
+.h-68px {
+  height: 68px;
+}
+
+.h-72px {
+  height: 72px;
+}
+
+.h-76px {
+  height: 76px;
+}
+
+.h-80px {
+  height: 80px;
 }
 
 .hero-1 {
@@ -3758,7 +4051,7 @@ span {
   padding-top: 20px;
 }
 .hero-section.hero-style2 .hero-1 .about-textcircle .boxes .exprience {
-  font-family: "Kalnia", serif;
+  font-family: "Outfit", sans-serif;
   font-size: 70px;
   font-weight: 300;
   color: var(--white);
@@ -3766,7 +4059,7 @@ span {
 }
 .hero-section.hero-style2 .hero-1 .about-textcircle .boxes .exprience .year {
   font-size: 20px;
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
   opacity: 0.52;
   margin-bottom: -20px;
@@ -3891,7 +4184,7 @@ span {
     padding-top: 20px;
   }
   .hero-section.hero-style2 .hero-1 .about-textcircle .boxes .exprience {
-    font-family: "Kalnia", serif;
+    font-family: "Outfit", sans-serif;
     font-size: 70px;
     font-weight: 300;
     color: var(--white);
@@ -3899,7 +4192,7 @@ span {
   }
   .hero-section.hero-style2 .hero-1 .about-textcircle .boxes .exprience .year {
     font-size: 20px;
-    font-family: "Barlow", sans-serif;
+    font-family: "Inter", sans-serif;
     color: #fff;
     opacity: 0.52;
     margin-bottom: -20px;
@@ -4580,7 +4873,7 @@ span {
   font-size: 130px;
   font-weight: 900;
   text-transform: uppercase;
-  font-family: "Kalnia", serif;
+  font-family: "Outfit", sans-serif;
   line-height: 134px;
 }
 .scrolling-wrap .comm .text-custom-storke {
@@ -4833,7 +5126,7 @@ span {
   max-width: 512px;
   margin: 0 auto;
   font-size: 16px;
-  font-family: "Barlow", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 @media (max-width: 1399px) {
   .drinks-section .drinks-head {
@@ -5031,7 +5324,7 @@ span {
   }
 }
 .preloader .animation-preloader .txt-loading {
-  font: bold 5em "Kalnia", serif, "Barlow", sans-serif;
+  font: bold 5em "Outfit", sans-serif, "Inter", sans-serif;
   text-align: center;
   user-select: none;
 }
@@ -5071,7 +5364,7 @@ span {
   content: attr(data-text-preloader);
   left: 0;
   opacity: 0;
-  font-family: "Kalnia", serif;
+  font-family: "Outfit", sans-serif;
   position: absolute;
   top: -3px;
   transform: rotateY(-90deg);

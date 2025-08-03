@@ -58,7 +58,6 @@
 }
 
 //>>>>> Header Main Area Start <<<<<//
-
 .header-main {
 	display: flex;
 	align-items: center;
@@ -475,7 +474,7 @@
 		}
 	}
 	.header-logo {
-		width: 90px;
+		width: 165px;
 		display: block;
 		img {
 			width: 100%;
@@ -719,5 +718,13 @@
 .blar-comming{
 	img{
 		filter: blur(4px);
+	}
+}
+
+//Bars 
+.bars__one{
+	transition: all 0.4s;
+	&:hover{
+		border-color: $theme-color-3 !important;
 	}
 }
