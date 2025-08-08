@@ -141,6 +141,42 @@
 		//<< 09 >> Nice Select Start <<//
 		$("select").niceSelect();
 
+		//<< Super Deals Slide >>//
+		//<< 12 >> Apartment Slider Start <<//
+		const superDealsSlider = new Swiper(".superDeals-slider", {
+			spaceBetween: 24,
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				// disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 4,
+				},
+				991: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 2,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				400: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
 		//<< 10 >> Testimonial Slider Start <<//
 		if ($(".testimonial-slider").length > 0) {
 			const testimonialSlider = new Swiper(".testimonial-slider", {

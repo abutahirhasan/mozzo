@@ -4,19 +4,19 @@
 	z-index: 2;
 	vertical-align: middle;
 	display: inline-flex;
-	gap: 15px;
+	gap: 8px;
 	border: none;
 	text-align: center;
 	background-color: $theme-color;
 	color: $white;
-	font-size: 18px;
-	font-weight: 700;
-	text-transform: uppercase;
-    line-height: 22px;
-	padding: 15px 36px 17px;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: capitalize;
+	line-height: 18px;
+	padding: 11px 20px 13px;
 	overflow: hidden;
 	align-items: center;
-	font-family: "Expose", sans-serif;
+	border-radius: 8px;
 
 	&::after,
 	&::before {
@@ -52,6 +52,16 @@
 			width: 410px;
 		}
 	}
+	&.btn-outline-blak {
+		border: 1px solid #c5c5c5;
+		padding: 10px 20px 11px;
+		color: $black;
+		background-color: transparent;
+		transition: all 0.4s;
+		&:hover{
+			color: $white;
+		}
+	}
 
 	&.theme2-btn {
 		background-color: $theme-color-2;
@@ -78,7 +88,7 @@
 	}
 	&.extra-bg {
 		background-color: $bg-color;
-        color: $black;
+		color: $black;
 		&::after,
 		&::before {
 			background-color: $theme-color;
