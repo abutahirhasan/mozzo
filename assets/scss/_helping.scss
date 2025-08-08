@@ -255,23 +255,23 @@ br {
 	width: 100%;
 	overflow: hidden;
 	box-sizing: border-box;
-  .cart-item-thumb{
-    width: 86px;
-    .head{
-      color: #1B1F2A;
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: uppercase;
-    }
-  }
-  .price-usd{
-    font-size: 16px;
-    font-weight: 500;
-    color: #666C78;
-  }
-  tr{
-    border-bottom: 1px solid #E4E4E5;
-  }
+	.cart-item-thumb {
+		width: 86px;
+		.head {
+			color: #1b1f2a;
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+	.price-usd {
+		font-size: 16px;
+		font-weight: 500;
+		color: #666c78;
+	}
+	tr {
+		border-bottom: 1px solid #e4e4e5;
+	}
 }
 .common-table thead,
 .common-table tbody {
@@ -291,17 +291,17 @@ br {
 	box-sizing: border-box;
 }
 .common-table thead tr {
-	color: #1B1F2A;
+	color: #1b1f2a;
 	border-bottom: unset;
 	border-radius: 16px 16px 0 0;
-  border-bottom: 1px solid #E4E4E5;
+	border-bottom: 1px solid #e4e4e5;
 }
 .common-table thead tr th {
 	background: unset;
 	color: unset;
 	border: unset;
-  font-size: 16px;
-  padding-bottom: 16px;
+	font-size: 16px;
+	padding-bottom: 16px;
 }
 .common-table tbody tr td {
 	background: transparent;
@@ -310,224 +310,469 @@ br {
 	border-bottom: unset;
 }
 
-.quantity{
-  button{
-    i{
-      font-size: 16px;
-    }
-  }
+.quantity {
+	button {
+		i {
+			font-size: 16px;
+		}
+	}
 }
 .quantity .quantityValue {
 	width: 40px;
 	text-align: center;
 	padding: 0;
-  color: #000;
-  border: unset;
+	color: #000;
+	border: unset;
 }
 //Cart Style style
 
-
-
-
-
-
-
-
-
-
-
-
-
 //Not Use up css
 
-
 //Social Cmn Style
-.social-cmn{
-	a{
+.social-cmn {
+	a {
 		width: 40px;
 		min-width: 40px;
 		height: 40px;
 		transition: all 0.4s;
-		&:hover{
+		&:hover {
 			background: $theme-color !important;
 		}
 	}
 }
 
-.pra-clr{
+.pra-clr {
 	color: rgb(7, 10, 1, 0.8);
 }
 
-//Default Font-size 
-.fs-10{
+//Default Font-size
+.fs-10 {
 	font-size: 10px;
 }
-.fs-11{
+.fs-11 {
 	font-size: 11px;
 }
-.fs-12{
+.fs-12 {
 	font-size: 12px;
 }
-.fs-13{
+.fs-13 {
 	font-size: 13px;
 }
-.fs-14{
+.fs-14 {
 	font-size: 14px;
 }
-.fs-15{
+.fs-15 {
 	font-size: 15px;
 }
-.fs-16{
+.fs-16 {
 	font-size: 16px;
 	line-height: 25px;
 }
-.fs-17{
+.fs-17 {
 	font-size: 17px;
 }
-.fs-18{
+.fs-18 {
 	font-size: 18px;
 	line-height: 28px;
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		font-size: 16px;
 	}
 }
-.fs-19{
+.fs-19 {
 	font-size: 19px;
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		font-size: 16px;
 	}
 }
-.fs-20{
+.fs-20 {
 	font-size: 20px;
 	line-height: 32px;
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 18px;
 	}
 }
-.fs-22{
+.fs-22 {
 	font-size: 22px;
 	line-height: 32px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		font-size: 20px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 18px;
 	}
 }
-.fs-24{
+.fs-24 {
 	font-size: 24px;
 	line-height: 38px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		font-size: 22px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 20px;
 	}
 }
-.fs-26{
+.fs-26 {
 	font-size: 26px;
 	line-height: 38px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		font-size: 24px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 22px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		font-size: 20px;
 	}
 }
-.fs-28{
+.fs-28 {
 	font-size: 28px;
 	line-height: 38px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		font-size: 26px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 24px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		font-size: 22px;
 	}
 }
-.fs-30{
+.fs-30 {
 	font-size: 30px;
 	line-height: 42px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		font-size: 26px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 24px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		font-size: 22px;
 	}
 }
 
-.fs-32{
+.fs-32 {
 	font-size: 32px;
 	line-height: 132%;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		font-size: 28px;
 	}
-	@include breakpoint(max-lg){
+	@include breakpoint(max-lg) {
 		font-size: 24px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		font-size: 22px;
 	}
 }
 
 //Default Font Weight
-.fw-500{
+.fw-500 {
 	font-weight: 500;
 }
 
 //Border
-.border-white{
+.border-white {
 	border: 1px solid var(--white);
 }
 
 //width
-.w-4px { width: 4px; }
-.w-8px { width: 8px; }
-.w-12px { width: 12px; }
-.w-16px { width: 16px; }
-.w-20px { width: 20px; }
-.w-24px { width: 24px; }
-.w-28px { width: 28px; }
-.w-32px { width: 32px; }
-.w-36px { width: 36px; }
-.w-40px { width: 40px; }
-.w-44px { width: 44px; }
-.w-48px { width: 48px; }
-.w-52px { width: 52px; }
-.w-56px { width: 56px; }
-.w-60px { width: 60px; }
-.w-64px { width: 64px; }
-.w-68px { width: 68px; }
-.w-72px { width: 72px; }
-.w-76px { width: 76px; }
-.w-80px { width: 80px; }
+.w-4px {
+	width: 4px;
+}
+.w-8px {
+	width: 8px;
+}
+.w-12px {
+	width: 12px;
+}
+.w-16px {
+	width: 16px;
+}
+.w-20px {
+	width: 20px;
+}
+.w-24px {
+	width: 24px;
+}
+.w-28px {
+	width: 28px;
+}
+.w-32px {
+	width: 32px;
+}
+.w-36px {
+	width: 36px;
+}
+.w-40px {
+	width: 40px;
+}
+.w-44px {
+	width: 44px;
+}
+.w-48px {
+	width: 48px;
+}
+.w-52px {
+	width: 52px;
+}
+.w-56px {
+	width: 56px;
+}
+.w-60px {
+	width: 60px;
+}
+.w-64px {
+	width: 64px;
+}
+.w-68px {
+	width: 68px;
+}
+.w-72px {
+	width: 72px;
+}
+.w-76px {
+	width: 76px;
+}
+.w-80px {
+	width: 80px;
+}
+.w-84px {
+	width: 84px;
+}
+.w-90px {
+	width: 90px;
+}
 
-//height 
-.h-4px { height: 4px; }
-.h-8px { height: 8px; }
-.h-12px { height: 12px; }
-.h-16px { height: 16px; }
-.h-20px { height: 20px; }
-.h-24px { height: 24px; }
-.h-28px { height: 28px; }
-.h-32px { height: 32px; }
-.h-36px { height: 36px; }
-.h-40px { height: 40px; }
-.h-44px { height: 44px; }
-.h-48px { height: 48px; }
-.h-52px { height: 52px; }
-.h-56px { height: 56px; }
-.h-60px { height: 60px; }
-.h-64px { height: 64px; }
-.h-68px { height: 68px; }
-.h-72px { height: 72px; }
-.h-76px { height: 76px; }
-.h-80px { height: 80px; }
+//height
+.h-4px {
+	height: 4px;
+}
+.h-8px {
+	height: 8px;
+}
+.h-12px {
+	height: 12px;
+}
+.h-16px {
+	height: 16px;
+}
+.h-20px {
+	height: 20px;
+}
+.h-24px {
+	height: 24px;
+}
+.h-28px {
+	height: 28px;
+}
+.h-32px {
+	height: 32px;
+}
+.h-36px {
+	height: 36px;
+}
+.h-40px {
+	height: 40px;
+}
+.h-44px {
+	height: 44px;
+}
+.h-48px {
+	height: 48px;
+}
+.h-52px {
+	height: 52px;
+}
+.h-56px {
+	height: 56px;
+}
+.h-60px {
+	height: 60px;
+}
+.h-64px {
+	height: 64px;
+}
+.h-68px {
+	height: 68px;
+}
+.h-72px {
+	height: 72px;
+}
+.h-76px {
+	height: 76px;
+}
+.h-80px {
+	height: 80px;
+}
+.h-84px {
+	height: 84px;
+}
+.h-90px {
+	height: 90px;
+}
+
+.p-30 {
+	padding: 30px;
+}
+.m-30 {
+	margin: 30px;
+}
+.pt-30 {
+	padding-top: 30px;
+}
+.pb-30 {
+	padding-bottom: 30px;
+}
+.ps-30 {
+	padding-left: 30px;
+}
+.pe-30 {
+	padding-right: 30px;
+}
+.mt-30 {
+	margin-top: 30px;
+}
+.mb-30 {
+	margin-bottom: 30px;
+}
+.ms-30 {
+	margin-left: 30px;
+}
+.me-30 {
+	margin-right: 30px;
+}
+
+//width
+.max-w-750 {
+	max-width: 750px;
+}
+input {
+	&::placeholder {
+		color: #000 !important;
+	}
+}
+
+.pt-80 {
+	padding-top: 80px;
+	@include breakpoint(max-lg) {
+		padding-top: 60px;
+	}
+}
+.pb-80 {
+	padding-bottom: 80px;
+	@include breakpoint(max-lg) {
+		padding-bottom: 60px;
+	}
+}
+
+.rounded-16{
+	border-radius: 16px;
+}
+.rounded-20{
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 1399px) {
+	.p-30 {
+		padding: 24px;
+	}
+	.m-30 {
+		margin: 24px;
+	}
+	.pt-30 {
+		padding-top: 24px;
+	}
+	.pb-30 {
+		padding-bottom: 24px;
+	}
+	.ps-30 {
+		padding-left: 24px;
+	}
+	.pe-30 {
+		padding-right: 24px;
+	}
+	.mt-30 {
+		margin-top: 24px;
+	}
+	.mb-30 {
+		margin-bottom: 24px;
+	}
+	.ms-30 {
+		margin-left: 24px;
+	}
+	.me-30 {
+		margin-right: 24px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	.p-30 {
+		padding: 20px;
+	}
+	.m-30 {
+		margin: 20px;
+	}
+	.pt-30 {
+		padding-top: 20px;
+	}
+	.pb-30 {
+		padding-bottom: 20px;
+	}
+	.ps-30 {
+		padding-left: 20px;
+	}
+	.pe-30 {
+		padding-right: 20px;
+	}
+	.mt-30 {
+		margin-top: 20px;
+	}
+	.mb-30 {
+		margin-bottom: 20px;
+	}
+	.ms-30 {
+		margin-left: 20px;
+	}
+	.me-30 {
+		margin-right: 20px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.p-30 {
+		padding: 18px;
+	}
+	.m-30 {
+		margin: 18px;
+	}
+	.pt-30 {
+		padding-top: 18px;
+	}
+	.pb-30 {
+		padding-bottom: 18px;
+	}
+	.ps-30 {
+		padding-left: 18px;
+	}
+	.pe-30 {
+		padding-right: 18px;
+	}
+	.mt-30 {
+		margin-top: 18px;
+	}
+	.mb-30 {
+		margin-bottom: 18px;
+	}
+	.ms-30 {
+		margin-left: 18px;
+	}
+	.me-30 {
+		margin-right: 18px;
+	}
+}
+
+.ani-circle{
+	bottom: -20px;
+	right: -30px;
+	z-index: -1;
+}

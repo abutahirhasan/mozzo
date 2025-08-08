@@ -75,13 +75,10 @@ button {
 }
 
 input:focus {
-	color: $white;
+	color: $black;
 	outline: none;
 }
 
-input {
-	color: $white;
-}
 
 h1,
 h2,
@@ -194,3 +191,6 @@ span {
 }
 
 
+i{
+	line-height: 1.5 !important;
+}
