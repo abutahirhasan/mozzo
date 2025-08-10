@@ -194,3 +194,34 @@ span {
 i{
 	line-height: 1.5 !important;
 }
+
+
+//card
+.order-card_box{
+	.icons{
+		border: 2px solid $theme-color;
+	}
+	padding: 30px 24px 40px 40px;
+	box-shadow: 0 0 20px 0 #F4E8E6;
+	transition: all 0.4s;
+	&:hover{
+		box-shadow: 0 0 20px 0 #f4e8e662;
+		.icons{
+			background-color: transparent;
+			img{
+				filter: brightness(0);
+			}
+		}
+		.step-badge{
+			background-color: $theme-color;
+			color: $white;
+		}
+	}
+	@include breakpoint(max-xl){
+		padding: 24px 18px 30px 30px;
+	}
+}
+
+.smooth{
+	transition: all 0.4s;
+}

@@ -109,6 +109,7 @@
   --bg4:#1C210C;
   --bg5:#EEEEEE;
   --bg6:#00BE23;
+  --section-bg2:#FEF9F8;
   --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -214,6 +215,10 @@
 
 .section-bg {
   background: var(--bg);
+}
+
+.section-bg2 {
+  background-color: var(--section-bg2);
 }
 
 .border-clr {
@@ -426,6 +431,37 @@ i {
   line-height: 1.5 !important;
 }
 
+.order-card_box {
+  padding: 30px 24px 40px 40px;
+  box-shadow: 0 0 20px 0 #F4E8E6;
+  transition: all 0.4s;
+}
+.order-card_box .icons {
+  border: 2px solid var(--theme);
+}
+.order-card_box:hover {
+  box-shadow: 0 0 20px 0 rgba(244, 232, 230, 0.3843137255);
+}
+.order-card_box:hover .icons {
+  background-color: transparent;
+}
+.order-card_box:hover .icons img {
+  filter: brightness(0);
+}
+.order-card_box:hover .step-badge {
+  background-color: var(--theme);
+  color: var(--white);
+}
+@media (max-width: 1199px) {
+  .order-card_box {
+    padding: 24px 18px 30px 30px;
+  }
+}
+
+.smooth {
+  transition: all 0.4s;
+}
+
 .theme-btn {
   position: relative;
   z-index: 2;
@@ -482,6 +518,21 @@ i {
 }
 .theme-btn.btn-outline-blak:hover {
   color: var(--white);
+}
+.theme-btn.btn-outline-white {
+  border: 1px solid #fff;
+  padding: 10px 20px 11px;
+  color: var(--white);
+  background-color: transparent;
+  transition: all 0.4s;
+}
+.theme-btn.btn-outline-white:hover {
+  color: var(--white);
+  background-color: var(--theme);
+  border-color: var(--theme);
+}
+.theme-btn.btn-outline-white:hover::after, .theme-btn.btn-outline-white:hover::before {
+  background-color: var(--theme);
 }
 .theme-btn.theme2-btn {
   background-color: var(--theme2);
@@ -3923,8 +3974,32 @@ i {
   margin-right: 30px;
 }
 
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.ms-40 {
+  margin-left: 40px;
+}
+
+.me-40 {
+  margin-right: 40px;
+}
+
 .max-w-750 {
   max-width: 750px;
+}
+
+.max-w-400 {
+  max-width: 400px;
+}
+
+.max-w-450 {
+  max-width: 450px;
 }
 
 input::placeholder {
@@ -3961,7 +4036,32 @@ input::placeholder {
   border-radius: 20px;
 }
 
+.thumb-overlay {
+  position: relative;
+}
+.thumb-overlay::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 1;
+}
+
 @media screen and (max-width: 1399px) {
+  .mt-40 {
+    margin-top: 35px;
+  }
+  .mb-40 {
+    margin-bottom: 35px;
+  }
+  .ms-40 {
+    margin-left: 35px;
+  }
+  .me-40 {
+    margin-right: 35px;
+  }
   .p-30 {
     padding: 24px;
   }
@@ -3994,6 +4094,18 @@ input::placeholder {
   }
 }
 @media screen and (max-width: 1199px) {
+  .mt-40 {
+    margin-top: 30px;
+  }
+  .mb-40 {
+    margin-bottom: 30px;
+  }
+  .ms-40 {
+    margin-left: 30px;
+  }
+  .me-40 {
+    margin-right: 30px;
+  }
   .p-30 {
     padding: 20px;
   }
@@ -4026,6 +4138,18 @@ input::placeholder {
   }
 }
 @media screen and (max-width: 991px) {
+  .mt-40 {
+    margin-top: 27px;
+  }
+  .mb-40 {
+    margin-bottom: 27px;
+  }
+  .ms-40 {
+    margin-left: 27px;
+  }
+  .me-40 {
+    margin-right: 27px;
+  }
   .p-30 {
     padding: 18px;
   }
@@ -4087,9 +4211,19 @@ input::placeholder {
 }
 
 .icon-effect:hover .icon {
-  animation: zoomIn 0.5s linear;
+  animation: zoomIn 0.5s linear !important;
 }
 
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .card-effect .thumb {
   position: relative;
   overflow: hidden;
@@ -4141,6 +4275,10 @@ input::placeholder {
   height: 7px;
   background-color: #970500;
   clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+.step-badge {
+  background-color: #fff1ee;
 }
 
 .hero-style1 {
@@ -6374,7 +6512,7 @@ input.main-search-input::placeholder {
   display: inline-block;
   text-align: center;
   padding: 8px 14px;
-  background: #ECF3FF;
+  background: #ecf3ff;
   border-radius: 8px;
 }
 .details-common-box .details-tags li a:hover {
@@ -6438,6 +6576,29 @@ input.main-search-input::placeholder {
 @media (max-width: 767px) {
   .same-space40 {
     gap: 24px;
+  }
+}
+
+.big-burger-content h2 {
+  font-size: 96px;
+  line-height: 100px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  word-spacing: 4px;
+}
+@media (max-width: 575px) {
+  .big-burger-content h2 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 700;
+    word-spacing: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .big-burger-thumb .price {
+    width: 100px;
   }
 }
 

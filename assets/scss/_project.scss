@@ -493,44 +493,44 @@
 		li {
 			a {
 				&:hover {
-					span{
+					span {
 						color: $theme-color;
 					}
 				}
 			}
 		}
-		@include breakpoint(max-xxl){
+		@include breakpoint(max-xxl) {
 			gap: 10px;
 		}
 	}
-	.recente-ads-inner{
+	.recente-ads-inner {
 		display: grid;
 		gap: 24px;
-		.content{
-			.titles{
+		.content {
+			.titles {
 				display: block;
 				line-height: 20px;
 			}
 		}
-		@include breakpoint(max-lg){
+		@include breakpoint(max-lg) {
 			gap: 19px;
 		}
 	}
-	.details-tags{
+	.details-tags {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 11px;
-		li{
-			a{
+		li {
+			a {
 				font-size: 14px;
 				font-weight: 500;
 				color: $black2;
 				display: inline-block;
 				text-align: center;
 				padding: 8px 14px;
-				background: #ECF3FF;
+				background: #ecf3ff;
 				border-radius: 8px;
-				&:hover{
+				&:hover {
 					background: $theme-color;
 				}
 			}
@@ -581,18 +581,41 @@
 		}
 	}
 }
-.same-space40{
+.same-space40 {
 	display: grid;
 	gap: 40px;
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		gap: 30px;
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		gap: 24px;
 	}
 }
 //Reservation section
 
-
-
 //Mozzo
+.big-burger-content {
+	h2 {
+		font-size: 96px;
+		line-height: 100px;
+		font-weight: 800;
+		letter-spacing: 1px;
+		text-transform: capitalize;
+		word-spacing: 4px;
+	}
+	@include breakpoint(max-sm) {
+		h2 {
+			font-size: 40px;
+			line-height: 45px;
+			font-weight: 700;
+			word-spacing: 1px;
+		}
+	}
+}
+.big-burger-thumb {
+	@include breakpoint(max-sm) {
+		.price {
+			width: 100px;
+		}
+	}
+}
