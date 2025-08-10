@@ -22,6 +22,7 @@
     --bg4:#1C210C;
     --bg5:#EEEEEE;
     --bg6:#00BE23;
+    --bg7:#FFF3EE;
     --section-bg2:#FEF9F8;
     --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);
     
@@ -49,6 +50,7 @@ $bg3: var(--bg3);
 $bg4: var(--bg4);
 $bg5: var(--bg5);
 $bg6: var(--bg6);
+$bg7: var(--bg7);
 $section-bg2: var(--section-bg2);
 
 
@@ -69,6 +71,9 @@ $section-bg2: var(--section-bg2);
 }
 .bg6{
     background: $bg6;
+}
+.bg7{
+    background: $bg7;
 }
 .bg-gradient{
     background: linear-gradient(90deg, #EA0000 0%, #FC692A 100%) !important;
@@ -113,7 +118,7 @@ $section-bg2: var(--section-bg2);
     background: $ratting-color;
 }
 .text-clr{
-    color: $text-color;
+    color: $text-color !important;
 }
 .text-bg{
     background: $text-color;

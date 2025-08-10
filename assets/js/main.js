@@ -141,8 +141,8 @@
 		//<< 09 >> Nice Select Start <<//
 		$("select").niceSelect();
 
+		//<< Mozzo >>//
 		//<< Super Deals Slide >>//
-		//<< 12 >> Apartment Slider Start <<//
 		const superDealsSlider = new Swiper(".superDeals-slider", {
 			spaceBetween: 24,
 			speed: 1000,
@@ -191,6 +191,9 @@
 					nextEl: ".array-prev",
 					prevEl: ".array-next",
 				},
+				pagination: {
+					el: ".swiper-dot",
+				},
 				breakpoints: {
 					991: {
 						slidesPerView: 1,
@@ -210,6 +213,9 @@
 				},
 			});
 		}
+
+		//<< Mozzo >>//
+
 		//<< 11 >> Banner Slider1
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
