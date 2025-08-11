@@ -40,6 +40,7 @@ $theme-color-4: var(--theme4);
 $ratting-color: var(--ratting);
 $text-color: var(--text);
 $text-color-2: var(--text2);
+$text-color-3: var(--text3);
 $text-color-4: var(--text4);
 $header-color: var(--header);
 $header-color-2: var(--header2);
@@ -130,6 +131,9 @@ $section-bg2: var(--section-bg2);
 }
 .text4-clr{
     color: $text-color-4 !important;
+}
+.text3-clr{
+    color: $text-color-3 !important;
 }
 .text2-bg{
     background: $text-color-2;

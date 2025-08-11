@@ -211,6 +211,10 @@
   color: var(--text4) !important;
 }
 
+.text3-clr {
+  color: var(--text3) !important;
+}
+
 .text2-bg {
   background: var(--text2);
 }
@@ -458,7 +462,7 @@ i {
 
 .order-card_box {
   padding: 30px 24px 40px 40px;
-  box-shadow: 0 0 20px 0 #F4E8E6;
+  box-shadow: 0 0 20px 0 #f4e8e6;
   transition: all 0.4s;
 }
 .order-card_box .icons {
@@ -481,6 +485,17 @@ i {
   .order-card_box {
     padding: 24px 18px 30px 30px;
   }
+}
+
+.order-card__theme3 .icons {
+  border-color: var(--theme2);
+}
+.order-card__theme3 .step-badge {
+  background-color: var(--theme3) !important;
+  color: var(--white) !important;
+}
+.order-card__theme3 img {
+  filter: brightness(0);
 }
 
 .smooth {
@@ -3356,7 +3371,7 @@ i {
   width: 11px;
   height: 11px;
   transition: 0.6s;
-  background-color: #C4C4C4;
+  background-color: #c4c4c4;
   opacity: 1;
   border-radius: 50%;
   position: relative;
@@ -3365,6 +3380,10 @@ i {
   background-color: var(--theme);
   transition: 0.6s;
   position: relative;
+}
+
+.dot-theme3 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--theme3) !important;
 }
 
 @media (max-width: 767px) {
@@ -4348,6 +4367,9 @@ input::placeholder {
   background-color: var(--theme);
   border-radius: 100px;
   display: inline-block;
+}
+.section-badge1.style5 {
+  background-color: var(--theme3) !important;
 }
 
 .badge-offer {

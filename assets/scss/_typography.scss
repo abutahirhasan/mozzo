@@ -2,11 +2,11 @@
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
 
-@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Baloo+Bhai+2:wght@400..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Reggae+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Baloo+Bhai+2:wght@400..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Reggae+One&display=swap");
 
 $heading-font: "Outfit", sans-serif;
 $heading-font-bhalo: "Baloo Bhai 2", sans-serif;
-$heading-font-edensor: 'Edensor', sans-serif;
+$heading-font-edensor: "Edensor", sans-serif;
 $heading-font-afacad: "Afacad", sans-serif;
 $heading-font-cormorant: "Cormorant Garamond", serif;
 $heading-font-regge: "Reggae One", system-ui;
@@ -16,35 +16,35 @@ $body-font: "Inter", sans-serif;
 //font-family: "Font Awesome 6 Free";
 
 //Default FOnt
-.heading-font{
+.heading-font {
 	font-family: $heading-font;
 }
-.heading-font-bhalo{
+.heading-font-bhalo {
 	font-family: $heading-font-bhalo;
 }
-.heading-font-edensor{
+.heading-font-edensor {
 	font-family: $heading-font-edensor;
 }
-.heading-font-afasad{
+.heading-font-afasad {
 	font-family: $heading-font-afacad;
 }
-.heading-font-cormorant{
+.heading-font-cormorant {
 	font-family: $heading-font-cormorant;
 }
-.heading-font-regge{
+.heading-font-regge {
 	font-family: $heading-font-cormorant;
 }
-.sub-font{
+.sub-font {
 	font-family: $sub-font;
 }
-.body-font{
+.body-font {
 	font-family: $body-font;
 }
 @font-face {
-  font-family: 'Edensor';
-  src: url('../fonts/Edensor-FREE.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Edensor";
+	src: url("../fonts/Edensor-FREE.otf") format("opentype");
+	font-weight: normal;
+	font-style: normal;
 }
 //Default FOnt
 
@@ -78,7 +78,6 @@ input:focus {
 	color: $black;
 	outline: none;
 }
-
 
 h1,
 h2,
@@ -182,46 +181,55 @@ span {
 	@include transition;
 }
 
-
 //Default Css
-.d-center{
+.d-center {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-
-i{
+i {
 	line-height: 1.5 !important;
 }
 
-
 //card
-.order-card_box{
-	.icons{
+.order-card_box {
+	.icons {
 		border: 2px solid $theme-color;
 	}
 	padding: 30px 24px 40px 40px;
-	box-shadow: 0 0 20px 0 #F4E8E6;
+	box-shadow: 0 0 20px 0 #f4e8e6;
 	transition: all 0.4s;
-	&:hover{
+	&:hover {
 		box-shadow: 0 0 20px 0 #f4e8e662;
-		.icons{
+		.icons {
 			background-color: transparent;
-			img{
+			img {
 				filter: brightness(0);
 			}
 		}
-		.step-badge{
+		.step-badge {
 			background-color: $theme-color;
 			color: $white;
 		}
 	}
-	@include breakpoint(max-xl){
+	@include breakpoint(max-xl) {
 		padding: 24px 18px 30px 30px;
 	}
 }
+.order-card__theme3 {
+	.icons{
+		border-color: $theme-color-2;
+	}
+	.step-badge{
+		background-color: $theme-color-3 !important;
+		color: $white !important;
+	}
+	img {
+		filter: brightness(0);
+	}
+}
 
-.smooth{
+.smooth {
 	transition: all 0.4s;
 }

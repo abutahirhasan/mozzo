@@ -82,7 +82,6 @@
         </div>
     </div>
 
-
     <!-- Offcanvas Area Start -->
     <div class="fix-area">
         <div class="offcanvas__info">
@@ -185,7 +184,7 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="has-dropdown active menu-thumb">
+                                        <li class="has-dropdown droop active menu-thumb">
                                             <a href="index.html">
                                                 Home
                                                 <i class="fas fa-angle-down"></i>
@@ -264,18 +263,39 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="room-grid.html">
-                                                Rooms
+                                            <a href="menu.html">
+                                                Menu
                                                 <i class="fas fa-angle-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="room-grid.html">Rooms Grid</a></li>
-                                                <li><a href="room-list.html">Rooms List</a></li>
-                                                <li><a href="room-details.html">Rooms Details</a></li>
+                                                <li><a href="food-menu-single.html">Single Food Menu</a></li>
+                                                <li><a href="menu-list.html">Menu List</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="restaurant.html">RESTAURANT</a>
+                                            <a href="shop.html">
+                                                Shop
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="order-tracking.html">Order Tracking</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="blog-grid.html">
+                                                Blog
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                <li><a href="blog-standard.html">Blog Standard</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="reservation.html">Reservations</a></li>
+                                            </ul>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="#0">
@@ -284,23 +304,14 @@
                                             </a>
                                             <ul class="submenu">
                                                 <li><a href="about.html">About Us</a></li>
-                                                <li><a href="service.html">Services</a></li>
                                                 <li><a href="faqs.html">Faqs</a></li>
                                                 <li><a href="team.html">Team</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
+                                                <li><a href="restaurant.html">Restaurant List</a></li>
+                                                <li><a href="restaurant-details1.html">Restaurant Details 01</a></li>
+                                                <li><a href="restaurant-details2.html">Restaurant Details 02</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
                                                 <li><a href="error.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="blog-grid.html">
-                                                News
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="reservation.html">Reservations</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -317,7 +328,7 @@
                             <img src="assets/img/icon/tolly.png" alt="tolly-icon">
                             <span class="count-quan d-center">02</span>
                         </button>
-                        <div class="header__hamburger d-lg-none my-auto">
+                        <div class=" d-lg-none my-auto">
                             <div class="sidebar__toggle">
                                 <img src="assets/img/icon/bars.png" alt="icon">
                             </div>
@@ -331,8 +342,14 @@
                             <img src="assets/img/icon/tolly.png" alt="tolly-icon">
                             <span class="count-quan d-center">02</span>
                         </button>
-                        <button type="button" class="destop-bars sidebar__toggle">
-                            <img src="assets/img/icon/bars.png" alt="img">
+                        <a href="#0"
+                            class="border-white rounded-pill d-center gap-2 fw-bold text-white fs-14 h-40px px-4">
+                            <i class="fa-regular fa-user"></i>
+                            Log In
+                        </a>
+                        <button type="button"
+                            class="destop-bars bars__one w-40px h-40px border-white rounded-circle d-center sidebar__toggle text-white fs-20">
+                            <i class="fa-solid fa-bars"></i>
                         </button>
                     </div>
                 </div>
@@ -342,765 +359,917 @@
 
 
     <!-- Hero section start -->
-    <section class="hero-section hero-style5">
+    <section class="hero-section fix hero-style1 bg-cover"
+        style="background-image: url(assets/img/home-1/element/hero-bg1.jpg);">
         <div class="container">
-            <div class="row g-4 align-items-center justify-content-between">
-                <div class="col-lg-8">
-                    <div class="hero-content">
-                        <span
-                            class="text-lg-start text-center sub-font text-white sub-title fs-20 mb-sm-3 mb-2 d-block wow fadeInUp"
-                            data-wow-delay=".4s">
-                            Authentic historical charm
-                        </span>
-                        <h1 class="text-lg-start text-center mb-lg-5 mb-4 pb-lg-0 pb-2 white-clr fw-semibold text-uppercase wow fadeInUp"
-                            data-wow-delay=".5s">
-                            Jungle Safari
-                            Resort Comfort
-                            & Wildlife
-                        </h1>
-                        <div
-                            class="hero-btn-adjust d-flex justify-content-lg-start justify-content-center gap-sm-4 gap-3">
-                            <a href="room-grid.html"
-                                class="theme-btn theme3-btn rounded-0 fw-normal text-capitalize gap-1 px-6 py-2 wow fadeInRight"
-                                data-wow-delay=".5s">
-                                Book Now
-                            </a>
-                            <a href="room-list.html"
-                                class="room d-flex align-items-center gap-sm-3 gap-2 white-clr wow fadeInLeft"
-                                data-wow-delay=".6s">
-                                <img src="assets/img/icon/right-arrow.png" alt="img" class="right-arrow">
-                                View Resort
-                            </a>
+            <div class="hero-content1 z-1 pt-100 text-center">
+                <p class="fs-20 mb-lg-3 mb-2 text-white heading-font-bhalo">Explore top-rated attractions, activities
+                    and more</p>
+                <h2 class="mb-sm-4 mb-3 text-white heading-font-bhalo">Fast Delivery. Zero Hassle.</h2>
+                <div
+                    class="search-adjust1 bg-white rounded-pill d-flex align-items-center justify-content-between gap-2 max-w-750 mx-auto p-2 mb-md-5 mb-4">
+                    <form action="#" class="gap-2 d-flex align-items-center bg-white rounded-pill ps-4">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input class="fs-14 w-100 py-2 px-2 border-0" type="text" placeholder="Enter delivery address">
+                    </form>
+                    <div class="d-flex align-items-center gap-xl-4 gap-3">
+                        <div class="d-flex align-content-center gap-2 text-title fw-medium cursor-pointer">
+                            <i class="fa-solid fa-location-crosshairs"></i> <span
+                                class="d-sm-block fs-16 d-none fs-16 fw-medium text-title">Locate Me</span>
                         </div>
+                        <button type="submit"
+                            class="theme-btn py-2 px-3 fw-500 text-capitalize d-center gap-2 rounded-pill">
+                            <i class="fa-solid fa-magnifying-glass fs-14"></i> <span
+                                class="d-sm-block text-capitalize d-none fs-16 fw-semibold text-white">Search</span>
+                        </button>
                     </div>
-                </div>
-                <div class="col-lg-4 mt-lg-0 mt-sm-5 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="date-picker-container">
-                        <form id="booking-form"
-                            class="d-flex flex-column justify-content-start align-items-center gap-xxl-3 gap-lg-3 gap-2">
-                            <div class="form-group">
-                                <label for="check-in" class="black2-clr fs-14 fw-500 mb-2 d-block">Check In:</label>
-                                <input type="date" id="check-in" name="check-in">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="check-in" class="black2-clr fs-14 fw-500 mb-2 d-block">check-out:</label>
-                                <input type="date" id="check-out" name="check-out">
-                            </div>
-
-                            <div class="form-group">
-                                <label for="adults" class="black2-clr fs-14 fw-500 mb-2 d-block">Adult:</label>
-                                <select id="adults" name="adults">
-                                    <option value="1">+ Add Guests</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group mb-3">
-                                <label for="child" class="black2-clr fs-14 fw-500 mb-2 d-block">Children:</label>
-                                <select id="child" name="child">
-                                    <option value="1">+ Add Guests</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-
-                            <button type="submit"
-                                class="theme-btn theme3-btn text-nowrap d-center rounded-0 fs-16 fw-500 text-center text-capitalize">
-                                Check Availability
-                            </button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Day Night Section -->
-    <section class="day-night-section fix section-padding">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="section-title text-center">
-                        <span class="sub-font wow fadeInUp white-clr text-white">Day Night Jungle</span>
-                        <h2 class="fw-semibold mb-lg-4 mb-md-3 mb-2 wow fadeInUp white-clr" data-wow-delay=".3s">
-                            The Day of Jungle Way to Meet the World
-                        </h2>
-                        <p class="white-clr fs-16 wow fadeInUp" data-wow-delay=".4s">
-                            Safari Jungle Resort is a luxurious retreat nestled deep within the heart of a vast jungle,
-                            offering an immersive blend
-                            of adventure and relaxation. Surrounded by lush greenery, exotic wildlife,
-                            and the sounds of nature, the resort provides guests with a unique opportunity to
-                            experience the wilderness in comfort
-                        </p>
-                        <a href="restaurant.html"
-                            class="theme-btn bg-transparent rounded-0 fw-normal text-capitalize gap-1 px-6">
-                            View More
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Ele -->
-        <img src="assets/img/element/day-ele1.png" alt="img" class="day-ele1">
-        <img src="assets/img/element/day-ele2.png" alt="img" class="day-ele2">
-    </section>
-
-    <!-- About5 Section -->
-    <section class="about-section05 position-relative fix section-padding white-bg">
-        <div class="container">
-            <div class="row flex-row-reverse g-4 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="about-content-version3 ps-xxl-4">
-                        <div class="section-title">
-                            <span class="sub-font mb-xxl-4 mb-3 d-block wow fadeInUp">About mozzoa</span>
-                            <h2 class="wow fadeInUp fw-semibold mb-sm-3 mb-sm-3 mb-2 pb-xxl-2" data-wow-delay=".3s">
-                                We Invite to Celebrate <br> Safari Resort Wild
-                            </h2>
-                        </div>
-                        <p class="fs-16 black-clr mb-md-3 mb-sm-3 mb-2 pb-xxl-2">
-                            Our Safari Jungle Resort is a luxurious retreat nestled deep within the heart of a vast
-                            jungle, offering an immersive
-                            blend of adventure and relaxation. Surrounded by lush greenery, exotic wildlife, and the
-                            sounds of nature, the resort
-                            provides guests with a unique opportunity to experience the wilderness in comfort.
-                        </p>
-                        <p class="black-clr fs-16 mb-xl-5 mb-4">
-                            Visitors can embark on guided safari tours, witness breathtaking wildlife up close, and
-                            explore pristine landscapes.
-                            With eco-friendly practices and a focus on sustainability,
-                            the resort ensures that guests enjoy an authentic jungle experience while
-                            contributing to the preservation of the environment.
-                        </p>
-                        <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-xxl-4 gap-xl-4 gap-3">
-                            <a href="about.html"
-                                class="theme-btn theme3-btn rounded-1 fw-normal text-capitalize gap-1 px-6">
-                                Discover More
-                            </a>
-                            <img src="assets/img/element/about5-text.png" alt="img">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-thumb-version3 img-hover pe-xl-5 w-100 wow fadeInRight" data-wow-delay="0.4s">
-                        <img src="assets/img/about/about-version3.jpg" alt="img" class="w-100 rounded-0">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Ele -->
-        <img src="assets/img/element/about5-cl.png" alt="img" class="about5-cl1">
-        <img src="assets/img/element/about5-cl2.png" alt="img" class="about5-cl2 d-sm-block d-none">
-    </section>
-
-    <!-- Choose Section -->
-    <section class="choose-section5 fix section-padding">
-        <div class="container">
-            <div class="section-title mb-50 text-center">
-                <span class="sub-font wow fadeInUp white-clr text-white">Why Chosen Us</span>
-                <h2 class="fw-semibold mb-md-3 mb-2 wow fadeInUp white-clr" data-wow-delay=".3s">
-                    Explore Our Best Facilities
-                </h2>
-                <p class="white-clr fs-16">
-                    Our Safari Jungle Resort is a luxurious retreat nestled deep within the heart of a vast jungle,
-                    offering an immersive
-                    blend of adventure and relaxation. Surrounded by
-                    lush greenery, exotic.
-                </p>
-            </div>
-            <div class="row g-4">
-                <div class="col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="choose-items5 text-center rounded-3">
-                        <div class="icon d-center rounded-circle">
-                            <img src="assets/img/icon/kitcen-icon.png" alt="img">
-                        </div>
-                        <div class="cont">
-                            <h3 class="black-clr mb-xxl-3 mb-2"><a href="service.html" class="black-clr">Restaurant &
-                                    Party</a>
-                            </h3>
-                            <p class="black-clr fs-16">
-                                luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive
-                                blend of adventure and
-                                relaxation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="choose-items5 text-center rounded-3">
-                        <div class="icon d-center rounded-circle">
-                            <img src="assets/img/icon/kitcen-icon.png" alt="img">
-                        </div>
-                        <div class="cont">
-                            <h3 class="black-clr mb-xxl-3 mb-2"><a href="service.html" class="black-clr">Free WI-FI</a>
-                            </h3>
-                            <p class="black-clr fs-16">
-                                luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive
-                                blend of adventure and
-                                relaxation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="choose-items5 text-center rounded-3">
-                        <div class="icon d-center rounded-circle">
-                            <img src="assets/img/icon/kitcen-icon.png" alt="img">
-                        </div>
-                        <div class="cont">
-                            <h3 class="black-clr mb-xxl-3 mb-2"><a href="service.html" class="black-clr">Swimming
-                                    Pool</a></h3>
-                            <p class="black-clr fs-16">
-                                luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive
-                                blend of adventure and
-                                relaxation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".8s">
-                    <div class="choose-items5 text-center rounded-3">
-                        <div class="icon d-center rounded-circle">
-                            <img src="assets/img/icon/kitcen-icon.png" alt="img">
-                        </div>
-                        <div class="cont">
-                            <h3 class="black-clr mb-xxl-3 mb-2"><a href="service.html" class="black-clr">Car Trip
-                                    Views</a></h3>
-                            <p class="black-clr fs-16">
-                                luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive
-                                blend of adventure and
-                                relaxation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
-                    <div class="choose-items5 text-center rounded-3">
-                        <div class="icon d-center rounded-circle">
-                            <img src="assets/img/icon/kitcen-icon.png" alt="img">
-                        </div>
-                        <div class="cont">
-                            <h3 class="black-clr mb-xxl-3 mb-2"><a href="service.html" class="black-clr">Memorable Tabu
-                                    Night</a>
-                            </h3>
-                            <p class="black-clr fs-16">
-                                luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive
-                                blend of adventure and
-                                relaxation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="choose-items5 text-center rounded-3">
-                        <div class="icon d-center rounded-circle">
-                            <img src="assets/img/icon/kitcen-icon.png" alt="img">
-                        </div>
-                        <div class="cont">
-                            <h3 class="black-clr mb-xxl-3 mb-2"><a href="service.html" class="black-clr">Health &
-                                    Beauty</a></h3>
-                            <p class="black-clr fs-16">
-                                luxurious retreat nestled deep within the heart of a vast jungle, offering an immersive
-                                blend of adventure and
-                                relaxation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- City View Section -->
-    <section class="city-view-section city-view2-section fix">
-        <div class="container-fluid p-0">
-            <div class="row g-0 city-wrapper5">
-                <div class="col-xxl-4 d-center city-view-content-wrap">
-                    <div class="city-view-content">
-                        <div class="section-title">
-                            <span class="sub-font mb-xxl-4 mb-3 black-clr d-block wow fadeInUp">Our Best Rooms
-                                Facilities</span>
-                            <h2 class="wow fadeInUp black-clr fw-semibold mb-md-3 mb-2" data-wow-delay=".3s">
-                                Explore Our Latest <br> Rooms & Suits
-                            </h2>
-                            <p class="fs-18 black-clr mb-sm-4 mb-3 pb-xxl-2">
-                                Visitors can embark on guided safari tours, witness breathtaking wildlife up close, and
-                                explore pristine landscapes.
-                                With
-                                eco-friendly practices and a guests enjoy an authentic jungle experience while focus on
-                                sustainability
-                            </p>
-                            <a href="room-details.html"
-                                class="theme-btn border-0 theme3-btn rounded-0 fw-normal text-capitalize gap-1 px-6 wow fadeInUp"
-                                data-wow-delay=".8s">
-                                Book Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xxl-8 d-center">
-                    <div class="city-slider-wrap2 swiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="city-item city-items5 d-center w-100">
-                                    <img src="assets/img/testimonial/city4.jpg" alt="img" class="w-100">
-                                    <div class="content d-center position-absolute">
-                                        <div class="box">
-                                            <h3 class="fs-32 fw-semibold white-clr mb-1">
-                                                $180 <span class="fs-14 fw-normal white-clr">/04 Day</span>
-                                            </h3>
-                                            <h5 class="white-clr mb-2">
-                                                <a href="room-details.html" class="white-clr">
-                                                    Natural Views Rooms
-                                                </a>
-                                            </h5>
-                                            <p class="fs-16 white-clr mb-4">
-                                                Referring to the formatting of a headline related to a Beach Resort
-                                            </p>
-                                            <a href="room-details.html"
-                                                class="theme-btn px-4 fs-16 bg-transparent rounded-5 fw-normal text-capitalize gap-1 px-6"
-                                                data-wow-delay=".8s">
-                                                Room Details
-                                            </a>
-                                        </div>
-                                        <!-- img ele -->
-                                        <img src="assets/img/element/city-ele.png" alt="ele" class="city-ele">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="city-item city-items5 d-center w-100">
-                                    <img src="assets/img/testimonial/city5.jpg" alt="img" class="w-100">
-                                    <div class="content d-center position-absolute">
-                                        <div class="box">
-                                            <h3 class="fs-32 fw-semibold white-clr mb-1">
-                                                $180 <span class="fs-14 fw-normal white-clr">/04 Day</span>
-                                            </h3>
-                                            <h5 class="white-clr mb-2">
-                                                <a href="room-details.html" class="white-clr">
-                                                    Natural Views Rooms
-                                                </a>
-                                            </h5>
-                                            <p class="fs-16 white-clr mb-4">
-                                                Referring to the formatting of a headline related to a Beach Resort
-                                            </p>
-                                            <a href="room-details.html"
-                                                class="theme-btn px-4 fs-16 bg-transparent rounded-5 fw-normal text-capitalize gap-1 px-6"
-                                                data-wow-delay=".8s">
-                                                Room Details
-                                            </a>
-                                        </div>
-                                        <!-- img ele -->
-                                        <img src="assets/img/element/city-ele.png" alt="ele" class="city-ele">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="city-item city-items5 d-center w-100">
-                                    <img src="assets/img/testimonial/city6.jpg" alt="img" class="w-100">
-                                    <div class="content d-center position-absolute">
-                                        <div class="box">
-                                            <h3 class="fs-32 fw-semibold white-clr mb-1">
-                                                $180 <span class="fs-14 fw-normal white-clr">/04 Day</span>
-                                            </h3>
-                                            <h5 class="white-clr mb-2">
-                                                <a href="room-details.html" class="white-clr">
-                                                    Natural Views Rooms
-                                                </a>
-                                            </h5>
-                                            <p class="fs-16 white-clr mb-4">
-                                                Referring to the formatting of a headline related to a Beach Resort
-                                            </p>
-                                            <a href="room-details.html"
-                                                class="theme-btn px-4 fs-16 bg-transparent rounded-5 fw-normal text-capitalize gap-1 px-6"
-                                                data-wow-delay=".8s">
-                                                Room Details
-                                            </a>
-                                        </div>
-                                        <!-- img ele -->
-                                        <img src="assets/img/element/city-ele.png" alt="ele" class="city-ele">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Suits Facilites section start -->
-    <section class="suit-facilites-section space-top fix">
-        <div class="container">
-            <div class="row g-4 flex-row-reverse align-items-center">
-                <div class="col-lg-5">
-                    <div class="suit-facilits-content">
-                        <div class="section-title">
-                            <span class="sub-font mb-xxl-4 mb-3 wow fadeInUp text-white">Extra Facilities</span>
-                            <h2 class="mb-3 fw-semibold wow fadeInUp white-clr" data-wow-delay=".3s">
-                                Explore Our Latest Rooms & Suits
-                            </h2>
-                            <p class="white-clr fs-16 mb-4 wow fadeInUp" data-wow-delay=".3s">
-                                Visitors can embark on guided safari tours, witness breathtaking wildlife up close, and
-                                explore pristine
-                                landscapes.
-                                With eco-friendly
-                            </p>
-                            <ul class="suit-facilites-list d-grid gap-3 mb-50">
-                                <li class="d-flex align-items-center gap-2 fs-32 fw-500 white-clr wow fadeInUp"
-                                    data-wow-delay=".4s">
-                                    <img src="assets/img/icon/check-icon.png" alt="img"> Safe Zone
-                                </li>
-                                <li class="d-flex align-items-center gap-2 fs-32 fw-500 white-clr wow fadeInUp"
-                                    data-wow-delay=".5s">
-                                    <img src="assets/img/icon/check-icon.png" alt="img"> Car/Jeep Provided
-                                </li>
-                                <li class="d-flex align-items-center gap-2 fs-32 fw-500 white-clr wow fadeInUp"
-                                    data-wow-delay=".6s">
-                                    <img src="assets/img/icon/check-icon.png" alt="img"> Free Tour Guide
-                                </li>
-                                <li class="d-flex align-items-center gap-2 fs-32 fw-500 white-clr wow fadeInUp"
-                                    data-wow-delay=".7s">
-                                    <img src="assets/img/icon/check-icon.png" alt="img"> Restaurant Services
-                                </li>
-                            </ul>
-                            <a href="room-grid.html"
-                                class="theme-btn theme3-btn rounded-0 fw-normal text-capitalize gap-1 px-6 wow fadeInUp"
-                                data-wow-delay=".8s">
-                                Book Now
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="suit-facilites-thumb-inner position-relative me-md-5">
-                        <div class="d-flex align-items-center gap-4">
-                            <div class="thumb-big wow fadeInLeft" data-wow-delay=".3s">
-                                <img src="assets/img/about/facilites-big1.jpg" alt="img">
-                            </div>
-                            <img src="assets/img/about/facilites-off-text.png" alt="img"
-                                class="mb-xl-5 mb-sm-4 offtext">
-                            <div class="thumb-big2 luxuries-wrap d-center wow fadeInRight" data-wow-delay=".4s">
-                                <img src="assets/img/about/facilites-big2.jpg" alt="">
-                                <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
-                                    class="luxuries-vid position-absolute rounded-circle d-center video-popup">
-                                    <i class="fa-solid fa-play"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="assets/img/element/shadow-ele.png" alt="img" class="shadow-ele1">
-        <img src="assets/img/element/shadow-ele.png" alt="img" class="shadow-ele2">
-    </section>
-
-    <!-- Testimonial section start -->
-    <section class="testimonial-section2 testimonial-style5 space-top fix">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-font mb-xxl-4 mb-3 wow fadeInUp text-white">Testimonials</span>
-                <h2 class="fw-semibold wow fadeInUp white-clr" data-wow-delay=".3s">
-                    What Traveller Says Us Our Services Quality
-                </h2>
-            </div>
-            <div class="testimonial-wrapper-main5">
-                <div class="testimonial-thumb5">
-                    <img src="assets/img/testimonial/testimonial5-thumb.png" alt="img">
                 </div>
                 <div
-                    class="testimonil-spce-wrapper d-xxl-flex flex-xxl-nowrap flex-wrap justify-content-xxl-between justify-content-center align-items-center">
-                    <div class="swiper testimonial-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="testimonial-items1">
-                                    <div class="content-area gap-3 d-flex">
-                                        <img src="assets/img/element/quote-white.png" alt="img"
-                                            class="quotev51 d-xxl-block d-none">
-                                        <div class="cont">
-                                            <div
-                                                class="d-flex justify-content-xxl-start justify-content-center gap-1 mb-xxl-4 mb-3">
-                                                <i class="fa-solid fa-star fs-20 ratting-clr"></i>
-                                                <i class="fa-solid fa-star fs-20 ratting-clr"></i>
-                                                <i class="fa-solid fa-star fs-20 ratting-clr"></i>
-                                                <i class="fa-solid fa-star fs-20 ratting-clr"></i>
-                                                <i class="fa-solid fa-star fs-20 ratting-clr"></i>
+                    class="hero-menu-wrap flex-wrap max-w-750 mx-auto d-flex justify-content-md-between justify-content-center gap-3 pt-3">
+                    <div class="menu-component d-flex flex-column gap-2 wow fadeInDown" data-wow-delay="0.5s">
+                        <a href="menus" class="card-split w-90px h-90px mx-auto rounded-circle d-center bg-white">
+                            <img width="60" height="60" src="assets/img/home-1/menu-l1.png" alt="icon"
+                                class="rounded-3">
+                        </a>
+                        <h6 class="text-white pt-1"><a href="menus" class="text-white">Burger</a></h6>
+                    </div>
+                    <div class="menu-component d-flex flex-column gap-2 wow fadeInDown" data-wow-delay="0.6s">
+                        <a href="menus" class="card-split w-90px h-90px mx-auto rounded-circle d-center bg-white">
+                            <img width="60" height="60" src="assets/img/home-1/menu-l2.png" alt="icon"
+                                class="rounded-3">
+                        </a>
+                        <h6 class="text-white pt-1"><a href="menus" class="text-white">Pasta</a></h6>
+                    </div>
+                    <div class="menu-component d-flex flex-column gap-2 wow fadeInDown" data-wow-delay="0.7s">
+                        <a href="menus" class="card-split w-90px h-90px mx-auto rounded-circle d-center bg-white">
+                            <img width="60" height="60" src="assets/img/home-1/menu-l3.png" alt="icon"
+                                class="rounded-3">
+                        </a>
+                        <h6 class="text-white pt-1"><a href="menus" class="text-white">Salad</a></h6>
+                    </div>
+                    <div class="menu-component d-flex flex-column gap-2 wow fadeInDown" data-wow-delay="0.8s">
+                        <a href="menus" class="card-split w-90px h-90px mx-auto rounded-circle d-center bg-white">
+                            <img width="60" height="60" src="assets/img/home-1/menu-l4.png" alt="icon"
+                                class="rounded-3">
+                        </a>
+                        <h6 class="text-white pt-1"><a href="menus" class="text-white">Pizza</a></h6>
+                    </div>
+                    <div class="menu-component d-flex flex-column gap-2 wow fadeInDown" data-wow-delay="0.9s">
+                        <a href="menus" class="card-split w-90px h-90px mx-auto rounded-circle d-center bg-white">
+                            <img width="60" height="60" src="assets/img/home-1/menu-l5.png" alt="icon"
+                                class="rounded-3">
+                        </a>
+                        <h6 class="text-white pt-1"><a href="menus" class="text-white">Sandwich</a></h6>
+                    </div>
+                    <div class="menu-component d-flex flex-column gap-2 wow fadeInDown" data-wow-delay="1s">
+                        <a href="menus" class="card-split w-90px h-90px mx-auto rounded-circle d-center bg-white">
+                            <img width="60" height="60" src="assets/img/home-1/menu-l6.png" alt="icon"
+                                class="rounded-3">
+                        </a>
+                        <h6 class="text-white pt-1"><a href="menus" class="text-white">Fried Rice</a></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/home-1/home-shape-start.png" alt="img" class="hero1-shape-start position-absolute">
+        <img src="assets/img/home-1/home-shape-end.png" alt="img"
+            class="hero1-shape-end position-absolute d-sm-block d-none">
+    </section>
+
+    <!-- Offer Section start -->
+    <section class="offer-section position-relative pt-80 pb-80 fix">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="offer-card fix h-100 rounded-20 p-4 bg-cover wow fadeInUp"
+                        style="background-image: url(assets/img/home-1/offer-bg1.jpg);" data-wow-delay="0.7s">
+                        <div class="cont p-2">
+                            <p
+                                class="theme2-bg fs-15 d-inline-block text-center rounded-pill py-1 px-3 text-black fw-semibold mb-3">
+                                10% Off: FEASTA10</p>
+                            <h3 class="text-uppercase lh-1 fs-30 heading-font-bhalo fw-bold mb-2">
+                                Tango <br>
+                                Bruger
+                            </h3>
+                            <img src="assets/img/home-1/text-price11.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="offer-card fix text-center h-100 rounded-20 p-4 bg-cover wow fadeInUp"
+                        style="background-image: url(assets/img/home-1/offer-bg2.jpg);" data-wow-delay="0.9s">
+                        <div class="cont p-2">
+                            <p
+                                class="theme2-bg fs-15 d-inline-block text-center rounded-pill py-1 px-3 text-black fw-semibold mb-3">
+                                15% off: BOGO-Mojo</p>
+                            <h3 class="text-uppercase lh-1 fs-30 heading-font-bhalo fw-bold mb-2">
+                                Creamy Pasta
+                            </h3>
+                            <img src="assets/img/home-1/text-price15.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="offer-card z-1 fix h-100 position-relative rounded-20 p-4 bg-cover wow fadeInUp"
+                        style="background-image: url(assets/img/home-1/offer-bg3.png);" data-wow-delay="1s">
+                        <div class="cont p-2">
+                            <p
+                                class="theme2-bg fs-15 d-inline-block text-center rounded-pill py-1 px-3 text-black fw-semibold mb-3">
+                                12%Off: FRIE12</p>
+                            <h3 class="text-uppercase lh-1 fs-30 heading-font-bhalo fw-bold mb-2">
+                                Cheesy <br>
+                                Pizza!
+                            </h3>
+                            <img src="assets/img/home-1/text-price12.png" alt="img">
+                        </div>
+                        <img src="assets/img/home-1/offer-pizza.png" alt="img"
+                            class="ani-circle position-absolute cir36">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- restaurant Section start -->
+    <section class="restaurant-section position-relative pt-80 pb-80 fix">
+        <div class="container">
+            <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap mb-30 pb-xl-0 pb-2">
+                <div class="section-title-style1">
+                    <div class="d-flex flex-column gap-2">
+                        <h3 class="wow fadeInUp white-clr text-black fs-30 lh-1 fw-semibold" data-wow-delay=".3s">
+                            Most Visited Restaurants
+                        </h3>
+                        <span class="w-32px section-badge1 style5"></span>
+                    </div>
+                </div>
+                <div class="theme-btn btn-outline-blak heading-font">
+                    See all Restaurant <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                        data-wow-delay="0.3s">
+                        <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                            <img src="assets/img/home-1/restaurant-thumb1.jpg" alt="img" class="w-100">
+                            <div
+                                class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                            </div>
+                        </div>
+                        <div
+                            class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                            <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                        </div>
+                        <div class="cont py-3 px-xxl-4 px-3">
+                            <div class="d-flex gap-2 align-items-center mb-1">
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                            class="fa-solid fa-star"></i></div> </i><span><span
+                                            class="text-black">4.8</span> (32)</span>
+                                </div>
+                                <span class=""
+                                    style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <i class="fa-regular fa-clock"></i> 20-30 mins
+                                </div>
+                            </div>
+                            <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">Burger Express</a>
+                            </h6>
+                            <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                            <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                        data-wow-delay="0.5s">
+                        <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                            <img src="assets/img/home-1/restaurant-thumb2.jpg" alt="img" class="w-100">
+                            <div
+                                class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                            </div>
+                        </div>
+                        <div
+                            class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                            <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                        </div>
+                        <div class="cont py-3 px-xxl-4 px-3">
+                            <div class="d-flex gap-2 align-items-center mb-1">
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                            class="fa-solid fa-star"></i></div> </i><span><span
+                                            class="text-black">4.8</span>
+                                        (32)</span>
+                                </div>
+                                <span class=""
+                                    style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <i class="fa-regular fa-clock"></i> 20-30 mins
+                                </div>
+                            </div>
+                            <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">north Wind
+                                    Restaurant</a></h6>
+                            <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                            <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                        data-wow-delay="0.6s">
+                        <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                            <img src="assets/img/home-1/restaurant-thumb3.jpg" alt="img" class="w-100">
+                            <div
+                                class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                            </div>
+                        </div>
+                        <div
+                            class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                            <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                        </div>
+                        <div class="cont py-3 px-xxl-4 px-3">
+                            <div class="d-flex gap-2 align-items-center mb-1">
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                            class="fa-solid fa-star"></i></div> </i><span><span
+                                            class="text-black">4.8</span>
+                                        (32)</span>
+                                </div>
+                                <span class=""
+                                    style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <i class="fa-regular fa-clock"></i> 20-30 mins
+                                </div>
+                            </div>
+                            <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">KFG Cafe Shop</a>
+                            </h6>
+                            <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                            <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4 col-xl-3">
+                    <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                        data-wow-delay="0.7s">
+                        <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                            <img src="assets/img/home-1/restaurant-thumb4.jpg" alt="img" class="w-100">
+                            <div
+                                class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                            </div>
+                        </div>
+                        <div
+                            class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                            <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                        </div>
+                        <div class="cont py-3 px-xxl-4 px-3">
+                            <div class="d-flex gap-2 align-items-center mb-1">
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                            class="fa-solid fa-star"></i></div> </i><span><span
+                                            class="text-black">4.8</span>
+                                        (32)</span>
+                                </div>
+                                <span class=""
+                                    style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                    <i class="fa-regular fa-clock"></i> 20-30 mins
+                                </div>
+                            </div>
+                            <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">Food Station99</a>
+                            </h6>
+                            <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                            <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- restaurant Section start -->
+    <section class="restaurant-section position-relative pb-80 fix">
+        <div class="container">
+            <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap mb-30 pb-xl-0 pb-2">
+                <div class="section-title-style1">
+                    <div class="d-flex flex-column gap-2">
+                        <h3 class="wow fadeInUp white-clr text-black fs-30 lh-1 fw-semibold" data-wow-delay=".3s">
+                            Super Delicious Deals
+                        </h3>
+                        <span class="w-32px section-badge1 style5"></span>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center gap-1">
+                    <button type="button" class="theme-btn p-0 w-40px h-40px d-center btn-outline-blak array-prev">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </button>
+                    <button type="button" class="theme-btn p-0 w-40px h-40px d-center btn-outline-blak array-next">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="swiper superDeals-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                                <img src="assets/img/home-1/super-deals1.jpg" alt="img" class="w-100">
+                            </div>
+                            <div
+                                class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> BOGO
+                            </div>
+                            <div
+                                class="position-absolute z-1 top-0 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1" style="margin-top: 54px;">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                            </div>
+                            <div class="cont py-3 px-xxl-4 px-3">
+                                <div class="d-flex gap-2 align-items-center mb-1">
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                                class="fa-solid fa-star"></i></div> </i><span><span
+                                                class="text-black">4.8</span> (32)</span>
+                                    </div>
+                                    <span class=""
+                                        style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <i class="fa-regular fa-clock"></i> 20-30 mins
+                                    </div>
+                                </div>
+                                <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">Oven Baked
+                                        Pasta</a>
+                                </h6>
+                                <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                                <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                    <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                                <img src="assets/img/home-1/super-deals2.jpg" alt="img" class="w-100">
+                                <div
+                                    class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                    <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                                </div>
+                            </div>
+                            <div
+                                class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> BOGOBuy 1 Get 2
+                            </div>
+                            <div class="position-absolute z-1 top-0 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1"
+                                style="margin-top: 54px;">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                            </div>
+                            <div class="cont py-3 px-xxl-4 px-3">
+                                <div class="d-flex gap-2 align-items-center mb-1">
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                                class="fa-solid fa-star"></i></div> </i><span><span class="text-black">4.8</span>
+                                            (32)</span>
+                                    </div>
+                                    <span class=""
+                                        style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <i class="fa-regular fa-clock"></i> 20-30 mins
+                                    </div>
+                                </div>
+                                <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">
+                                        Cheshunt Salad</a>
+                                </h6>
+                                <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                                <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                    <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                                <img src="assets/img/home-1/super-deals3.jpg" alt="img" class="w-100">
+                                <div
+                                    class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                    <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                                </div>
+                            </div>
+                            <div
+                                class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> BOGO
+                            </div>
+                            <div class="position-absolute z-1 top-0 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1"
+                                style="margin-top: 54px;">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 15% Off
+                            </div>
+                            <div class="cont py-3 px-xxl-4 px-3">
+                                <div class="d-flex gap-2 align-items-center mb-1">
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                                class="fa-solid fa-star"></i></div> </i><span><span class="text-black">4.8</span>
+                                            (32)</span>
+                                    </div>
+                                    <span class=""
+                                        style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <i class="fa-regular fa-clock"></i> 20-30 mins
+                                    </div>
+                                </div>
+                                <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">
+                                        Smoky Sandwich</a>
+                                </h6>
+                                <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                                <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                    <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="restaurant-card position-relative border card-scale h-100 rounded-12 wow fadeInUp"
+                            data-wow-delay="0.3s">
+                            <div href="restaurant.html" class="thumb rounded-top-3 d-block position-relative">
+                                <img src="assets/img/home-1/super-deals4.jpg" alt="img" class="w-100">
+                                <div
+                                    class="position-absolute start-0 bottom-0 mb-xxl-3 mb-2 ms-xxl-4 ms-xl-3 ms-2 top-badge bg6 fs-10 rounded-1 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                    <img src="assets/img/icons/top-badge.svg" alt="img"> Top Rated
+                                </div>
+                            </div>
+                            <div
+                                class="position-absolute z-1 top-0 mt-xxl-4 mt-3 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> Buy 1 Get 2
+                            </div>
+                            <div class="position-absolute z-1 top-0 badge-offer bg-gradient fs-12 py-1 lh-base px-2 text-white heading-font fw-500 d-inline-flex align-items-center gap-1"
+                                style="margin-top: 54px;">
+                                <img src="assets/img/icons/badge-off.svg" alt="img"> Flat 10% Off
+                            </div>
+                            <div class="cont py-3 px-xxl-4 px-3">
+                                <div class="d-flex gap-2 align-items-center mb-1">
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <div class="theme2-bg rounded-1 d-center fs-10 text-white w-16px h-16px"><i
+                                                class="fa-solid fa-star"></i></div> </i><span><span class="text-black">4.8</span>
+                                            (32)</span>
+                                    </div>
+                                    <span class=""
+                                        style="width: 5px; height: 5px; border-radius: 50%; display: block; background-color: #B7B7B7;"></span>
+                                    <div class="d-flex align-items-center gap-1 fs-14 text-clr">
+                                        <i class="fa-regular fa-clock"></i> 20-30 mins
+                                    </div>
+                                </div>
+                                <h6 class="mb-2"><a href="restaurant.html" class="text-black link-effect">
+                                        The BBQ Chicken Burger</a>
+                                </h6>
+                                <p class="d-block text-clr fs-15 mb-2 lh-1">Rice, Chicken</p>
+                                <div class="d-flex align-items-center gap-2 fs-14 text-clr">
+                                    <i class="fa-solid fa-location-dot"></i> 6391 Elgin St. Celina
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="how-order-section z-1 section-bg2 position-relative pb-80 pt-80 fix">
+        <div class="container">
+            <div class="section-title-style1 mx-auto mb-40 max-w-450 text-center">
+                <h3 class="wow fadeInUp mb-sm-3 fw-bold mb-2 white-clr text-black fs-30 lh-1 fw-semibold text-capitalize text-capitalize" data-wow-delay=".3s">
+                   How to order?
+                </h3>
+                <p class="fs-16">dolor sit amet consectetur. Massa a of est sit commodo
+                convallis auctor aliquet ready works</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="order-card_box order-card__theme3 icon-effect bg-white rounded-20 position-relative">
+                        <div class="icons smooth rounded-circle w-80px h-80px d-center theme2-bg mb-sm-4 mb-3">
+                            <img src="assets/img/icons/order-icon1.png" alt="img" class="icon">
+                        </div>
+                        <h4 class="mb-xl-2 mb-2"><a href="#" class="link-effect">Choose your Product</a></h4>
+                        <p class="fs-16">dolor sit amet consecte Massa areestery
+                        sit commodo convallis auctor aliquet
+                        ready moderns areaworks</p>
+                        <div class="py-2 px-3 step-badge smooth fs-16 fw-semibold theme-clr rounded-start-pill position-absolute end-0 top-0 mt-lg-5 mt-md-4 mt-3">
+                            Step-01
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="order-card_box order-card__theme3 icon-effect bg-white rounded-20 position-relative">
+                        <div class="icons smooth rounded-circle w-80px h-80px d-center theme2-bg mb-sm-4 mb-3">
+                            <img src="assets/img/icons/order-icon2.png" alt="img" class="icon">
+                        </div>
+                        <h4 class="mb-xl-2 mb-2"><a href="#" class="link-effect">Make your Order</a></h4>
+                        <p class="fs-16">dolor sit amet consecte Massa areestery
+                            sit commodo convallis auctor aliquet
+                            ready moderns areaworks</p>
+                        <div
+                            class="py-2 px-3 step-badge smooth fs-16 fw-semibold theme-clr rounded-start-pill position-absolute end-0 top-0 mt-lg-5 mt-md-4 mt-3">
+                            Step-02
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="order-card_box order-card__theme3 icon-effect bg-white rounded-20 position-relative">
+                        <div class="icons smooth rounded-circle w-80px h-80px d-center theme2-bg mb-sm-4 mb-3">
+                            <img src="assets/img/icons/order-icon3.png" alt="img" class="icon">
+                        </div>
+                        <h4 class="mb-xl-2 mb-2"><a href="#" class="link-effect">Food is on the way</a></h4>
+                        <p class="fs-16">dolor sit amet consecte Massa areestery
+                            sit commodo convallis auctor aliquet
+                            ready moderns areaworks</p>
+                        <div
+                            class="py-2 px-3 step-badge smooth fs-16 fw-semibold theme-clr rounded-start-pill position-absolute end-0 top-0 mt-lg-5 mt-md-4 mt-3">
+                            Step-03
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/home-1/order-ele1.png" alt="img" class="position-absolute z-n1 d-sm-block d-none" style="bottom: -20px; right: -50px;">
+    </div>
+
+
+    <!-- Popular Section start -->
+    <section class="popular-section position-relative pt-80 pb-80 fix">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-xl-8 col-lg-8">
+                    <div class="d-flex align-items-end justify-content-between gap-3 flex-wrap mb-30 pb-xl-2 pb-2">
+                        <div class="section-title-style1">
+                            <div class="d-flex flex-column gap-2">
+                                <h3 class="wow fadeInUp white-clr text-black fs-30 lh-1 fw-semibold" data-wow-delay=".3s">
+                                    Most Popular Items
+                                </h3>
+                                <span class="w-32px section-badge1 style5"></span>
+                            </div>
+                        </div>
+                        <a href="#0" class="theme-btn btn-outline-blak heading-font">
+                            See all Menu <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="row g-3">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="most-popular-card card-effect smooth d-flex align-items-xxl-center justify-content-between gap-2 border rounded-12 p-xl-4 p-3">
+                                <div class="cont">
+                                    <h6 class="mb-lg-1 mb-1"><a href="#0" class="link-effect">Breakfast Grilled Platter</a></h6>
+                                    <p class="fs-15 mb-lg-2 mb-1 max-w-200 lh-base">Consists of grilled grilled
+                                    mushroom, fried egg...</p>
+                                    <h6 class="theme3-clr fs-16 fw-bold">$15.00</h6>
+                                </div>
+                                <div class="thumb rounded-2 position-relative w-90px h-90px">
+                                    <img width="90" height="90" src="assets/img/home-1/popular-items1.jpg" alt="img" class="rounded-2">
+                                    <a href="#0" class="w-28px h-28px z-1 position-absolute bottom-0 end-0 m-2 bg-white rounded d-center theme3-clr fs-14">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div
+                                class="most-popular-card card-effect smooth d-flex align-items-xxl-center justify-content-between gap-2 border rounded-12 p-xl-4 p-3">
+                                <div class="cont">
+                                    <h6 class="mb-lg-1 mb-1"><a href="#0" class="link-effect">Appetizer</a></h6>
+                                    <p class="fs-15 mb-lg-2 mb-1 max-w-200 lh-base">Consists of grilled grilled
+                                        mushroom, fried egg...</p>
+                                    <h6 class="theme3-clr fs-16 fw-bold">$19.00</h6>
+                                </div>
+                                <div class="thumb rounded-2 position-relative w-90px h-90px">
+                                    <img width="90" height="90" src="assets/img/home-1/popular-items2.jpg" alt="img" class="rounded-2">
+                                    <a href="#0"
+                                        class="w-28px h-28px z-1 position-absolute bottom-0 end-0 m-2 bg-white rounded d-center theme3-clr fs-14">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div
+                                class="most-popular-card card-effect smooth d-flex align-items-xxl-center justify-content-between gap-2 border rounded-12 p-xl-4 p-3">
+                                <div class="cont">
+                                    <h6 class="mb-lg-1 mb-1"><a href="#0" class="link-effect">Chicken Somucha</a></h6>
+                                    <p class="fs-15 mb-lg-2 mb-1 max-w-200 lh-base">Consists of grilled grilled
+                                        mushroom, fried egg...</p>
+                                    <h6 class="theme3-clr fs-16 fw-bold">$11.00</h6>
+                                </div>
+                                <div class="thumb rounded-2 position-relative w-90px h-90px">
+                                    <img width="90" height="90" src="assets/img/home-1/popular-items3.jpg" alt="img" class="rounded-2">
+                                    <a href="#0"
+                                        class="w-28px h-28px z-1 position-absolute bottom-0 end-0 m-2 bg-white rounded d-center theme3-clr fs-14">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div
+                                class="most-popular-card card-effect smooth d-flex align-items-xxl-center justify-content-between gap-2 border rounded-12 p-xl-4 p-3">
+                                <div class="cont">
+                                    <h6 class="mb-lg-1 mb-1"><a href="#0" class="link-effect">Peri Peri Pasta</a></h6>
+                                    <p class="fs-15 mb-lg-2 mb-1 max-w-200 lh-base">Consists of grilled grilled
+                                        mushroom, fried egg...</p>
+                                    <h6 class="theme3-clr fs-16 fw-bold">$11.00</h6>
+                                </div>
+                                <div class="thumb rounded-2 position-relative w-90px h-90px">
+                                    <img width="90" height="90" src="assets/img/home-1/popular-items4.jpg" alt="img" class="rounded-2">
+                                    <a href="#0"
+                                        class="w-28px h-28px z-1 position-absolute bottom-0 end-0 m-2 bg-white rounded d-center theme3-clr fs-14">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div
+                                class="most-popular-card card-effect smooth d-flex align-items-xxl-center justify-content-between gap-2 border rounded-12 p-xl-4 p-3">
+                                <div class="cont">
+                                    <h6 class="mb-lg-1 mb-1"><a href="#0" class="link-effect">Hot Chocolate Coffee</a></h6>
+                                    <p class="fs-15 mb-lg-2 mb-1 max-w-200 lh-base">Consists of grilled grilled
+                                        mushroom, fried egg...</p>
+                                    <h6 class="theme3-clr fs-16 fw-bold">$11.00</h6>
+                                </div>
+                                <div class="thumb rounded-2 position-relative w-90px h-90px">
+                                    <img width="90" height="90" src="assets/img/home-1/popular-items5.jpg" alt="img" class="rounded-2">
+                                    <a href="#0"
+                                        class="w-28px h-28px z-1 card-effect position-absolute bottom-0 end-0 m-2 bg-white rounded d-center theme3-clr fs-14">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div
+                                class="most-popular-card card-effect smooth d-flex align-items-xxl-center justify-content-between gap-2 border rounded-12 p-xl-4 p-3">
+                                <div class="cont">
+                                    <h6 class="mb-lg-1 mb-1"><a href="#0" class="link-effect">Mixed Fruits Salad</a></h6>
+                                    <p class="fs-15 mb-lg-2 mb-1 max-w-200 lh-base">Consists of grilled grilled
+                                        mushroom, fried egg...</p>
+                                    <h6 class="theme3-clr fs-16 fw-bold">$11.00</h6>
+                                </div>
+                                <div class="thumb rounded-2 position-relative w-90px h-90px">
+                                    <img width="90" height="90" src="assets/img/home-1/popular-items6.jpg" alt="img" class="rounded-2">
+                                    <a href="#0"
+                                        class="w-28px h-28px z-1 position-absolute bottom-0 end-0 m-2 bg-white rounded d-center theme3-clr fs-14">
+                                        <i class="fa-solid fa-plus"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4">
+                    <div class="popular-thumb-most position-relative rounded-20 overflow-hidden h-100">
+                        <img src="assets/img/home-1/popular-price5.jpg" alt="img" class="w-100">
+                        <div class="price-badge position-absolute top-0 start-0 ms-2 mt-5 pt-5">
+                            <img src="assets/img/home-1/price-badge-black.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Section start -->
+    <section class="app-section position-relative py-lg-0 py-5 fix bg-cover"
+        style="background-image: url(assets/img/apps-bg5.jpg);">
+        <div class="container position-relative py-lg-5">
+            <div class="row g-4 align-items-center justify-content-between py-5">
+                <div class="col-lg-5 col-md-6">
+                    <h3 class="text-dark mb-lg-3 mb-2 fw-semibold">Download the app</h3>
+                    <h2 class="text-dark mb-30 fw-light">
+                        Get <strong class="fw-bold">20% Discount</strong> of
+                        your First Order
+                    </h2>
+                    <div class="d-flex align-items-center gap-xl-3 gap-2">
+                        <img src="assets/img/google.png" alt="img">
+                        <img src="assets/img/app-store.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="app-thumb1" style="margin-bottom: -140px;">
+                        <img src="assets/img/app-thum5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/fresh-beef.png" alt="img" class="app-buger position-absolute bounce-x">
+    </section>
+
+    <div class="client-section z-1 position-relative pb-100 pt-80 fix">
+        <div class="container">
+            <div class="section-title-style1 mx-auto mb-40 max-w-450 text-center">
+                <h3 class="wow fadeInUp text-black fs-30 lh-1 fw-semibold"
+                    data-wow-delay=".3s">
+                    What’s Client Think About
+                    Our Services
+                </h3>
+            </div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-9">
+                    <div class="testimonial-wrapper1">
+                        <img src="assets/img/flow-theme3.png" alt="img" class="position-absolute" style="top: -50px; left: -50px;">
+                        <div class="swiper testimonial-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-items style1 d-flex flex-md-nowrap flex-wrap align-items-center position-relative">
+                                        <div class="testimonial-thumb rounded-20 position-relative">
+                                            <img src="assets/img/client-admin1.jpg" alt="img" class="rounded-20">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex gap-1 mb-2">
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
                                             </div>
-                                            <p class="heading-font white-clr mb-lg-0 mb-3">
-                                                Moment we arrived, we were treated like royalty. The staff anticipated
-                                                our
-                                                every need, from greeting us by name to
-                                                ensuring our room was perfect. They even surprised us with a beautifully
-                                                crafted.
-                                            </p>
-                                            <div class="text-ratting mt-xxl-5 mt-xl-4 mt-4">
-                                                <div
-                                                    class="d-xxl-flex d-grid flex-xxl-nowrap flex-wrap align-items-center justify-content-xxl-between justify-content-center w-85 gap-2">
-                                                    <div class="emma">
-                                                        <h3 class="fs-32 mb-sm-2 mb-1 fw-semibold white-clr">
-                                                            Emma & James L.
-                                                        </h3>
-                                                        <span class="heading-font fs-20 fw-500 white-clr d-block">New
-                                                            York
-                                                            City</span>
-                                                    </div>
-                                                    <img src="assets/img/element/quote-white.png" alt="img"
-                                                        class="quotev5 ms-auto mb-4 d-xxl-block d-none pe-5">
+                                            <h3 class="text-black mb-2 fw-semibold">Great Product! Highly Recommended!</h3>
+                                            <p class="mb-lg-3 mb-2 fs-16 max-w-480">“ Great Quality Products WitheryGood awrPackaging unknown
+                                            printer took a galle rambled it make pecimive centuries
+                                            Delicious Food Context ”</p>
+                                            <div class=" gap-3 d-flex align-items-center">
+                                                <img width="50" height="50" src="assets/img/admin1.jpg" alt="img" class="rounded-circle">
+                                                <div class="">
+                                                    <h6 class="mb-0 fw-bold black-clr">
+                                                        Annette Black
+                                                    </h6>
+                                                    <span class="fs-14 fw-500 pra-clr d-block">Sr.Designer</span>
                                                 </div>
                                             </div>
                                         </div>
+                                        <img src="assets/img/quote-white.png" alt="img" class="quote-icon">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-items style1 d-flex flex-md-nowrap flex-wrap align-items-center position-relative">
+                                        <div class="testimonial-thumb rounded-20 position-relative">
+                                            <img src="assets/img/client-admin1.jpg" alt="img" class="rounded-20">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex gap-1 mb-2">
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                            </div>
+                                            <h3 class="text-black mb-2 fw-semibold">Great Product! Highly Recommended!</h3>
+                                            <p class="mb-lg-3 mb-2 fs-16 max-w-480">“ Great Quality Products WitheryGood awrPackaging unknown
+                                                printer took a galle rambled it make pecimive centuries
+                                                Delicious Food Context ”</p>
+                                            <div class=" gap-3 d-flex align-items-center">
+                                                <img width="50" height="50" src="assets/img/admin1.jpg" alt="img" class="rounded-circle">
+                                                <div class="">
+                                                    <h6 class="mb-0 fw-bold black-clr">
+                                                        Annette Black
+                                                    </h6>
+                                                    <span class="fs-14 fw-500 pra-clr d-block">Sr.Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/img/quote-white.png" alt="img" class="quote-icon">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-items style1 d-flex flex-md-nowrap flex-wrap align-items-center position-relative">
+                                        <div class="testimonial-thumb rounded-20 position-relative">
+                                            <img src="assets/img/client-admin1.jpg" alt="img" class="rounded-20">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex gap-1 mb-2">
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                            </div>
+                                            <h3 class="text-black mb-2 fw-semibold">Great Product! Highly Recommended!</h3>
+                                            <p class="mb-lg-3 mb-2 fs-16 max-w-480">“ Great Quality Products WitheryGood awrPackaging unknown
+                                                printer took a galle rambled it make pecimive centuries
+                                                Delicious Food Context ”</p>
+                                            <div class=" gap-3 d-flex align-items-center">
+                                                <img width="50" height="50" src="assets/img/admin1.jpg" alt="img" class="rounded-circle">
+                                                <div class="">
+                                                    <h6 class="mb-0 fw-bold black-clr">
+                                                        Annette Black
+                                                    </h6>
+                                                    <span class="fs-14 fw-500 pra-clr d-block">Sr.Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/img/quote-white.png" alt="img" class="quote-icon">
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="swiper-dot dot-theme3"></div>
                     </div>
-                    <div class="testimonial-btngrap2 mt-xxl-0 mt-4">
-                        <button type="button" class="common-slide-btn d-center rounded-circle array-prev">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </button>
-                        <button type="button" class="common-slide-btn d-center rounded-circle array-next">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </button>
+                </div>
+                <div class="col-lg-3 mt-lg-0 mt-4">
+                    <div class="theme3-bg text-center p-30 rounded-12 position-relative">
+                        <img src="assets/img/satisfied-like.png" alt="icon" class="mb-30 pb-1">
+                        <h5 class="mb-xl-2 text-white mb-1 fw-500">Satisfied Clients</h5>
+                        <h1 class="text-white fw-semibold">98%</h1>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="assets/img/element/shadow-ele.png" alt="img" class="shadow-ele3">
-    </section>
-
-    <!-- Watch section start -->
-    <section class="watch5-section d-center fix">
-        <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
-            class="luxuries-vid position-absolute rounded-circle d-center video-popup">
-            <h3 class="black-clr">Play</h3>
-        </a>
-    </section>
-
-    <!-- Team section start -->
-    <section class="team-section fix space-top white-bg">
-        <div class="container">
-            <div class="section-title mb-50 text-center">
-                <span class="sub-font wow fadeInUp black-clr">Meet The Teams</span>
-                <h2 class="fw-semibold wow fadeInUp black-clr" data-wow-delay=".3s">
-                    See Our Expert Team <br> Managements
-                </h2>
-            </div>
-            <div class="row g-xl-4 g-3">
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInRight" data-wow-delay=".5s">
-                    <div class="team-items">
-                        <a href="team.html" class="thumbs overflow-hidden">
-                            <img src="assets/img/service/team1.jpg" alt="img" class="overflow-hidden">
-                        </a>
-                        <div class="content py-3 px-xl-4 px-lg-3 px-3">
-                            <h6 class="mb-lg-3 mb-2 d-block"><a href="#">Alexander Cameron</a></h6>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 pb-1">
-                                <span class="fs-14 black-clr">Tour Guider</span>
-                                <div class="d-flex align-items-center gap-xxl-2 gap-1">
-                                    <a href="#" class="icon d-center rounded-circle">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="team-link">
-                                        Linkedin
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".4s">
-                    <div class="team-items active">
-                        <a href="team.html" class="thumbs overflow-hidden">
-                            <img src="assets/img/service/team2.jpg" alt="img" class="overflow-hidden">
-                        </a>
-                        <div class="content py-3 px-xl-4 px-lg-3 px-3">
-                            <h6 class="mb-lg-3 mb-2 d-block"><a href="#">Sophia Rodriguez</a></h6>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 pb-1">
-                                <span class="fs-14 black-clr">Resort Manager</span>
-                                <div class="d-flex align-items-center gap-xxl-2 gap-1">
-                                    <a href="#" class="icon d-center rounded-circle">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="team-link">
-                                        Linkedin
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="team-items">
-                        <a href="team.html" class="thumbs overflow-hidden">
-                            <img src="assets/img/service/team3.jpg" alt="img" class="overflow-hidden">
-                        </a>
-                        <div class="content py-3 px-xl-4 px-lg-3 px-3">
-                            <h6 class="mb-lg-3 mb-2 d-block"><a href="#">Marvin McKinney</a></h6>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 pb-1">
-                                <span class="fs-14 black-clr">Chief Security Officer</span>
-                                <div class="d-flex align-items-center gap-xxl-2 gap-1">
-                                    <a href="#" class="icon d-center rounded-circle">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="team-link">
-                                        Linkedin
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 wow fadeInLeft" data-wow-delay=".5s">
-                    <div class="team-items">
-                        <a href="team.html" class="thumbs overflow-hidden">
-                            <img src="assets/img/service/team4.jpg" alt="img" class="overflow-hidden">
-                        </a>
-                        <div class="content py-3 px-xl-4 px-lg-3 px-3">
-                            <h6 class="mb-lg-3 mb-2 d-block"><a href="#">Brooklyn Simmons</a></h6>
-                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-1 pb-1">
-                                <span class="fs-14 black-clr">Chief Chef</span>
-                                <div class="d-flex align-items-center gap-xxl-2 gap-1">
-                                    <a href="#" class="icon d-center rounded-circle">
-                                        <i class="fa-brands fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="team-link">
-                                        Linkedin
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="counter-wrapper4 gap-3 d-flex flex-md-nowrap flex-wrap align-items-center justify-content-md-between justify-content-center gap-md-0 gap-3 mt-5 pt-xxl-4 pt-2 mb-5 pb-4">
-                <div class="counter-items4 text-center wow fadeInUp" data-wow-delay=".4s">
-                    <h2 class="d-flex align-items-center justify-content-center">
-                        <span class="count fw-500 black-clr">250</span>
-                        <span>+</span>
-                    </h2>
-                    <span class="fs-20 pra-clr">Booking Months</span>
-                </div>
-                <div class="counter-items4 text-center wow fadeInUp" data-wow-delay=".6s">
-                    <h2 class="d-flex align-items-center justify-content-center">
-                        <span class="count fw-500 black-clr">98</span>
-                        <span>%</span>
-                    </h2>
-                    <span class="fs-20 pra-clr">Positive Feedback</span>
-                </div>
-                <div class="counter-items4 text-center wow fadeInUp" data-wow-delay=".8s">
-                    <h2 class="d-flex align-items-center justify-content-center">
-                        <span class="count fw-500 black-clr">50</span>
-                        <span>+</span>
-                    </h2>
-                    <span class="fs-20 pra-clr">Booking Months</span>
-                </div>
-                <div class="counter-items4 text-center wow fadeInUp" data-wow-delay=".9s">
-                    <h2 class="d-flex align-items-center justify-content-center">
-                        <span class="count fw-500 black-clr">20</span>
-                        <span>+</span>
-                    </h2>
-                    <span class="fs-20 pra-clr">Awards Winner</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    </div>
 
     <!-- Blog section start -->
-    <section class="blog-section black-bg space-top space-bottom bg4">
-        <div class="container pb-1">
-            <div class="section-title mb-50 text-center">
-                <span class="sub-font wow fadeInUp white-clr text-white">News & Blog</span>
-                <h2 class="fw-semibold wow fadeInUp white-clr" data-wow-delay=".3s">
-                    Our Latest news & <br> Blogs
-                </h2>
+    <section class="blog-section section-bg2 pt-100 pb-100">
+        <div class="container">
+            <div class="section-title-style1 mx-auto mb-40 max-w-450 text-center">
+                <h3 class="wow fadeInUp mb-sm-3 fw-bold mb-2 white-clr text-black fs-30 lh-1 fw-semibold text-capitalize" data-wow-delay=".3s">
+                    Latest blog posts
+                </h3>
+                <p class="fs-16">dolor sit amet consectetur. Massa a of est sit commodo
+                convallis auctor aliquet ready works</p>
             </div>
             <div class="row g-md-4 g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-single-item white-bg wow fadeInUp" data-wow-delay=".4s">
-                        <a href="room-details.html" class="thumb d-block mb-4 w-100 overflow-hidden">
-                            <img src="assets/img/blog/blog4-v1.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content pb-4 px-xl-4 px-lg-3 px-4">
-                            <ul class="blog-admin mb-sm-3 mb-2 d-flex align-items-center gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-user"></i> By Admin
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-clock"></i> 25 September, 2025
-                                </li>
-                            </ul>
-                            <h3>
-                                <a href="blog-details.html" class="fw-semibold">
-                                    Unveiling Michelin-Starred Restaurants at Top
-                                    Online Food Orders
-                                </a>
-                            </h3>
-                            <a href="blog-details.html" class="view-more d-flex align-items-center gap-3">
-                                <span class="view-text">View More</span>
-                                <span class="icon black-bg d-center"><i
-                                        class="fa-solid fa-arrow-right white-clr fs-14"></i></span>
-                            </a>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="blog-single-item card-effect position-relative rounded-16 overflow-hidden wow fadeInUp" data-wow-delay=".4s">
+                        <div class="thumb d-block w-100 overflow-hidden">
+                            <img src="assets/img/home-1/blog1.png" alt="img" class="w-100 overflow-hidden">
+                        </div>
+                        <div class="content position-absolute bottom-0 z-1 bg-white rounded-12 p-lg-4 p-3 mb-3" style="width: 90%; left: 50%; transform: translateX(-50%);">
+                            <div class="p-xxl-2">
+                                <ul class="blog-admin mb-1 d-flex align-items-center gap-2">
+                                    <li class="d-flex align-items-center gap-2 text-clr">
+                                        <i class="fa-regular fa-calendar text-clr"></i> 25 May, 2025 / Food
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="blog-details.html" class="fw-semibold lh-base">
+                                        Chef’s specialty Food for
+                                        personal and all staff
+                                    </a>
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-single-item white-bg wow fadeInUp" data-wow-delay=".6s">
-                        <a href="room-details.html" class="thumb d-block mb-4 w-100 overflow-hidden">
-                            <img src="assets/img/blog/blog4-v2.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content pb-4 px-xl-4 px-lg-3 px-4">
-                            <ul class="blog-admin mb-sm-3 mb-2 d-flex align-items-center gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-user"></i> By Admin
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-clock"></i> 25 September, 2025
-                                </li>
-                            </ul>
-                            <h3>
-                                <a href="blog-details.html" class="fw-semibold">
-                                    Top 5 Online Food Orders The Ultimate in Secluded Luxury
-                                </a>
-                            </h3>
-                            <a href="blog-details.html" class="view-more d-flex align-items-center gap-3">
-                                <span class="view-text">View More</span>
-                                <span class="icon black-bg d-center"><i
-                                        class="fa-solid fa-arrow-right white-clr fs-14"></i></span>
-                            </a>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="blog-single-item card-effect position-relative rounded-16 overflow-hidden wow fadeInUp"
+                        data-wow-delay=".6s">
+                        <div class="thumb d-block w-100 overflow-hidden">
+                            <img src="assets/img/home-1/blog2.jpg" alt="img" class="w-100 overflow-hidden">
+                        </div>
+                        <div class="content position-absolute bottom-0 z-1 bg-white rounded-12 p-lg-4 p-3 mb-3"
+                            style="width: 90%; left: 50%; transform: translateX(-50%);">
+                            <div class="p-xxl-2">
+                                <ul class="blog-admin mb-1 d-flex align-items-center gap-2">
+                                    <li class="d-flex align-items-center gap-2 text-clr">
+                                        <i class="fa-regular fa-calendar text-clr"></i> 25 May, 2025 / Food
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="blog-details.html" class="fw-semibold lh-base">
+                                        Marinate chicken Mango
+                                        achiote, a Yucatecan
+                                    </a>
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-single-item white-bg wow fadeInUp" data-wow-delay=".7s">
-                        <a href="room-details.html" class="thumb d-block mb-4 w-100 overflow-hidden">
-                            <img src="assets/img/blog/blog4-v3.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content pb-4 px-xl-4 px-lg-3 px-4">
-                            <ul class="blog-admin mb-sm-3 mb-2 d-flex align-items-center gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-user"></i> By Admin
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-clock"></i> 25 September, 2025
-                                </li>
-                            </ul>
-                            <h3>
-                                <a href="blog-details.html" class="fw-semibold">
-                                    Unveiling Michelin-Starred Restaurants at Top
-                                    Online Food Orders
-                                </a>
-                            </h3>
-                            <a href="blog-details.html" class="view-more d-flex align-items-center gap-3">
-                                <span class="view-text">View More</span>
-                                <span class="icon black-bg d-center"><i
-                                        class="fa-solid fa-arrow-right white-clr fs-14"></i></span>
-                            </a>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="blog-single-item card-effect position-relative rounded-16 overflow-hidden wow fadeInUp"
+                        data-wow-delay=".8s">
+                        <div class="thumb d-block w-100 overflow-hidden">
+                            <img src="assets/img/home-1/blog3.jpg" alt="img" class="w-100 overflow-hidden">
+                        </div>
+                        <div class="content position-absolute bottom-0 z-1 bg-white rounded-12 p-lg-4 p-3 mb-3"
+                            style="width: 90%; left: 50%; transform: translateX(-50%);">
+                            <div class="p-xxl-2">
+                                <ul class="blog-admin mb-1 d-flex align-items-center gap-2">
+                                    <li class="d-flex align-items-center gap-2 text-clr">
+                                        <i class="fa-regular fa-calendar text-clr"></i> 25 May, 2025 / Food
+                                    </li>
+                                </ul>
+                                <h4>
+                                    <a href="blog-details.html" class="fw-semibold lh-base">
+                                        Preparation the best of
+                                        vegetables, and starches
+                                    </a>
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1109,161 +1278,108 @@
     </section>
 
     <!-- Footer section start -->
-    <footer class="footer-section footer-style2 fix white-bg">
+    <footer class="footer-section fix black-bg">
         <div class="container">
             <div class="footer-widget-wrapper">
-                <div class="row g-5">
+                <div class="row g-4">
                     <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
                         <div class="single-footer-widget">
                             <div class="widget-head">
                                 <a href="index.html">
-                                    <img src="assets/img/logo/log-black.png" alt="logo-img">
+                                    <img src="assets/img/logo/logo-white.png" alt="logo-img">
                                 </a>
                             </div>
                             <div class="footer-content">
-                                <p class="fs-16 black-clr">
-                                    Pharetra maecenas felis vestibulum
-                                    convallis mollis nullam congue sit.d rivers of Finland Quebec.
+                                <p class="fs-16 white-clr opacity-75 mb-xl-3 mb-2">
+                                    1487 Rocky Horse Carre 1487Rocky
+                                    Arlington, TX 16819 United
                                 </p>
-                                <form action="#" class="adjust-form d-flex align-items-center">
-                                    <input type="text" placeholder="Enter your mail">
-                                    <button type="submit" class="theme-btn py-2 px-2 d-center">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </form>
-                                <div class="social-cmn d-flex align-items-center gap-2 wow fadeInUp"
-                                    data-wow-delay=".5s">
-                                    <a href="#" class="d-center rounded-circle"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i
-                                            class="fa-brands fa-pinterest-p"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
+                                <h5 class="text-white mb-lg-3 mb-2">1800 6565 222</h5>
+                                <p class="fs-16 white-clr opacity-75">info@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-sm-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
+                    <div class="d-flex justify-content-sm-center col-xl-2 col-lg-2 col-md-5 col-sm-6 wow fadeInUp"
                         data-wow-delay=".4s">
                         <div class="single-footer-widget">
-                            <div class="widget-head fs-20 black-clr fw-semibold">
+                            <h5 class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
                                 Quick Links
+                            </h5>
+                            <ul class="important-link d-grid gap-sm-2 gap-1">
+                                <li>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light">How It Works</a>
+                                </li>
+                                <li>
+                                    <a href="about.html" class="text-white opacity-75 fw-light">Get to know us</a>
+                                </li>
+                                <li>
+                                    <a href="#0" class="text-white opacity-75 fw-light">Pricing Packages</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-lg-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
+                        data-wow-delay=".3s">
+                        <div class="single-footer-widget">
+                            <div class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
+                                Information
                             </div>
                             <ul class="important-link d-grid gap-sm-2 gap-1">
                                 <li>
-                                    <a href="room-grid.html">Rooms</a>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light">Help Center</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">About Us</a>
+                                    <a href="about.html" class="text-white opacity-75 fw-light">Refund Condition</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Services</a>
+                                    <a href="about.html" class="text-white opacity-75 fw-light">Become an Affiliate</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Transport Guide</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Transport Guide</a>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light">Cash Back Policy</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-sm-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".3s">
-                        <div class="single-footer-widget">
-                            <div class="widget-head fs-20 black-clr fw-semibold">
-                                Information
-                            </div>
-                            <ul class="adredd-info d-grid gap-xxl-4 gap-xl-3 gap-2">
-                                <li class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M18.9998 10.0608C18.9998 16.8486 10.3332 22.6668 10.3332 22.6668C10.3332 22.6668 1.6665 16.8486 1.6665 10.0608C1.6665 7.74615 2.5796 5.52634 4.20491 3.88965C5.83023 2.25297 8.03463 1.3335 10.3332 1.3335C12.6317 1.3335 14.8361 2.25297 16.4614 3.88965C18.0867 5.52634 18.9998 7.74615 18.9998 10.0608Z"
-                                            stroke="white" stroke-width="1.73333" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M10.3332 12.9699C11.9287 12.9699 13.2221 11.6674 13.2221 10.0608C13.2221 8.45412 11.9287 7.15168 10.3332 7.15168C8.73768 7.15168 7.44428 8.45412 7.44428 10.0608C7.44428 11.6674 8.73768 12.9699 10.3332 12.9699Z"
-                                            stroke="white" stroke-width="1.73333" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <a href="#">
-                                        8502 Preston Rd. Inglewood, Maine 98380
-                                    </a>
-                                </li>
-                                <li class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <svg width="20" height="24" viewBox="0 0 694 694" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M522.484 691.077C455.147 674.207 317.297 626.644 192.326 501.674C67.3552 376.704 19.7936 238.853 2.92257 171.517C-6.77276 132.82 10.6862 95.4782 40.2899 74.3326L117.898 18.8979C163.308 -13.5371 226.478 -2.53076 258.242 43.3506L307.1 113.926C327.84 143.884 320.687 184.944 291.037 206.122L252.078 233.95C257.975 256.504 276.313 302.82 333.747 360.254C391.18 417.687 437.497 436.024 460.05 441.92L487.877 402.96C509.057 373.314 550.117 366.157 580.074 386.897L650.65 435.757C696.53 467.524 707.537 530.69 675.1 576.1L619.667 653.71C598.52 683.314 561.18 700.774 522.484 691.077ZM239.466 454.534C353.114 568.18 478.527 611.337 538.684 626.41C547.477 628.61 558.107 625.194 565.417 614.96L620.854 537.35C631.664 522.217 627.997 501.16 612.7 490.57L542.127 441.71L512.264 483.52C500.06 500.607 477.49 514.007 451.21 508.337C418.41 501.26 357.777 478.564 286.607 407.394C215.437 336.224 192.74 275.59 185.663 242.79C179.993 216.51 193.394 193.941 210.48 181.736L252.288 151.873L203.429 81.2979C192.841 66.0039 171.784 62.3352 156.648 73.1469L79.0392 128.582C68.8046 135.892 65.3876 146.522 67.5906 155.315C82.6632 215.473 125.82 340.887 239.466 454.534Z"
-                                            fill="#000" />
-                                    </svg>
-
-
-                                    <a href="#">
-                                        (603) 555-0123
-                                    </a>
-                                </li>
-                                <li class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_2476)">
-                                            <path
-                                                d="M12.0002 5.60006V12.0001L16.2668 14.1334M22.6668 12.0002C22.6668 17.8912 17.8912 22.6668 12.0002 22.6668C6.10912 22.6668 1.3335 17.8912 1.3335 12.0002C1.3335 6.10912 6.10912 1.3335 12.0002 1.3335C17.8912 1.3335 22.6668 6.10912 22.6668 12.0002Z"
-                                                stroke="white" stroke-width="1.6" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_1_2476">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <a href="#">
-                                        Mon – Sat: 8 am – 5 pm,
-                                        <span class="d-flex align-items-center gap-1 fs-16 black-clr">
-                                            Sunday: <span class="black-clr fw-500 text-uppercase">CLOSED</span>
-                                        </span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-sm-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
+                    <div class="d-flex justify-content-sm-center col-xl-4 col-lg-4 col-md-5 col-sm-6 wow fadeInUp"
                         data-wow-delay=".5s">
                         <div class="single-footer-widget">
-                            <div class="widget-head fs-20 black-clr fw-semibold">
-                                Payments Methods
+                            <div class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
+                                Subscribe
                             </div>
-                            <p class="mb-4 fs-16 black-clr fw-500">
-                                Pay any way choose , No matter whether its cash or an international payment card ,
-                                we support all options.
+                            <p class="mb-4 fs-16 white-clr opacity-75">
+                                When an unknown printer took a galley of
+                                type and scrambled it to make
                             </p>
-                            <div class="d-flex align-items-center gap-xxl-3 gap-2 flex-wrap">
-                                <button type="button">
-                                    <img src="assets/img/hero/payneer.png" alt="payment">
+                            <form action="#" class="adjust-form style1 d-flex flex-column gap-2 align-items-center">
+                                <input type="text" placeholder="Type e-mail" class="w-100 fs-14 text-white bg-1F1F1F border-0 rounded-2 py-3 px-3">
+                                <button type="submit" class="theme-btn theme3-btn w-100 theme-border d-center">
+                                    Subscribe Now
                                 </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/master.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/paypal.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/app-master.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/stripe.png" alt="payment">
-                                </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="footer-bottom fs-16 text-center">
-                Copyright &copy; <a href="#" class="theme-clr">mozzoa</a> | All Right Reserved
-            </p>
+            <div class="footer-bottom d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap gap-2 fs-16 text-center">
+                <p class="fs-16 text3-clr">Copyright &copy; 2025 <a href="#" class="theme-clr">mozzoa</a></p>
+                <div class="d-flex align-items-center gap-4">
+                    <a href="javascript:void(0)">
+                        <i class="fa-brands fa-facebook-f fs-18 text-white"></i>
+                    </a>
+                    <a href="javascript:void(0)">                        
+                        <i class="fa-brands fa-twitter fs-18 text-white"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="fa-brands fa-instagram fs-18 text-white"></i>
+                    </a>
+                    <a href="javascript:void(0)">
+                        <i class="fa-brands fa-pinterest-p fs-18 text-white"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
