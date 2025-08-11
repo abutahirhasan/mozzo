@@ -102,6 +102,7 @@
   --text: #4B4B4B;
   --text2: #f5f5f5;
   --text3: #e2dfeb;
+  --text4: #B0B0B0;
   --border: #e2dfeb;
   --bg:#F9DABB;
   --bg2:#F8F5F0;
@@ -206,6 +207,10 @@
   color: var(--text2);
 }
 
+.text4-clr {
+  color: var(--text4) !important;
+}
+
 .text2-bg {
   background: var(--text2);
 }
@@ -236,6 +241,21 @@
 
 .border-bg {
   background: var(--border);
+}
+
+.border--top {
+  border-top: 1px solid #1F1F1F !important;
+}
+
+.bg-1F1F1F {
+  background-color: #1F1F1F;
+}
+
+.adjust-form.style1 input {
+  color: #B0B0B0;
+}
+.adjust-form.style1 input::placeholder {
+  color: #B0B0B0 !important;
 }
 
 /* --------------------------------------------
@@ -2565,7 +2585,7 @@ i {
 }
 
 .footer-bottom {
-  border-top: 1px solid #32353f;
+  border-top: 1px solid #1F1F1F;
   padding: 30px 0;
 }
 @media (max-width: 1199px) {
@@ -4347,6 +4367,10 @@ input::placeholder {
 
 .step-badge {
   background-color: #fff1ee;
+}
+
+.theme-border {
+  border: 1px solid var(--theme);
 }
 
 .hero-style1 {
