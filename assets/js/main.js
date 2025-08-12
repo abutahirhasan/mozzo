@@ -177,6 +177,41 @@
 			},
 		});
 
+		//<< Super Deals Slide >>//
+		const menuSlidWrap = new Swiper(".menu-slid-wrap", {
+			spaceBetween: 24,
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				// disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 7,
+				},
+				991: {
+					slidesPerView: 7,
+				},
+				767: {
+					slidesPerView: 6,
+				},
+				575: {
+					slidesPerView: 4,
+				},
+				400: {
+					slidesPerView: 3,
+				},
+				0: {
+					slidesPerView: 2,
+				},
+			},
+		});
+
 		//<< 10 >> Testimonial Slider Start <<//
 		if ($(".testimonial-slider").length > 0) {
 			const testimonialSlider = new Swiper(".testimonial-slider", {

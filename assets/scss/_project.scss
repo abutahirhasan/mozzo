@@ -649,8 +649,8 @@
 }
 
 //team-partner-section
-.team-partner-section{
-	&::before{
+.team-partner-section {
+	&::before {
 		position: absolute;
 		z-index: -1;
 		content: "";
@@ -659,8 +659,64 @@
 		bottom: 0;
 		left: 0;
 		background-color: #111111 !important;
-		@include breakpoint(max-md){
+		@include breakpoint(max-md) {
 			display: none;
 		}
 	}
+}
+
+//menu-section-wrap
+.menu-section-wrap {
+	padding: 48px 60px;
+	background-color: #d9d9d92e;
+	border-radius: 36px;
+	.menu-component {
+		.card-split {
+			box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+		}
+	}
+	.adjustment-arrow {
+		// position: absolute;
+		// top: 50%;
+		// transform: translateY(-50%);
+		// left: 0;
+		// width: 100%;
+		.arrow {
+			width: 75px;
+			height: 75px;
+		}
+	}
+	.arrow-start {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -40px;
+	}
+	.arrow-end {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: -30px;
+	}
+	@include breakpoint(max-md) {
+		padding: 48px 30px;
+		.arrow-start {
+			position: initial;
+			top: 50%;
+			transform: translateY(-0%);
+			left: -40px;
+		}
+		.arrow-end {
+			position: initial;
+			top: 50%;
+			transform: translateY(-0%);
+			right: -30px;
+		}
+	}
+}
+
+
+.form-wrapper-five{
+	max-width: 925px;
+	margin: 0 auto;
 }
