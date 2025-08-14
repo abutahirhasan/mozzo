@@ -683,6 +683,12 @@ br {
 .max-w-285 {
 	max-width: 285px;
 }
+.max-w-270 {
+	max-width: 270px;
+}
+.max-w-250 {
+	max-width: 250px;
+}
 .max-w-150 {
 	max-width: 150px;
 }
@@ -1035,4 +1041,36 @@ input {
 }
 .black-clr{
 	color: #000;
+}
+
+//section-title-style1
+.section-title-style1{
+	&.section-title2{
+		h2{
+			font-size: 40px;
+			position: relative;
+			z-index: 1;
+			&::before{
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: -1;
+				background-color: $theme-color;
+				width: 60px;
+				height: 10px;
+				content: "";
+			}
+		}
+	}
+}
+
+
+.w-fit {
+	width: -moz-fit-content !important;
+	width: fit-content !important;
+}
+
+.swiper-wrapper {
+    transition-timing-function: linear !important;
 }

@@ -56,6 +56,17 @@
 }
 //Testimonial
 
+.testimonial-items02 {
+	.box {
+		padding: 40px 40px;
+		border-radius: 20px;
+	}
+	@include breakpoint(max-xl) {
+		.box {
+			padding: 20px 20px;		
+		}
+	}
+}
 
 //Common Testimonial Btn
 .common-slide-btn {

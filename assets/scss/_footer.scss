@@ -86,65 +86,29 @@
 }
 
 .footer-bottom {
-	border-top: 1px solid #1F1F1F;
+	border-top: 1px solid #1f1f1f;
 	padding: 30px 0;
 	@include breakpoint(max-xl) {
 		padding: 22px 0;
 	}
 }
 
-//Footer Style 02
-.footer-style2 {
+.footer-widget-wrapper {
+	.border--end-footer {
+		border-right: 1px solid #1f1f1f;
+	}
 	.single-footer-widget {
-		.social-cmn {
-			a {
-				background: $white;
-                border: 1px solid $black;
-				i {
-					color: $black;
-				}
-                &:hover{
-                    border-color: $theme-color;
-                }
-			}
-		}
-		.footer-content {
-			.adjust-form {
-				input {
-                    background: $black;
-					color: $white;
-					&::placeholder {
-						color: $white;
-					}
-				}
-			}
-		}
-		.important-link {
-			li {
-				a {
-					color: $black;
-				}
-			}
-		}
-		.adredd-info {
-			li {
-                svg{
-                    path{
-                        stroke: $black;
-                    }
-                }
-				a {
-					color: $black;
-				}
-				&:hover {
-					a {
-						color: $theme-color;
-					}
-				}
-			}
+		padding: 120px 8px 120px;
+	}
+	@include breakpoint(max-lg) {
+		.single-footer-widget {
+			padding: 60px 8px 60px;
 		}
 	}
-    .footer-bottom{
-        border-color: #ebebeb;
-    }
+	@include breakpoint(max-md) {
+		padding: 75px 4px !important;
+		.single-footer-widget {
+			padding: 0px 1px 0px;
+		}
+	}
 }

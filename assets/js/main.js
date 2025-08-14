@@ -249,6 +249,100 @@
 			});
 		}
 
+		//<< 16 >> Brand Slider Start <<//
+		if ($(".brand-slider").length > 0) {
+			const brandSlider = new Swiper(".brand-slider", {
+				spaceBetween: 30,
+				speed: 2000,
+				loop: true,
+				centeredSlides: true,
+				autoplay: {
+					delay: 2000,
+					disableOnInteraction: false,
+				},
+				breakpoints: {
+					1199: {
+						slidesPerView: 7,
+					},
+					991: {
+						slidesPerView: 6,
+					},
+					767: {
+						slidesPerView: 5,
+					},
+					575: {
+						slidesPerView: 4,
+					},
+					400: {
+						slidesPerView: 3,
+					},
+					0: {
+						slidesPerView: 2,
+					},
+				},
+			});
+		}
+
+		//<< 19 >> Testimonial Slider Start <<//
+		if ($(".testimonial-wrap02").length > 0) {
+			const testimonialWrap02 = new Swiper(".testimonial-wrap02", {
+				spaceBetween: 24,
+				speed: 1000,
+				loop: true,
+				autoplay: {
+					delay: 1000,
+					disableOnInteraction: false,
+				},
+				navigation: {
+					nextEl: ".array-prev",
+					prevEl: ".array-next",
+				},
+				breakpoints: {
+					991: {
+						slidesPerView: 2,
+					},
+					767: {
+						slidesPerView: 2,
+					},
+					575: {
+						slidesPerView: 1,
+					},
+					400: {
+						slidesPerView: 1,
+					},
+					0: {
+						slidesPerView: 1,
+					},
+				},
+			});
+		}
+
+		//--Text Custom Slide
+		const sponsor__text__slide = new Swiper(".sponsor-text-slide", {
+			speed: 6000,
+			loop: true,
+			slidesPerView: "auto",
+			centeredSlides: true,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				991: {
+					spaceBetween: 12,
+				},
+				600: {
+					spaceBetween: 12,
+				},
+				400: {
+					spaceBetween: 12,
+				},
+				0: {
+					spaceBetween: 12,
+				},
+			},
+		});
+
 		//<< Mozzo >>//
 
 		//<< 11 >> Banner Slider1

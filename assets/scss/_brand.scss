@@ -10,15 +10,13 @@
 		}
 	}
 	.brand-item {
-		max-width: 160px;
-		height: 80px;
+		max-width: 130px;
 		margin: 0 auto;
 		transition: all 0.4s;
 		img {
 			height: 100%;
 			object-fit: contain;
 			width: 100%;
-			opacity: 0.7;
 			transition: all 0.4s;
 		}
 	}
