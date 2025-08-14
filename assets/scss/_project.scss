@@ -1,198 +1,32 @@
-//Stories Section
-.stories-section {
-	.container {
-		max-width: 1660px;
-		margin: 0 auto;
-	}
-}
-.stories-wrapper {
-	display: grid;
-	align-items: flex-start;
-	width: 100%;
-	grid-template-columns: repeat(5, 1fr);
-	gap: 24px;
-	.stories-item {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		overflow: hidden;
-		position: relative;
-		z-index: 1;
-		.ista {
-			width: 46px;
-			height: 46px;
-			border-radius: 5px;
-			background: $theme-color;
-			position: absolute;
-			z-index: 1;
-			transform: rotateX(90deg);
-			i {
-				color: $black;
-			}
-		}
-		img {
-			overflow: hidden;
-			transition: all 0.5s;
-		}
-		&::before {
-			position: absolute;
-			content: "";
-			width: 0%;
-			height: 100%;
-			background: rgba(0, 0, 0, 0.329);
-			transition: all 0.5s;
-			z-index: 1;
-		}
-		&:hover {
-			.ista {
-				transform: rotateX(0deg);
-			}
-			&::before {
-				width: 100%;
-			}
-			img {
-				transform: scale(1.05) rotate(2deg);
-			}
-		}
-	}
-	@include breakpoint(max-xxl) {
-		gap: 14px;
-		.stories-item {
-			.ista {
-				width: 40px;
-				height: 40px;
-			}
-		}
-	}
-	@include breakpoint(max-lg) {
-		grid-template-columns: repeat(3, 1fr);
-		gap: 14px;
-		justify-content: center;
-	}
-	@include breakpoint(max-sm) {
-		grid-template-columns: repeat(1, 1fr);
-		gap: 14px;
-		justify-content: center;
-	}
-}
-//Stories Section
-
-//Luxuries Section
-.luxries-section {
-	position: relative;
+//Video Section
+.cmn-vid {
+	width: 75px;
+	height: 75px;
+	border: 1px solid $white;
 	z-index: 1;
-	.luxuries-shape {
-		position: absolute;
-		top: 50%;
-		width: 100%;
-		left: 0;
-		transform: translateY(-50%);
-		z-index: -1;
-	}
-	&.style2 {
-		.luxries-single-item {
-			border-radius: 12px;
-			overflow: hidden;
-			border: 4px solid $black;
-			position: relative;
-			z-index: 1;
-			transition: all 0.4s;
-			.theme-custom {
-				color: $black;
-				background: transparent;
-				border: 1px solid $theme-color;
-				&:hover {
-					color: $white;
-				}
-			}
-			.content {
-				padding: 24px 28px 30px;
-				z-index: -1;
-				position: relative;
-			}
-			.luxries-thumb-info {
-				width: 0%;
-				left: -50%;
-				transition: all 0.5s;
-			}
-			&:hover {
-				.luxries-thumb-info {
-					left: 0;
-					width: 100%;
-				}
-				border-color: $white;
-			}
-		}
-	}
 }
-.luxuries-wrap {
-	.luxuries-vid {
-		width: 150px;
-		height: 150px;
-		border: 1px solid $white;
-		z-index: 1;
-		i {
-			font-size: 28px;
-			color: $white;
-		}
-		&::before,
-		&::after {
-			position: absolute;
-			width: 100%;
-			height: 100%;
-			content: "";
-			border: 1px solid $white;
-			border-radius: 50%;
-		}
-		&::before {
-			transition: all 0.3s;
-			animation: scsl 2s linear infinite;
-		}
-		&::after {
-			transition: all 0.4s;
-			animation: scsl2 3s linear infinite;
-		}
-	}
-	&::before {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		content: "";
-		background: linear-gradient(
-			182deg,
-			rgba(0, 0, 0, 0) -86.27%,
-			rgba(0, 0, 0, 0.15) 98.22%
-		);
-	}
-	@include breakpoint(max-md) {
-		.luxuries-vid {
-			width: 90px;
-			height: 90px;
-			i {
-				font-size: 22px;
-			}
-		}
-		.mimg {
-			height: 350px;
-			object-fit: cover;
-		}
-	}
-	@include breakpoint(max-sm) {
-		.luxuries-vid {
-			width: 70px;
-			height: 70px;
-			i {
-				font-size: 22px;
-			}
-		}
-		.mimg {
-			height: 300px;
-			object-fit: cover;
-		}
-	}
+.cmn-vid i {
+	font-size: 20px;
+	color: $white;
 }
+.cmn-vid::before,
+.cmn-vid .cmn-vid::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	border: 1px solid $white;
+	border-radius: 50%;
+}
+.cmn-vid::before {
+	transition: all 0.3s;
+	animation: scsl 2s linear infinite;
+}
+.cmn-vid::after {
+	transition: all 0.4s;
+	animation: scsl2 3s linear infinite;
+}
+
 @keyframes scsl {
 	50% {
 		transform: scale(1.05);
@@ -237,361 +71,31 @@
 		opacity: 0;
 	}
 }
-.luxries-single-item {
-	.white-icon {
-		filter: brightness(0);
-		width: 26px;
-		height: 26px;
-	}
-	.thumb {
-		img {
-			transition: all 0.4s;
-		}
-	}
-	&:hover {
-		.thumb {
-			img {
-				transform: scale(1.05);
-			}
-		}
-	}
-}
-.watching-information-wrap {
-	background: $white;
-	padding: 60px 16px;
-	border: 0.2px solid $theme-color;
-	box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.05);
-	margin-top: -180px;
-	z-index: 1;
-	position: relative;
-	.box {
-		p {
-			max-width: 550px;
-			margin: 0 auto;
-		}
-		form {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 20px;
-			max-width: 470px;
-			margin: 0 auto;
-			input {
-				padding: 10px 14px 12px;
-				color: $white;
-				font-size: 16px;
-				background: $black;
-				width: 60%;
-				border: unset;
-				&::placeholder {
-					color: $white;
-				}
-			}
+
+.video-section {
+	padding: 310px 5px 172px;
+	.fresh-wrap {
+		h2 {
+			font-size: 40px;
 		}
 	}
 	@include breakpoint(max-xxl) {
-		margin-top: 60px;
+		padding: 310px 10px 100px;
+		.fresh-wrap {
+			h2 {
+				font-size: 40px;
+			}
+		}
 	}
 	@include breakpoint(max-sm) {
-		margin-top: 60px;
-		.box {
-			form {
-				input {
-					width: 100%;
-				}
-				flex-wrap: wrap;
-				gap: 14px;
+		padding: 310px 10px 90px;
+		.fresh-wrap {
+			h2 {
+				font-size: 28px;
 			}
 		}
 	}
 }
-
-//Verstion 02
-.luxries-thumb-info {
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	.mimg {
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-	.luxries-initial-arrow {
-		position: absolute;
-		z-index: 2;
-		.luxries-arrow {
-			width: 45px;
-			height: 45px;
-			border: 1px solid $white;
-			border-radius: 8px;
-			margin: 0 auto 14px;
-			&:hover {
-				background: $theme-color;
-			}
-		}
-	}
-	&::before {
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		content: "";
-		width: 100%;
-		height: 100%;
-		border-radius: 8px;
-		opacity: 0.69;
-		background: linear-gradient(
-			180deg,
-			rgba(28, 33, 12, 0.8) 0%,
-			#1c210c 56.55%
-		);
-	}
-}
-//Luxuries Section
-
-//Video Section 2
-.video-section {
-	&.style2 {
-		.luxuries-wrap {
-			background: url(../../assets/img/global/vide-bg2.jpg) no-repeat center
-				center;
-			background-size: cover;
-			background-attachment: fixed;
-			z-index: 1;
-			position: relative;
-			padding: 450px 0;
-			&::before {
-				position: absolute;
-				left: 0;
-				bottom: 0;
-				content: "";
-				width: 100%;
-				height: 100%;
-				z-index: -1;
-				background: rgba(0, 0, 0, 0.219);
-			}
-			.luxuries-vid {
-				width: 300px;
-				height: 300px;
-				i {
-					font-size: 36px;
-				}
-			}
-			@include breakpoint(max-xxl) {
-				padding: 350px;
-				.luxuries-vid {
-					width: 250px;
-					height: 250px;
-					i {
-						font-size: 36px;
-					}
-				}
-			}
-			@include breakpoint(max-lg) {
-				padding: 250px 0;
-				.luxuries-vid {
-					width: 120px;
-					height: 120px;
-					i {
-						font-size: 22px;
-					}
-				}
-			}
-			@include breakpoint(max-sm) {
-				padding: 190px 0;
-				.luxuries-vid {
-					width: 120px;
-					height: 120px;
-					i {
-						font-size: 22px;
-					}
-				}
-			}
-		}
-	}
-}
-//Video Section 2
-
-//Gallery Project
-.gallery-single-item {
-	position: relative;
-	img {
-		width: 100%;
-		height: 100%;
-	}
-	.arrows-area {
-		position: absolute;
-		width: 90%;
-		height: 90%;
-		background: $white;
-		transform: rotateX(90deg);
-		z-index: 1;
-		transition: all 0.4s;
-		.marrows {
-			width: 60px;
-			height: 60px;
-			object-fit: contain;
-		}
-		.arrow-text {
-			position: absolute;
-			bottom: 30px;
-			z-index: 2;
-		}
-	}
-	&:hover {
-		.arrows-area {
-			transform: rotateX(0deg);
-		}
-	}
-}
-//Gallery Project
-
-//Reservation section
-.details-common-box {
-	padding: 30px 30px;
-	border-radius: 12px;
-	border: 1px solid #e9e9e9;
-	background: $white;
-	box-shadow: 0px 0px 15px 0px #efefef;
-	@include breakpoint(max-xl) {
-		padding: 24px 24px;
-	}
-	@include breakpoint(max-lg) {
-		padding: 22px 20px;
-	}
-	@include breakpoint(max-md) {
-		padding: 20px 18px;
-	}
-	.search-area {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		background: #f2f2f2;
-		border-radius: 8px;
-
-		input {
-			width: 100%;
-			padding: 10px 16px;
-			color: $black2;
-			font-size: 14px;
-			background: transparent;
-			border: unset;
-			&::placeholder {
-				color: $black2;
-			}
-		}
-		button {
-			padding-right: 14px;
-			font-size: 16px;
-			color: $theme-color;
-		}
-	}
-	.cate-listing {
-		display: grid;
-		gap: 16px;
-		li {
-			a {
-				&:hover {
-					span {
-						color: $theme-color;
-					}
-				}
-			}
-		}
-		@include breakpoint(max-xxl) {
-			gap: 10px;
-		}
-	}
-	.recente-ads-inner {
-		display: grid;
-		gap: 24px;
-		.content {
-			.titles {
-				display: block;
-				line-height: 20px;
-			}
-		}
-		@include breakpoint(max-lg) {
-			gap: 19px;
-		}
-	}
-	.details-tags {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 11px;
-		li {
-			a {
-				font-size: 14px;
-				font-weight: 500;
-				color: $black2;
-				display: inline-block;
-				text-align: center;
-				padding: 8px 14px;
-				background: #ecf3ff;
-				border-radius: 8px;
-				&:hover {
-					background: $theme-color;
-				}
-			}
-		}
-	}
-}
-.cmn-detail-line {
-	width: 100%;
-	height: 1px;
-	background: #e1e1e1;
-	display: block;
-}
-.belling-address {
-	input,
-	textarea {
-		width: 100%;
-		padding: 12px 18px;
-		border-radius: 8px;
-		border: 1px solid #e1e1e1;
-		color: #353844;
-		font-size: 14px;
-		&::placeholder {
-			color: #353844;
-		}
-	}
-	.nice-select {
-		width: 100%;
-		padding: 13px 16px 16px;
-		border-radius: 8px;
-		border: 1px solid #e1e1e1;
-		color: #353844;
-		font-size: 14px;
-		font-weight: 400;
-		.current {
-			font-weight: 500;
-			font-size: 14px;
-			color: #353844;
-		}
-		&::after {
-			top: 25px;
-			right: 20px;
-		}
-		.list {
-			background: $white;
-			li {
-				border-color: #e1e1e1;
-			}
-		}
-	}
-}
-.same-space40 {
-	display: grid;
-	gap: 40px;
-	@include breakpoint(max-xl) {
-		gap: 30px;
-	}
-	@include breakpoint(max-md) {
-		gap: 24px;
-	}
-}
-//Reservation section
 
 //Mozzo
 .big-burger-content {
@@ -715,8 +219,7 @@
 	}
 }
 
-
-.form-wrapper-five{
+.form-wrapper-five {
 	max-width: 925px;
 	margin: 0 auto;
 }
