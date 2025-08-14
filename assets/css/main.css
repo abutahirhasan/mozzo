@@ -171,6 +171,10 @@
   background: var(--theme);
 }
 
+.theme-opacity-10 {
+  background-color: #FFEFE8 !important;
+}
+
 .theme2-clr {
   color: var(--theme2);
 }
@@ -209,6 +213,10 @@
 
 .text4-clr {
   color: var(--text4) !important;
+}
+
+.text5-clr {
+  color: #A8A8A8 !important;
 }
 
 .text3-clr {
@@ -536,6 +544,16 @@ i {
   background: rgba(0, 0, 0, 0.7);
 }
 .restaurant-card_text:hover .restaurant-order-text {
+  opacity: 1;
+  visibility: visible;
+}
+
+.chef-single-item .content {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s;
+}
+.chef-single-item:hover .content {
   opacity: 1;
   visibility: visible;
 }

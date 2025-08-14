@@ -102,6 +102,9 @@ $section-bg2: var(--section-bg2);
 .theme-bg{
     background: $theme-color;
 }
+.theme-opacity-10{
+    background-color: #FFEFE8 !important;
+}
 .theme2-clr{
     color: $theme-color-2;
 }
@@ -131,6 +134,9 @@ $section-bg2: var(--section-bg2);
 }
 .text4-clr{
     color: $text-color-4 !important;
+}
+.text5-clr{
+    color: #A8A8A8 !important;
 }
 .text3-clr{
     color: $text-color-3 !important;

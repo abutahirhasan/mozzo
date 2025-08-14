@@ -279,3 +279,18 @@ i {
 		}
 	}
 }
+
+//chef-single-item
+.chef-single-item{
+	.content{
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.4s;
+	}
+	&:hover{
+		.content{
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+}
