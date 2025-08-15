@@ -39,6 +39,21 @@
 	}
 }
 
+.section-title-style4 {
+	h2 {
+		font-size: 64px;
+		line-height: 50px;
+		letter-spacing: -1.92px;
+	}
+	@include breakpoint(max-xl) {
+		h2 {
+			font-size: 64px;
+			line-height: 50px;
+			letter-spacing: -1.92px;
+		}
+	}
+}
+
 //>>>>> Section Title End <<<<<//
 
 //>>>>> Basic Css Start <<<<<//
@@ -71,13 +86,13 @@
 .common-bg {
 	background: rgb(0, 119, 177, 0.05);
 }
-.cus-border{
+.cus-border {
 	border: 1px solid rgb(7, 10, 1, 0.1) !important;
 }
-.cus-bb{
+.cus-bb {
 	border-bottom: 1px solid rgb(7, 10, 1, 0.1) !important;
 }
-.cus-bt{
+.cus-bt {
 	border-top: 1px solid rgb(7, 10, 1, 0.1) !important;
 }
 

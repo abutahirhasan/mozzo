@@ -12,6 +12,11 @@
 }
 //Blog Section
 
+.blog-single-item-middle{
+	@include breakpoint(lg){
+		max-width: 550px;
+	}
+}
 
 
 //Mozzo end
