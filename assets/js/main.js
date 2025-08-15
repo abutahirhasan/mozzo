@@ -342,9 +342,7 @@
 				},
 			},
 		});
-
-		//<< Mozzo >>//
-
+		
 		//<< 11 >> Banner Slider1
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
@@ -389,6 +387,8 @@
 				nextEl: ".array-prev",
 			},
 		});
+
+		//<< Mozzo >>//
 
 		//<< 12 >> Apartment Slider Start <<//
 		const apartmentSlider = new Swiper(".apartment-slider", {
