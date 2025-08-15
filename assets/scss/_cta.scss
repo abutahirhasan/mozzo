@@ -127,3 +127,15 @@
 		opacity: 0.5;
 	}
 }
+
+//special-coffe-item
+.special-coffe-wrapper{
+
+}
+.special-coffe-item{
+	transition: all 0.4s;
+	padding: 8px;
+	&:hover{
+		background-color: rgb(17, 17, 17, 0.05);
+	}
+}

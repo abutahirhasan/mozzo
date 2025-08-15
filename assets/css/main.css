@@ -1322,6 +1322,14 @@ i {
   }
 }
 
+.special-coffe-item {
+  transition: all 0.4s;
+  padding: 8px;
+}
+.special-coffe-item:hover {
+  background-color: rgba(17, 17, 17, 0.05);
+}
+
 .custom-accordion .accordion-item {
   border: unset;
 }
@@ -3595,6 +3603,11 @@ input::placeholder {
 }
 .form-outline input::placeholder {
   color: var(--white) !important;
+}
+
+.container-1520 {
+  max-width: 1590px;
+  margin: 0 auto;
 }
 
 .hero-style1 {
