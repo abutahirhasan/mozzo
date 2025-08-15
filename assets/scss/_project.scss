@@ -223,3 +223,44 @@
 	max-width: 925px;
 	margin: 0 auto;
 }
+
+.coffeeno-wrapper {
+	@include breakpoint(max-md) {
+		.vid-icon {
+			width: 50px;
+			display: block;
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+.coffeeno-text {
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: $text-color;
+	color: transparent;
+	font-size: 250px;
+	font-weight: 550;
+	line-height: 250px;
+	text-transform: capitalize;
+	margin-bottom: -80px;
+	@include breakpoint(max-xl) {
+		font-size: 170px;
+		font-weight: 550;
+		line-height: 190px;
+		text-transform: capitalize;
+		margin-bottom: -80px;
+	}
+	@include breakpoint(max-lg) {
+		font-size: 80px;
+		font-weight: 550;
+		line-height: 90px;
+		margin-bottom: -10px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 60px;
+		font-weight: 550;
+		line-height: 70px;
+		margin-bottom: -10px;
+	}
+}

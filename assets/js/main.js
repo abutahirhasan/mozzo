@@ -343,6 +343,31 @@
 			},
 		});
 		
+		const sponsor__text__slide2 = new Swiper(".sponsor-text-slide2", {
+			speed: 6000,
+			loop: true,
+			slidesPerView: "auto",
+			centeredSlides: true,
+			autoplay: {
+				delay: 1,
+				disableOnInteraction: false,
+			},
+			breakpoints: {
+				991: {
+					spaceBetween: 12,
+				},
+				600: {
+					spaceBetween: 12,
+				},
+				400: {
+					spaceBetween: 12,
+				},
+				0: {
+					spaceBetween: 12,
+				},
+			},
+		});
+
 		//<< 11 >> Banner Slider1
 		const heroSLider = new Swiper(".hero-slider", {
 			// Optional parameters
