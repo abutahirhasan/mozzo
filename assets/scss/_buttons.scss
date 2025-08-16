@@ -59,6 +59,18 @@
 			background-color: $theme-color;
 		}
 	}
+	&.btn-outline--seconday{
+		border: 1px solid $text-secondary;
+		color: $text-secondary;
+		padding: 10px 20px 11px;
+		background-color: transparent;
+		&:hover{
+			color: $white;
+			&::before{
+				background-color: $text-secondary;
+			}
+		}
+	}
 	&.btn-outline-blak {
 		border: 1px solid #c5c5c5;
 		padding: 10px 20px 11px;

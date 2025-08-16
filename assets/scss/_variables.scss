@@ -4,6 +4,7 @@
     --body: #fff;
     --black: #111;
     --black2: #353844;
+    --text-secondary: #86624A;
     --white: #fff;
     --theme: #FF5200;
     --theme2: #FBBC00;
@@ -38,6 +39,7 @@ $theme-color-2: var(--theme2);
 $theme-color-3: var(--theme3);
 $theme-color-4: var(--theme4);
 $ratting-color: var(--ratting);
+$text-secondary: var(--text-secondary);
 $text-color: var(--text);
 $text-color-2: var(--text2);
 $text-color-3: var(--text3);
@@ -95,6 +97,12 @@ $section-bg2: var(--section-bg2);
 }
 .white-bg{
     background: $white;
+}
+.text-secondary{
+    color: $text-secondary !important;
+}
+.border-secondary{
+    border: 1px solid $text-secondary !important;
 }
 .theme-clr{
     color: $theme-color;
@@ -176,13 +184,3 @@ $section-bg2: var(--section-bg2);
     background-color: #1F1F1F;
 }
 
-.adjust-form{
-    &.style1{
-        input{
-            color: #B0B0B0;
-            &::placeholder{
-                color: #B0B0B0 !important;
-            }
-        }
-    }
-}

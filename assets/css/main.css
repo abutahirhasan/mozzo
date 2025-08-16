@@ -91,6 +91,7 @@
   --body: #fff;
   --black: #111;
   --black2: #353844;
+  --text-secondary: #86624A;
   --white: #fff;
   --theme: #FF5200;
   --theme2: #FBBC00;
@@ -161,6 +162,14 @@
 
 .white-bg {
   background: var(--white);
+}
+
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+.border-secondary {
+  border: 1px solid var(--text-secondary) !important;
 }
 
 .theme-clr {
@@ -267,13 +276,6 @@
   background-color: #1F1F1F;
 }
 
-.adjust-form.style1 input {
-  color: #B0B0B0;
-}
-.adjust-form.style1 input::placeholder {
-  color: #B0B0B0 !important;
-}
-
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
@@ -287,6 +289,7 @@
 
 .heading-font-edensor {
   font-family: "Edensor", sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .heading-font-afasad {
@@ -621,6 +624,18 @@ i {
 }
 .theme-btn.btn-dark-common::after, .theme-btn.btn-dark-common::before {
   background-color: var(--theme);
+}
+.theme-btn.btn-outline--seconday {
+  border: 1px solid var(--text-secondary);
+  color: var(--text-secondary);
+  padding: 10px 20px 11px;
+  background-color: transparent;
+}
+.theme-btn.btn-outline--seconday:hover {
+  color: var(--white);
+}
+.theme-btn.btn-outline--seconday:hover::before {
+  background-color: var(--text-secondary);
 }
 .theme-btn.btn-outline-blak {
   border: 1px solid #c5c5c5;
@@ -3678,6 +3693,30 @@ input::placeholder {
 .container-1520 {
   max-width: 1590px;
   margin: 0 auto;
+}
+
+.adjust-form.style1 input {
+  color: #B0B0B0;
+}
+.adjust-form.style1 input::placeholder {
+  color: #B0B0B0 !important;
+}
+
+.letter-spacing-4 {
+  letter-spacing: 4px;
+}
+@media (max-width: 991px) {
+  .letter-spacing-4 {
+    letter-spacing: 2px;
+  }
+}
+
+.letter-spacing-1 {
+  letter-spacing: 1px;
+}
+
+.letter-spacing-05 {
+  letter-spacing: 0.5px;
 }
 
 .hero-style1 {

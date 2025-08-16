@@ -1175,3 +1175,27 @@ input {
 	max-width: 1590px;
 	margin: 0 auto;
 }
+
+
+.adjust-form{
+    &.style1{
+        input{
+            color: #B0B0B0;
+            &::placeholder{
+                color: #B0B0B0 !important;
+            }
+        }
+    }
+}
+.letter-spacing-4{
+	letter-spacing: 4px;
+	@include breakpoint(max-lg){
+		letter-spacing: 2px;
+	}
+}
+.letter-spacing-1{
+	letter-spacing: 1px;
+}
+.letter-spacing-05{
+	letter-spacing: 0.5px;
+}

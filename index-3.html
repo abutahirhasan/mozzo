@@ -167,29 +167,8 @@
 
     <div class="offcanvas__overlay"></div>
 
-    <!-- Header Top Section Start -->
-    <div class="header-top-section style3 d-lg-block d-none overflow-hidden">
-        <div class="container">
-            <div class="header-top-wrapper">
-                <a href="#" class="located d-flex align-items-center gap-2 fs-14">
-                    <i class="fa-solid fa-location-dot"></i> 2972 Westheimer Rd, Illinois 85486
-                </a>
-                <ul class="contact-list">
-                    <li>
-                        <i class="fa-solid fa-phone"></i>
-                        <a href="#" class="link">+92 (8800) 6830</a>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-envelope"></i>
-                        <a href="#" class="link">mozzoasupport@gmail.com</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
     <!-- Header Section Start -->
-    <header id="header-sticky" class="header-1 style3 white-variation">
+    <header id="header-sticky" class="header-1 header-5">
         <div class="container">
             <div class="mega-menu-wrapper">
                 <div class="header-main">
@@ -205,7 +184,7 @@
                             <div class="main-menu">
                                 <nav id="mobile-menu">
                                     <ul>
-                                        <li class="has-dropdown active menu-thumb">
+                                        <li class="has-dropdown droop active menu-thumb">
                                             <a href="index.html">
                                                 Home
                                                 <i class="fas fa-angle-down"></i>
@@ -284,18 +263,39 @@
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="room-grid.html">
-                                                Rooms
+                                            <a href="menu.html">
+                                                Menu
                                                 <i class="fas fa-angle-down"></i>
                                             </a>
                                             <ul class="submenu">
-                                                <li><a href="room-grid.html">Rooms Grid</a></li>
-                                                <li><a href="room-list.html">Rooms List</a></li>
-                                                <li><a href="room-details.html">Rooms Details</a></li>
+                                                <li><a href="food-menu-single.html">Single Food Menu</a></li>
+                                                <li><a href="menu-list.html">Menu List</a></li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <a href="restaurant.html">RESTAURANT</a>
+                                            <a href="shop.html">
+                                                Shop
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="shop.html">Shop</a></li>
+                                                <li><a href="shop-details.html">Shop Details</a></li>
+                                                <li><a href="cart.html">Cart</a></li>
+                                                <li><a href="checkout.html">Checkout</a></li>
+                                                <li><a href="order-tracking.html">Order Tracking</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="blog-grid.html">
+                                                Blog
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                                <li><a href="blog-standard.html">Blog Standard</a></li>
+                                                <li><a href="blog-details.html">Blog Details</a></li>
+                                                <li><a href="reservation.html">Reservations</a></li>
+                                            </ul>
                                         </li>
                                         <li class="has-dropdown">
                                             <a href="#0">
@@ -304,23 +304,14 @@
                                             </a>
                                             <ul class="submenu">
                                                 <li><a href="about.html">About Us</a></li>
-                                                <li><a href="service.html">Services</a></li>
                                                 <li><a href="faqs.html">Faqs</a></li>
                                                 <li><a href="team.html">Team</a></li>
-                                                <li><a href="gallery.html">Gallery</a></li>
+                                                <li><a href="team-details.html">Team Details</a></li>
+                                                <li><a href="restaurant.html">Restaurant List</a></li>
+                                                <li><a href="restaurant-details1.html">Restaurant Details 01</a></li>
+                                                <li><a href="restaurant-details2.html">Restaurant Details 02</a></li>
+                                                <li><a href="contact.html">Contact</a></li>
                                                 <li><a href="error.html">404</a></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            <a href="blog-grid.html">
-                                                News
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                                <li><a href="reservation.html">Reservations</a></li>
                                             </ul>
                                         </li>
                                         <li>
@@ -337,7 +328,7 @@
                             <img src="assets/img/icon/tolly.png" alt="tolly-icon">
                             <span class="count-quan d-center">02</span>
                         </button>
-                        <div class="header__hamburger d-lg-none my-auto">
+                        <div class=" d-lg-none my-auto">
                             <div class="sidebar__toggle">
                                 <img src="assets/img/icon/bars.png" alt="icon">
                             </div>
@@ -351,8 +342,14 @@
                             <img src="assets/img/icon/tolly.png" alt="tolly-icon">
                             <span class="count-quan d-center">02</span>
                         </button>
-                        <button type="button" class="destop-bars sidebar__toggle">
-                            <img src="assets/img/icon/bars.png" alt="img">
+                        <a href="#0"
+                            class="border-white rounded-pill d-center gap-2 fw-bold text-white fs-14 h-40px px-4">
+                            <i class="fa-regular fa-user"></i>
+                            Log In
+                        </a>
+                        <button type="button"
+                            class="destop-bars bars__one w-40px h-40px border-white rounded-circle d-center sidebar__toggle text-white fs-20">
+                            <i class="fa-solid fa-bars"></i>
                         </button>
                     </div>
                 </div>
@@ -360,1382 +357,643 @@
         </div>
     </header>
 
+
     <!-- Hero section start -->
-    <section class="hero-section3 fix">
+    <section class="hero-section position-relative fix hero-style4">
+        <div class="container container-1520 p-0">
+            <div class="hero-content4 d-flex flex-md-nowrap flex-wrap align-items-end z-1 position-relative">
+                <div class="col-lg-8">
+                    <h1 class="heading-font-edensor mb-xl-4 mb-3 fw-medium text-uppercase">A Cup Coffee, feed your soul</h1>
+                    <div class="thumb-hero4">
+                        <div class="thumb">
+                            <img src="assets/img/home-4/hero-thum4.png" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="content">
+                        <div class="mb-30 pb-3">
+                            <p class="fs-18 text-dark heading-font-afasad mb-xl-4 mb-lg-3 mb-2">Step into a world of freshly brewed coffee, cozy
+                                ambiance, and warm conversations.</p>
+                            <a href="#0" class="theme-btn btn-dark-common rounded-pill py-3 px-4">
+                                BOOK A TABLE
+                            </a>
+                        </div>
+                        <div class="d-flex flex-md-column flex-md-nowrap flex-wrap gap-lg-4 gap-md-3 gap-2">
+                            <div class="d-flex w-md-100 w-100 align-items-center gap-2 justify-content-between bg-black py-xxl-4 py-xl-3 py-2 px-xl-4 px-3 rounded-2">
+                                <h3 class="heading-font-edensor text-white">
+                                    <a href="#0" class="heading-font-edensor link-effect text-white fw-normal" style="letter-spacing: 1px;">
+                                        Coffee Proper <br> Roasting
+                                    </a>
+                                </h3>
+                                <a href="#0" class="w-44px h-44px rounded-1 d-center bg-gray">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex w-md-100 w-100 align-items-center gap-2 justify-content-between bg-black py-xxl-4 py-xl-3 py-2 px-xl-4 px-3 rounded-2">
+                                <h3 class="heading-font-edensor text-white">
+                                    <a href="#0" class="heading-font-edensor link-effect text-white fw-normal" style="letter-spacing: 1px;">
+                                        Served with <br> a Smile
+                                    </a>
+                                </h3>
+                                <a href="#0" class="w-44px h-44px rounded-1 d-center bg-gray">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex w-md-100 w-100 align-items-center gap-2 justify-content-between bg-black py-xxl-4 py-xl-3 py-2 px-xl-4 px-3 rounded-2">
+                                <h3 class="heading-font-edensor text-white">
+                                    <a href="#0" class="heading-font-edensor link-effect text-white fw-normal" style="letter-spacing: 1px;">
+                                        One Cup at <br> a Time
+                                    </a>
+                                </h3>
+                                <a href="#0" class="w-44px h-44px rounded-1 d-center bg-gray">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div
+                                class="d-flex w-md-100 w-100 align-items-center gap-2 justify-content-between bg-black py-xxl-4 py-xl-3 py-2 px-xl-4 px-3 rounded-2">
+                                <h3 class="heading-font-edensor text-white">
+                                    <a href="#0" class="heading-font-edensor link-effect text-white fw-normal" style="letter-spacing: 1px;">
+                                        Coffee Proper <br> Roasting
+                                    </a>
+                                </h3>
+                                <a href="#0" class="w-44px h-44px rounded-1 d-center bg-gray">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <img src="assets/img/home-4/hero4-shae-left.png" alt="img" class="position-absolute top-0 shape start-0 z-n1 d-md-block d-none">
+        <img src="assets/img/home-4/hero4-shae-right.png" alt="img" class="position-absolute top-0 shape end-0 z-n1 float-bob-y">
+    </section>
+
+    <!-- About section start -->
+    <section class="about-section section-bg2 section-padding">
         <div class="container">
-            <div
-                class="hero-wrapper3 d-lg-flex d-grid flex-lg-nowrap flex-wrap gap-4 align-items-center justify-content-lg-between justify-content-center">
-                <div class="hero-content3">
-                    <span class="sub-font sub-title text-white fs-20 mb-md-4 mb-3 d-block">
-                        Explore New Experiences
-                    </span>
-                    <h2 class="mb-md-5 mb-4 white-clr fw-semibold">
-                        Discover Chaos <br>
-                        Your Secluded Beach <br> Resort Retreat
-                    </h2>
-                    <div class="hero-btn-adjust d-flex gap-sm-4 gap-3">
-                        <a href="room-grid.html"
-                            class="theme-btn bg-white rounded-5 fw-normal text-capitalize gap-1 px-6">
-                            Book Now
-                        </a>
-                        <a href="room-grid.html" class="room-arrow-btn">
-                            <img src="assets/img/icon/right-arrow.png" alt="img" class="right-arrow"> View
-                            Room
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-thumb4 w-100 card-effect wow fadeInRight">
+                        <img src="assets/img/home-4/about-thumb1.png" alt="img" class="w-100">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content-wrap">
+                        <div class="section-title-style4 text-center mx-auto mb-40 pb-xl-1">
+                            <h5 class="heading-font-afasad text-uppercase fw-normal mb-xl-4 mb-sm-3 mb-3 pb-xxl-2 text-dark"
+                                style="letter-spacing: 2px;">welcome to caffeno</h5>
+                            <h2 class="wow fadeInUp mb-xl-4 mb-lg-3 mb-2 heading-font-edensor max-w-520 mx-auto fw-medium text-dark fs-30 lh-1 text-uppercase"
+                                data-wow-delay=".3s">
+                                Where Every <br> Cup coffee Feels <br>
+                                Like Home
+                            </h2>
+                            <p class="fs-20 heading-font-afasad max-w-520 mx-auto mb-30 pb-2 wow fadeInDown" data-wow-delay=".4s">
+                                we’re passionate about delivering rich flavors in a cozy, welcoming space. you're catching up with friends, working on
+                                your next big idea.
+                            </p>
+                            <div class="max-w-440 mx-auto d-flex align-items-center justify-content-between gap-3 max-w-520 mx-auto mb-30 pb-xl-3 wow fadeInDown" data-wow-delay=".5s">
+                                <div>
+                                    <h2 class="d-flex align-items-center justify-content-center gap-1">
+                                        <span class="count heading-font-edensor text-dark">98</span>
+                                        <span class="heading-font-edensor text-dark">%</span>
+                                    </h2>
+                                    <p class="fs-18 heading-font-afasad text-dark text-center">
+                                        Clients Satisfied and <br>
+                                        Repeating
+                                    </p>
+                                </div>
+                                <span style="width: 1px; height: 100px; display: block; background-color: rgb(17, 17, 17, 0.5);"></span>
+                                <div>
+                                    <h2 class="d-flex align-items-center justify-content-center gap-1">
+                                        <span class="count heading-font-edensor text-dark">125</span>
+                                        <span class="heading-font-edensor text-dark">+</span>
+                                    </h2>
+                                    <p class="fs-18 heading-font-afasad text-dark text-center">
+                                        Projects Completed in <br>
+                                        24 Countries
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="#0" class="theme-btn btn-dark-common py-lg-3 py-2 px-lg-5 px-4 rounded-pill">
+                                Learn About us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose section start -->
+    <section class="choose-us-section z-1 position-relative section-padding">
+        <div class="text-center choose-coffe-cup position-absolute d-xl-block d-none">
+            <img src="assets/img/home-4/choose-coffee.png" alt="img" class="choose-coffee">
+        </div>
+        <div class="container pt-xl-5 mt-xl-5">
+            <div class="row g-4 mt-xl-4">
+                <div class="col-lg-5">
+                    <div class="section-title-style4 mx-auto mb-40 pb-xl-1">
+                        <h5 class="heading-font-afasad text-uppercase fw-normal mb-xl-4 mb-sm-3 mb-3 pb-xxl-2 text-dark"
+                            style="letter-spacing: 2px;">wHY CHOOSE US</h5>
+                        <h2 class="wow fadeInUp mb-30 pb-xxl-2 heading-font-edensor max-w-480 fw-medium text-dark fs-30 lh-1 text-uppercase"
+                            data-wow-delay=".3s">
+                            WHERE FLAVOR MEETS COMPORT & SERVICES
+                        </h2>
+                        <a href="#0" class="theme-btn py-lg-3 py-2 px-lg-5 px-4 btn-outline-blak rounded-pill">
+                            Learn About us
                         </a>
                     </div>
                 </div>
-                <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
-                    class="hero-vid luxuries-vid position-relative rounded-circle d-center video-popup">
-                    <span class="icon d-center">
-                        <i class="fa-solid fa-play"></i>
-                    </span>
+                <div class="col-lg-7 ps-30">
+                    <div class="row g-0">
+                        <div class="col-sm-6">
+                            <div class="choose-items pb-40 border-top-0 border-end-0 border-start-0 border-bottom-0">
+                                <div class="icon d-center rounded-circle w-48px h-48px mb-xl-3 mb-2">
+                                    <img src="assets/img/icons/choo-percentage-badge.png" alt="icon">
+                                </div>
+                                <h4 class="mb-lg-2 mb-1"><a href="#0" class="text-dark heading-font-afasad">Fully Responsive</a></h4>
+                                <p class="fs-20 text-dark heading-font-afasad max-w-270">
+                                    we’re passionate about delivering rich flavors in a cozy space. you're catching up.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="choose-items pb-40 ps-40 border-top-0 border-end-0 border-bottom-0">
+                                <div class="icon d-center rounded-circle w-48px h-48px mb-xl-3 mb-2">
+                                    <img src="assets/img/icons/choo-percentage-badge.png" alt="icon">
+                                </div>
+                                <h4 class="mb-lg-2 mb-1"><a href="#0" class="text-dark heading-font-afasad">Fresh Ingredients</a></h4>
+                                <p class="fs-20 text-dark heading-font-afasad max-w-270">
+                                    we’re passionate about delivering rich flavors in a cozy space. you're catching up.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="choose-items pb-40 pt-40 border-bottom-0 border-start-0 border-end-0">
+                                <div class="icon d-center rounded-circle w-48px h-48px mb-xl-3 mb-2">
+                                    <img src="assets/img/icons/choo-percentage-badge.png" alt="icon">
+                                </div>
+                                <h4 class="mb-lg-2 mb-1"><a href="#0" class="text-dark heading-font-afasad">Friendly Atomsphere</a></h4>
+                                <p class="fs-20 text-dark heading-font-afasad max-w-270">
+                                    we’re passionate about delivering rich flavors in a cozy space. you're catching up.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="choose-items pb-40 ps-40 pt-40 border-end-0 border-bottom-0">
+                                <div class="icon d-center rounded-circle w-48px h-48px mb-xl-3 mb-2">
+                                    <img src="assets/img/icons/choo-percentage-badge.png" alt="icon">
+                                </div>
+                                <h4 class="mb-lg-2 mb-1"><a href="#0" class="text-dark heading-font-afasad">Exclusive Chef’s</a></h4>
+                                <p class="fs-20 text-dark heading-font-afasad max-w-270">
+                                    we’re passionate about delivering rich flavors in a cozy space. you're catching up.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="choose-items pt-40 border-bottom-0 border-start-0 border-end-0">
+                                <div class="icon d-center rounded-circle w-48px h-48px mb-xl-3 mb-2">
+                                    <img src="assets/img/icons/choo-percentage-badge.png" alt="icon">
+                                </div>
+                                <h4 class="mb-lg-2 mb-1"><a href="#0" class="text-dark heading-font-afasad">Fast Services</a></h4>
+                                <p class="fs-20 text-dark heading-font-afasad max-w-270">
+                                    we’re passionate about delivering rich flavors in a cozy space. you're catching up.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="choose-items ps-40 pt-40 border-bottom-0 border-end-0">
+                                <div class="icon d-center rounded-circle w-48px h-48px mb-xl-3 mb-2">
+                                    <img src="assets/img/icons/choo-percentage-badge.png" alt="icon">
+                                </div>
+                                <h4 class="mb-lg-2 mb-1"><a href="#0" class="text-dark heading-font-afasad">Free Wifi</a></h4>
+                                <p class="fs-20 text-dark heading-font-afasad max-w-270">
+                                    we’re passionate about delivering rich flavors in a cozy space. you're catching up.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/img/home-4/choose-shapel.png" alt="img" class="position-absolute bottom-0 start-0 z-n1 d-xl-block d-none">
+    </section>
+
+    <!-- Text Slide start -->
+    <section class="text-slider-section">
+        <div class="sponsor-text-slide2 swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop1.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop2.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop3.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop1.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop2.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop3.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop1.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop2.png" alt="img">
+                    </div>
+                </div>
+                <div class="swiper-slide w-fit">
+                    <div class="text-slide-item rounded-3">
+                        <img src="assets/img/home-4/text-shop3.png" alt="img">
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Menu Book section start -->
+    <section class="table-menu-book-section pt-100 pb-100">
+        <div class="container">
+            <div class="section-title-style4 mx-auto mb-40 pb-xl-1 text-center">
+                <h5 class="heading-font-afasad text-uppercase fw-normal mb-xl-4 mb-sm-3 mb-3 pb-xxl-2 text-dark"
+                    style="letter-spacing: 2px;">Our special menu</h5>
+                <h2 class="wow fadeInUp heading-font-edensor max-w-520 mx-auto fw-medium text-dark fs-30 lh-1 text-uppercase" data-wow-delay=".3s">
+                    Exclusive Beans, Rare Flavor.
+                </h2>
+            </div>
+            <div class="d-flex flex-column">
+                <div class="table-menu-items active position-relative overflow-hidden wow fadeInUp" data-wow-delay=".3s">                    
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-lg-3 gap-2 table-menu-inner">
+                        <h2 class="heading-font-edensor text-dark"><a href="#0" class="fw-medium">Mericano cold Coffee</a></h2>
+                        <div class="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                            <img src="assets/img/home-4/slash.png" alt="img">
+                            <h2 class="heading-font-edensor fw-medium lh-1 text-dark">$12.88</h2>
+                        </div>
+                        <a href="#0" class="theme-btn py-lg-3 py-2 px-lg-5 px-4 btn-outline-blak rounded-pill">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="table-menu-items position-relative overflow-hidden wow fadeInUp"
+                    data-wow-delay=".3s">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-lg-3 gap-2 table-menu-inner">
+                        <h2 class="heading-font-edensor text-dark"><a href="#0" class="fw-medium">American Espresso</a></h2>
+                        <div class="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                            <img src="assets/img/home-4/slash.png" alt="img">
+                            <h2 class="heading-font-edensor fw-medium lh-1 text-dark">$9.88</h2>
+                        </div>
+                        <a href="#0" class="theme-btn py-lg-3 py-2 px-lg-5 px-4 btn-outline-blak rounded-pill">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="table-menu-items position-relative overflow-hidden wow fadeInUp"
+                    data-wow-delay=".3s">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-lg-3 gap-2 table-menu-inner">
+                        <h2 class="heading-font-edensor text-dark"><a href="#0" class="fw-medium">Mozza Special Latte</a></h2>
+                        <div class="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                            <img src="assets/img/home-4/slash.png" alt="img">
+                            <h2 class="heading-font-edensor fw-medium lh-1 text-dark">$8.88</h2>
+                        </div>
+                        <a href="#0" class="theme-btn py-lg-3 py-2 px-lg-5 px-4 btn-outline-blak rounded-pill">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+                <div class="table-menu-items position-relative overflow-hidden wow fadeInUp"
+                    data-wow-delay=".3s">
+                    <div class="d-flex flex-wrap align-items-center justify-content-between gap-lg-3 gap-2 table-menu-inner">
+                        <h2 class="heading-font-edensor text-dark"><a href="#0" class="fw-medium">American Espresso</a></h2>
+                        <div class="d-flex align-items-center gap-xxl-5 gap-xl-4 gap-3">
+                            <img src="assets/img/home-4/slash.png" alt="img">
+                            <h2 class="heading-font-edensor fw-medium lh-1 text-dark">MIced Americano</h2>
+                        </div>
+                        <a href="#0" class="theme-btn py-lg-3 py-2 px-lg-5 px-4 btn-outline-blak rounded-pill">
+                            Book Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="client-section z-1 position-relative section-padding bg-black fix">
+        <img src="assets/img/home-4/feedback-shape.png" alt="img" class="position-absolute top-0 float-bob-y start-0 z-n1">
+        <div class="container">
+            <div class="section-title-style4 mx-auto mb-40 pb-xl-2 text-center">
+                <h5 class="heading-font-afasad text-uppercase fw-normal mb-xl-4 mb-sm-3 mb-3 pb-xxl-2 text-white" style="letter-spacing: 2px;">Our special menu</h5>
+                <h2 class="wow fadeInUp heading-font-edensor fw-medium text-white fs-30 lh-1 text-uppercase" data-wow-delay=".3s">
+                    USERS FEEDBACK
+                </h2>
+            </div>
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-9">
+                    <div class="testimonial-wrapper1 testimonial-wrapper4">
+                        <div class="swiper testimonial-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial-items style1 d-flex flex-md-nowrap flex-wrap align-items-center position-relative p-md-0 p-3">
+                                        <div class="testimonial-thumb rounded-circle position-relative">
+                                            <img src="assets/img/client-admin1.jpg" alt="img" class="rounded-circle">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex gap-1 mb-xl-3 mb-2">
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                            </div>
+                                            <h3 class="text-black mb-xxl-3 mb-2 heading-font-edensor fw-semibold">Great Product! Highly Recommended!</h3>
+                                            <p class="mb-xxl-4 mb-xl-3 mb-2 heading-font-afasad fs-16 max-w-480">“ Great Quality Products WitheryGood awrPackaging unknown
+                                            printer took a galle rambled it make pecimive centuries
+                                            Delicious Food Context ”</p>
+                                            <div class=" gap-3 d-flex align-items-center">
+                                                <img width="50" height="50" src="assets/img/admin1.jpg" alt="img" class="rounded-circle">
+                                                <div class="">
+                                                    <h6 class="mb-0 fw-bold heading-font-edensor black-clr">
+                                                        Annette Black
+                                                    </h6>
+                                                    <span class="fs-14 fw-medium text-dark d-block heading-font-afasad">Sr.Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/img/home-4/feedback-down.png" alt="img" class="quote-down position-absolute bottom-0 end-0">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial-items style1 d-flex flex-md-nowrap flex-wrap align-items-center position-relative p-md-0 p-3">
+                                        <div class="testimonial-thumb rounded-circle position-relative">
+                                            <img src="assets/img/client-admin1.jpg" alt="img" class="rounded-circle">
+                                        </div>
+                                        <div class="content">
+                                            <div class="d-flex gap-1 mb-xl-3 mb-2">
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                                <i class="fa-solid fa-star fs-16 ratting-clr"></i>
+                                            </div>
+                                            <h3 class="text-black mb-xxl-3 mb-2 heading-font-edensor fw-semibold">Great Product! Highly Recommended!
+                                            </h3>
+                                            <p class="mb-xxl-4 mb-xl-3 mb-2 heading-font-afasad fs-16 max-w-480">“ Great Quality Products WitheryGood
+                                                awrPackaging unknown
+                                                printer took a galle rambled it make pecimive centuries
+                                                Delicious Food Context ”</p>
+                                            <div class=" gap-3 d-flex align-items-center">
+                                                <img width="50" height="50" src="assets/img/admin1.jpg" alt="img" class="rounded-circle">
+                                                <div class="">
+                                                    <h6 class="mb-0 fw-bold heading-font-edensor black-clr">
+                                                        Annette Black
+                                                    </h6>
+                                                    <span class="fs-14 fw-medium text-dark d-block heading-font-afasad">Sr.Designer</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="assets/img/home-4/feedback-down.png" alt="img" class="quote-down position-absolute bottom-0 end-0">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-dot dot-black"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="bg-white text-center p-30 rounded-12 position-relative">
+                        <img src="assets/img/satisfied-like.png" alt="icon" class="mb-30 pb-1" style="filter: brightness(0);">
+                        <h5 class="mb-xl-4 mb-3 text-dark heading-font-afasad fw-500">Satisfied Clients</h5>
+                        <h1 class="text-dark heading-font-edensor fw-semibold">98%</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Coffe section start -->
+    <section class="special-coffe-section pt-100 fix">
+        <div class="container container-1520 pt-xxl-4">
+            <h2 class="coffeeno-text heading-font-edensor text-center">COFFEENO</h2>
+            <div class="coffeeno-wrapper position-relative rounded-12 overflow-hidden d-center wow fadeInUp" data-wow-delay="0.2s">
+                <img src="assets/img/home-4/coffeeno-thumb.jpg" alt="img" class="w-100">
+                <a href="#0" class="position-absolute vid-icon">
+                    <img src="assets/img/home-4/coffeeno-vid.png" alt="img">
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Custom Datepicket section start -->
-    <section class="datepicker-section fix">
-        <div class="container">
-            <div class="date-picker-container">
-                <form id="booking-form"
-                    class="d-flex flex-lg-nowrap justify-content-lg-between justify-content-center flex-wrap align-items-center gap-xxl-4 gap-xl-3 gap-2">
-                    <div class="form-group">
-                        <input type="date" id="check-in" name="check-in">
+    <!-- Special Coffe section start -->
+    <section class="special-coffe-section fix section-padding">
+        <div class="container container-1520">
+            <div class="row g-4">
+                <div class="col-xxl-8">
+                    <div class="section-title-style4 mx-auto mb-40 pb-xl-2 text-center">
+                        <h2 class="wow fadeInUp heading-font-edensor fw-medium text-dark fs-30 lh-1 text-capitalize" data-wow-delay=".3s">
+                            our Special coffee
+                        </h2>
                     </div>
-
-                    <div class="form-group">
-                        <input type="date" id="check-out" name="check-out">
-                    </div>
-
-                    <div class="form-group">
-                        <select id="adults" name="adults">
-                            <option value="1">Adult:</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <select id="children" name="children">
-                            <option value="0">Children</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                        </select>
-                    </div>
-
-                    <button type="submit"
-                        class="theme-btn text-nowrap d-center rounded-5 header-bg fs-16 fw-500 text-center text-capitalize">
-                        Check Availability
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- About section start -->
-    <section class="about-section3 position-relative section-padding bg3 fix">
-        <div class="container">
-            <div class="about-wrapper">
-                <div class="row flex-row-reverse g-4 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="about-content-version3 ps-xxl-4">
-                            <div class="section-title">
-                                <span class="sub-font mb-xxl-4 mb-3 d-block wow fadeInUp">About mozzoa</span>
-                                <h2 class="wow fadeInUp fw-semibold mb-lg-3 mb-2" data-wow-delay=".3s">
-                                    Welcome to Comport <br> Zone Beach Resort
-                                </h2>
-                            </div>
-                            <p class="fs-18 pra-clr mb-sm-4 mb-3 pb-xxl-3">
-                                It sounds like you're referring to the formatting of a headline related to a city hotel.
-                                If you are asking how to write
-                                or format a headline about a city hotel, here's a simple
-                            </p>
-                            <div class="about3-listing">
-                                <div class="about-insurance-item d-flex align-items-center gap-3 mb-4">
-                                    <div class="icon d-center white-bg rounded-2">
-                                        <img src="assets/img/icon/a-car.png" alt="img">
+                    <div class="special-coffe-wrapper d-flex flex-md-nowrap flex-wrap gap-3">
+                        <div class="special-coffe-inner w-100 d-flex flex-column gap-3">
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe1.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">CAFE LATTE</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$3.45</h4>
                                     </div>
-                                    <div class="cont">
-                                        <h5 class="black-clr mb-0 fw-500">Car Parking</h5>
-                                    </div>
-                                </div>
-                                <div class="about-insurance-item d-flex align-items-center gap-3 mb-4">
-                                    <div class="icon d-center white-bg rounded-2">
-                                        <img src="assets/img/icon/a-wifi.png" alt="img">
-                                    </div>
-                                    <div class="cont">
-                                        <h5 class="black-clr mb-0 fw-500">Free WIFI</h5>
-                                    </div>
-                                </div>
-                                <div class="about-insurance-item d-flex align-items-center gap-3 mb-50">
-                                    <div class="icon d-center white-bg rounded-2">
-                                        <img src="assets/img/icon/a-mackup.png" alt="img">
-                                    </div>
-                                    <div class="cont">
-                                        <h5 class="black-clr mb-0 fw-500">Spa & Makeup</h5>
-                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Fresh Brewed Offer & Steamed Milk</p>
                                 </div>
                             </div>
-                            <div class="d-flex flex-sm-nowrap flex-wrap align-items-center gap-xxl-4 gap-xl-3 gap-2">
-                                <img src="assets/img/about/about-author-sinature.png" alt="img" class="rounded-circle">
-                                <img src="assets/img/about/signature.png" alt="img">
-                                <a href="#" class="theme-btn theme2-btn rounded-5 fw-normal text-capitalize gap-1 px-6">
-                                    Discover More
-                                </a>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe2.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">ICE COFFEE</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$2.22</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Cold milk over espresso</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe3.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">MOCHA</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$3.99</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Chilled blend of espresso, chocolate & milk</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe4.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">espresso</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$5.45</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Espresso with steamed milk</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe5.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">AMIRICANO</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$2.05</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Espresso with a dash of milk foam</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-100 d-lg-flex d-none flex-column align-items-center gap-4">
+                            <span style="width: 1px; height: 150px; display: block; background-color: #D9D9D9;"></span>
+                            <div class="coffe-lin">
+                                <img src="assets/img/home-4/coffe-lin.png" alt="img">
+                            </div>
+                            <span style="width: 1px; height: 150px; display: block; background-color: #D9D9D9;"></span>
+                        </div>
+                        <div class="special-coffe-inner w-100 d-flex flex-column gap-3">
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe6.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">Cappuccino</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$3.45</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Fresh Brewed Offer & Steamed Milk</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe7.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">Iced Americano</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$2.22</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Cold milk over espresso</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe8.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">Mozza Special Latte</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$3.99</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Chilled blend of espresso, chocolate & milk</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe9.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">Caramel Mocha</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$5.45</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Espresso with steamed milk</p>
+                                </div>
+                            </div>
+                            <div class="special-coffe-item d-flex align-items-sm-center gap-2 wow fadeInDown" data-wow-delay="0.1s">
+                                <img width="50" height="50" src="assets/img/home-4/our-cafe10.png" alt="img" class="rounded-circle">
+                                <div class="menu-special-item w-100">
+                                    <div class="menu-special-head w-100 d-flex flex-sm-nowrap flex-wrap align-items-center gap-xl-4 gap-2">
+                                        <h4 class="text-dark heading-font-edensor text-uppercase min-w-230">Vanilla Coffee</h4>
+                                        <span class="line w-100"></span>
+                                        <h4 class="text-dark heading-font-edensor">$2.05</h4>
+                                    </div>
+                                    <p class="fs-14 text-black heading-font-afasad">Espresso with a dash of milk foam</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="about-thumb-version3 img-hover pe-xl-4 w-100 wow fadeInRight" data-wow-delay="0.4s">
-                            <img src="assets/img/about/about-version3.jpg" alt="img" class="w-100 rounded-5">
-                        </div>
+                </div>
+                <div class="col-lg-4 d-xxl-block d-none">
+                    <div class="thumb w-100 wow fadeInLeft" data-wow-delay="0.2s">
+                        <img src="assets/img/home-4/special-coffe-thumb.png" alt="img" class="w-100">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Ele -->
-        <img src="assets/img/about/storke-birds.png" alt="img" class="about-birds-left d-lg-block d-none">
-        <img src="assets/img/about/about-show-shape.png" alt="img" class="about-shadow-right">
     </section>
 
-    <!-- OffInfo section start -->
-    <section class="offinfo-section section-padding fix">
+    <!-- Brand Eat section start -->
+    <section class="brand-eat-section fix">
         <div class="container-fluid p-0">
-            <div class="swiper offinformation-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide mt-sm-5">
-                        <div class="off-info-items d-center w-100 position-relative">
-                            <img src="assets/img/off/off-info1.jpg" alt="img" class="rounded-5 w-100">
-                            <a href="#" class="off-info-content white-bg position-absolute">
-                                View <br> Details
-                            </a>
+            <div class="row g-0">
+                <div class="col-lg-3 col-sm-6">
+                    <div class="brand-eat-item position-relative z-1 card-effect overflow-hidden">
+                        <div class="thumb">
+                            <img src="assets/img/home-4/brand-eat1.jpg" alt="img" class="w-100">
                         </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="off-info-items d-center w-100 position-relative">
-                            <img src="assets/img/off/off-info2.jpg" alt="img" class="rounded-5 w-100">
-                            <a href="#" class="off-info-content white-bg position-absolute">
-                                View <br> Details
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide mt-sm-5">
-                        <div class="off-info-items d-center w-100 position-relative">
-                            <img src="assets/img/off/off-info3.jpg" alt="img" class="rounded-5 w-100">
-                            <a href="#" class="off-info-content white-bg position-absolute">
-                                View <br> Details
-                            </a>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="off-info-items d-center w-100 position-relative">
-                            <img src="assets/img/off/off-info4.jpg" alt="img" class="rounded-5 w-100">
-                            <a href="#" class="off-info-content white-bg position-absolute">
-                                View <br> Details
-                            </a>
+                        <div class="content py-xl-4 py-3 px-2 text-center z-1 position-absolute bottom-0 start-0 w-100">
+                            <h3 class="heading-font-edensor text-white fw-medium"><a href="#0" class="heading-font-edensor text-white">Chokolet Drinks Coffee</a></h3>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="testimonial-offbtn d-flex align-items-center justify-content-between w-100 px-2">
-                <button type="button" class="common-slide-btn d-center rounded-circle array-prev">
-                    <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <button type="button" class="common-slide-btn d-center rounded-circle array-next">
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Off_section section start -->
-    <section class="off-section fix space-top space-bottom">
-        <div class="container">
-            <div class="row g-lg-4 g-3">
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                    <a href="room-list.html" class="off-items w-100">
-                        <img src="assets/img/off/off-bg.jpg" alt="img" class="w-100 rounded-5">
-                    </a>
-                </div>
-                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="d-grid gap-lg-4 gap-3">
-                        <a href="room-list.html" class="off-items w-100">
-                            <img src="assets/img/off/off-small1.jpg" alt="img" class="w-100 rounded-5">
-                        </a>
-                        <a href="room-list.html" class="off-items w-100">
-                            <img src="assets/img/off/off-small2.jpg" alt="img" class="w-100 rounded-5">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Off Birds -->
-        <img src="assets/img/off/off-bird.png" alt="img" class="off-birds">
-        <img src="assets/img/off/off-bird.png" alt="img" class="off-birds2">
-    </section>
-
-    <!-- Book Video section start -->
-    <section class="video-section3 fix">
-        <div class="luxuries-wrap d-center position-relative">
-            <img src="assets/img/global/video-bg3.jpg" alt="img" class="w-100 mimg">
-            <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
-                class="luxuries-vid position-absolute rounded-circle d-center video-popup">
-                <i class="fa-solid fa-play"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Luxuries section start -->
-    <section class="luxries-room-section fix section-padding bg3">
-        <div class="container">
-            <div class="room-head-area mb-50 d-flex align-items-end justify-content-between gap-lg-3 gap-2 flex-wrap">
-                <div class="section-title">
-                    <span class="sub-font wow fadeInUp">Rooms</span>
-                    <h2 class="fw-semibold wow fadeInUp" data-wow-delay=".3s">
-                        The Best Pricing Of A <br> Suitable Rooms
-                    </h2>
-                </div>
-                <p class="text-clr fs-16">
-                    It sounds like you're referring to the formatting of
-                    a headline related to a city hotel. If you are
-                    asking how to write
-                </p>
-            </div>
-            <div class="row g-md-4 g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="luxries-room-item wow fadeInUp" data-wow-delay=".4s">
-                        <a href="room-details.html" class="thumb d-block w-100 overflow-hidden">
-                            <img src="assets/img/rooms/rooms-v1.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center justify-content-center gap-3">
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/square-white.png" alt="img" class="white-icon"> 260sq
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/double-bed-white.png" alt="img" class="white-icon"> 2 Beds
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/guests-white.png" alt="img" class="white-icon"> 4 Guests
-                                </li>
-                            </ul>
-                            <div class="boxes">
-                                <h3 class="theme2-clr mb-xxl-1 mb-0 fs-32 body-font fw-bold">$280 <span
-                                        class="black-clr body-font fw-500 fs-14">/04 Day</span></h3>
-                                <h3 class="mb-xl-3 mb-2">
-                                    <a href="room-details.html" class="fw-semibold d-block black-clr">
-                                        Double Duplex Rooms
-                                    </a>
-                                </h3>
-                                <p class="mb-4">
-                                    Referring to the formatting of a headline related to a Beach Resort
-                                </p>
-                                <a href="room-details.html" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                    Room Details
-                                </a>
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="brand-eat-item position-relative z-1 card-effect overflow-hidden">
+                        <div class="thumb">
+                            <img src="assets/img/home-4/brand-eat2.jpg" alt="img" class="w-100">
+                        </div>
+                        <div class="content py-xl-4 py-3 px-2 text-center z-1 position-absolute bottom-0 start-0 w-100">
+                            <h3 class="heading-font-edensor text-white fw-medium"><a href="#0"
+                                    class="heading-font-edensor text-white">Chokolet Drinks Coffee</a></h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="luxries-room-item wow fadeInRight" data-wow-delay=".5s">
-                        <a href="room-details.html" class="thumb d-block w-100 overflow-hidden">
-                            <img src="assets/img/rooms/rooms-v2.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center justify-content-center gap-3">
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/square-white.png" alt="img" class="white-icon"> 260sq
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/double-bed-white.png" alt="img" class="white-icon"> 2 Beds
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/guests-white.png" alt="img" class="white-icon"> 4 Guests
-                                </li>
-                            </ul>
-                            <div class="boxes">
-                                <h3 class="theme2-clr mb-xxl-1 mb-0 fs-32 body-font fw-bold">$180 <span
-                                        class="black-clr body-font fw-500 fs-14">/04 Day</span></h3>
-                                <h3 class="mb-xl-3 mb-2">
-                                    <a href="room-details.html" class="fw-semibold d-block black-clr">
-                                        Modern Duplex Rooms
-                                    </a>
-                                </h3>
-                                <p class="mb-4">
-                                    Referring to the formatting of a headline related to a Beach Resort
-                                </p>
-                                <a href="room-details.html" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                    Room Details
-                                </a>
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="brand-eat-item position-relative z-1 card-effect overflow-hidden">
+                        <div class="thumb">
+                            <img src="assets/img/home-4/brand-eat3.jpg" alt="img" class="w-100">
+                        </div>
+                        <div class="content py-xl-4 py-3 px-2 text-center z-1 position-absolute bottom-0 start-0 w-100">
+                            <h3 class="heading-font-edensor text-white fw-medium"><a href="#0"
+                                    class="heading-font-edensor text-white">Chokolet Drinks Coffee</a></h3>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="luxries-room-item wow fadeInLeft" data-wow-delay=".6s">
-                        <a href="room-details.html" class="thumb d-block w-100 overflow-hidden">
-                            <img src="assets/img/rooms/rooms-v1.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center justify-content-center gap-3">
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/square-white.png" alt="img" class="white-icon"> 260sq
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/double-bed-white.png" alt="img" class="white-icon"> 2 Beds
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/guests-white.png" alt="img" class="white-icon"> 4 Guests
-                                </li>
-                            </ul>
-                            <div class="boxes">
-                                <h3 class="theme2-clr mb-xxl-1 mb-0 fs-32 body-font fw-bold">$380 <span
-                                        class="black-clr body-font fw-500 fs-14">/04 Day</span></h3>
-                                <h3 class="mb-xl-3 mb-2">
-                                    <a href="room-details.html" class="fw-semibold d-block black-clr">
-                                        Standard Duplex Rooms
-                                    </a>
-                                </h3>
-                                <p class="mb-4">
-                                    Referring to the formatting of a headline related to a Beach Resort
-                                </p>
-                                <a href="room-details.html" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                    Room Details
-                                </a>
-                            </div>
+                <div class="col-lg-3 col-sm-6">
+                    <div class="brand-eat-item position-relative z-1 card-effect overflow-hidden">
+                        <div class="thumb">
+                            <img src="assets/img/home-4/brand-eat4.jpg" alt="img" class="w-100">
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="luxries-room-item wow fadeInUp" data-wow-delay=".4s">
-                        <a href="room-details.html" class="thumb d-block w-100 overflow-hidden">
-                            <img src="assets/img/rooms/rooms-v4.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center justify-content-center gap-3">
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/square-white.png" alt="img" class="white-icon"> 260sq
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/double-bed-white.png" alt="img" class="white-icon"> 2 Beds
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/guests-white.png" alt="img" class="white-icon"> 4 Guests
-                                </li>
-                            </ul>
-                            <div class="boxes">
-                                <h3 class="theme2-clr mb-xxl-1 mb-0 fs-32 body-font fw-bold">$260 <span
-                                        class="black-clr body-font fw-500 fs-14">/04 Day</span></h3>
-                                <h3 class="mb-xl-3 mb-2">
-                                    <a href="room-details.html" class="fw-semibold d-block black-clr">
-                                        Double Duplex Rooms
-                                    </a>
-                                </h3>
-                                <p class="mb-4">
-                                    Referring to the formatting of a headline related to a Beach Resort
-                                </p>
-                                <a href="room-details.html" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                    Room Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="luxries-room-item wow fadeInRight" data-wow-delay=".5s">
-                        <a href="room-details.html" class="thumb d-block w-100 overflow-hidden">
-                            <img src="assets/img/rooms/rooms-v5.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center justify-content-center gap-3">
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/square-white.png" alt="img" class="white-icon"> 260sq
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/double-bed-white.png" alt="img" class="white-icon"> 2 Beds
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/guests-white.png" alt="img" class="white-icon"> 4 Guests
-                                </li>
-                            </ul>
-                            <div class="boxes">
-                                <h3 class="theme2-clr mb-xxl-1 mb-0 fs-32 body-font fw-bold">$399 <span
-                                        class="black-clr body-font fw-500 fs-14">/04 Day</span></h3>
-                                <h3 class="mb-xl-3 mb-2">
-                                    <a href="room-details.html" class="fw-semibold d-block black-clr">
-                                        Family Duplex Rooms
-                                    </a>
-                                </h3>
-                                <p class="mb-4">
-                                    Referring to the formatting of a headline related to a Beach Resort
-                                </p>
-                                <a href="room-details.html" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                    Room Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="luxries-room-item wow fadeInLeft" data-wow-delay=".6s">
-                        <a href="room-details.html" class="thumb d-block w-100 overflow-hidden">
-                            <img src="assets/img/rooms/rooms-v6.jpg" alt="img" class="w-100 overflow-hidden">
-                        </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center justify-content-center gap-3">
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/square-white.png" alt="img" class="white-icon"> 260sq
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/double-bed-white.png" alt="img" class="white-icon"> 2 Beds
-                                </li>
-                                <li class="d-flex align-items-center gap-1 black-clr fs-14 fw-500">
-                                    <img src="assets/img/icon/guests-white.png" alt="img" class="white-icon"> 4 Guests
-                                </li>
-                            </ul>
-                            <div class="boxes">
-                                <h3 class="theme2-clr mb-xxl-1 mb-0 fs-32 body-font fw-bold">$280 <span
-                                        class="black-clr body-font fw-500 fs-14">/04 Day</span></h3>
-                                <h3 class="mb-xl-3 mb-2">
-                                    <a href="room-details.html" class="fw-semibold d-block black-clr">
-                                        Premium Duplex Rooms
-                                    </a>
-                                </h3>
-                                <p class="mb-4">
-                                    Referring to the formatting of a headline related to a Beach Resort
-                                </p>
-                                <a href="room-details.html" class="theme-btn fw-normal text-capitalize gap-1 py-3 px-6">
-                                    Room Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonial section start -->
-    <section class="testimonial-section3 fix">
-        <div class="container position-relative">
-            <div class="swiper testimonial-slider">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide position-relative">
-                        <div class="testimonial-items1 text-center">
-                            <div class="d-flex justify-content-center gap-1 mb-lg-4 mb-3">
-                                <i class="fa-solid fa-star fs-18 ratting-clr"></i>
-                                <i class="fa-solid fa-star fs-18 ratting-clr"></i>
-                                <i class="fa-solid fa-star fs-18 ratting-clr"></i>
-                                <i class="fa-solid fa-star fs-18 ratting-clr"></i>
-                                <i class="fa-solid fa-star fs-18 ratting-clr"></i>
-                            </div>
-                            <h3 class="white-clr mb-xl-5 mb-4 heading-font fw-500 position-relative">
-                                moment we arrived, we were treated like royalty. The staff anticipated our every need,
-                                from greeting us by name to
-                                ensuring our room was perfect. They even surprised us with a beautifully crafted.
-                                <img src="assets/img/element/quote-opa.png" alt="img" class="quote-opa">
-                            </h3>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <div class="emma">
-                                    <h3 class="fs-32 mb-sm-2 mb-1 fw-bold white-clr">
-                                        Emma & James L.
-                                    </h3>
-                                    <span class="heading-font fs-20 fw-400 white-clr d-block">New York City</span>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="assets/img/element/quote-white.png" alt="img" class="quotes d-xl-block d-none">
-                        <img src="assets/img/element/quote-white.png" alt="img" class="quotes-right d-xl-block d-none">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="testimonial-btngrap">
-            <button type="button" class="common-slide-btn d-center rounded-circle array-prev">
-                <i class="fa-solid fa-angle-left"></i>
-            </button>
-            <button type="button" class="common-slide-btn d-center rounded-circle array-next">
-                <i class="fa-solid fa-angle-right"></i>
-            </button>
-        </div>
-    </section>
-
-    <!-- Resort section start -->
-    <section class="resort-section fix space-top">
-        <div class="container">
-            <div class="section-title text-center mb-4 pb-xxl-1">
-                <span class="sub-font wow fadeInUp">Locations</span>
-                <h2 class="fw-semibold wow fadeInUp" data-wow-delay=".3s">
-                    Explore Our Beach Resort
-                </h2>
-            </div>
-            <ul class="nav resort-tabbing-area border-0 nav-tabs mb-50" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
-                        type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
-                        Cox’s Bazar
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
-                        type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
-                        Maldives
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
-                        type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
-                        Montero
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab1" data-bs-toggle="tab" data-bs-target="#contact-tab-pane1"
-                        type="button" role="tab" aria-controls="contact-tab-pane1" aria-selected="false">
-                        Italy
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#contact-tab-pane2"
-                        type="button" role="tab" aria-controls="contact-tab-pane2" aria-selected="false">
-                        Candia
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab3" data-bs-toggle="tab" data-bs-target="#contact-tab-pane3"
-                        type="button" role="tab" aria-controls="contact-tab-pane3" aria-selected="false">
-                        Egypt
-                    </button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab4" data-bs-toggle="tab" data-bs-target="#contact-tab-pane4"
-                        type="button" role="tab" aria-controls="contact-tab-pane4" aria-selected="false">
-                        Los Angels
-                    </button>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact-tab-pane1" role="tabpanel" aria-labelledby="contact-tab1"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact-tab-pane2" role="tabpanel" aria-labelledby="contact-tab2"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact-tab-pane3" role="tabpanel" aria-labelledby="contact-tab3"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact-tab-pane4" role="tabpanel" aria-labelledby="contact-tab4"
-                    tabindex="0">
-                    <div class="row g-4">
-                        <div class="col-lg-6">
-                            <div class="resort-map">
-                                <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52816169.558200695!2d-161.49265223136007!3d36.102185713814805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1732452254452!5m2!1sen!2sbd"
-                                    style="border:0;" allowfullscreen="" loading="lazy"
-                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="explore-resort-wrap ms-xxl-4">
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort1.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Seawall Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $99<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort2.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            London Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $79<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort3.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Cox’s Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $69<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort4.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Indo Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $59<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                                <div class="explore-resort-item">
-                                    <div class="thumb">
-                                        <img src="assets/img/blog/resort5.jpg" alt="img">
-                                    </div>
-                                    <div class="content">
-                                        <h5 class="black-clr fw-semibold mb-2">
-                                            Porco Beach Resort
-                                        </h5>
-                                        <p class="mb-2">
-                                            Referring to the formatting of a headline related to a Beach Resort
-                                        </p>
-                                        <h5 class="black-clr fw-semibold">
-                                            $49<span class="fs-12">/Day</span>
-                                        </h5>
-                                    </div>
-                                    <a href="room-details.html"
-                                        class="theme-btn text-nowrap theme2-btn fw-normal text-capitalize gap-1 px-6 rounded-5">
-                                        View More
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="content py-xl-4 py-3 px-2 text-center z-1 position-absolute bottom-0 start-0 w-100">
+                            <h3 class="heading-font-edensor text-white fw-medium"><a href="#0"
+                                    class="heading-font-edensor text-white">Chokolet Drinks Coffee</a></h3>
                         </div>
                     </div>
                 </div>
@@ -1744,95 +1002,102 @@
     </section>
 
     <!-- Blog section start -->
-    <section class="blog-section fix section-padding bg3">
+    <section class="blog-section fix position-relative pt-100 pb-100">
+        <img src="assets/img/home-3/footer-ele.png" alt="img" class="position-absolute end-0 mx-5 float-bob-y" style="top: 30%;">
         <div class="container">
-            <div class="section-title text-center mb-50">
-                <span class="sub-font wow fadeInUp">Blog & News</span>
-                <h2 class="fw-semibold wow fadeInUp" data-wow-delay=".3s">
-                    Latest News & Updates
-                </h2>
+            <div class="d-flex align-items-end justify-content-between flex-wrap gap-3 mb-40">                
+                <div class="section-title-style4">
+                    <h5 class="heading-font-afasad letter-spacing-4 text-uppercase fw-medium mb-xl-4 mb-lg-3 mb-2 text-secondary">news feed</h5>
+                    <h2 class="wow fadeInUp heading-font-edensor fw-medium text-dark fs-30 lh-1 text-capitalize" data-wow-delay=".3s">
+                        Our latest News & <br> blog posts
+                    </h2>
+                </div>
+                <a href="blog" class="theme-btn btn-outline--seconday py-2 text-uppercase fs-18 heading-font-afasad">
+                    See all blog
+                </a>
             </div>
-            <div class="row g-md-4 g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-single-item rounded-3 white-bg p-xxl-4 p-3 wow fadeInUp" data-wow-delay=".4s">
-                        <a href="blog-details.html" class="thumb d-block mb-4 w-100 overflow-hidden rounded-3">
-                            <img src="assets/img/blog/blog-grid7.jpg" alt="img" class="w-100 overflow-hidden">
+            <div class="row g-lg-4 g-3">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="blog-single-item4 card-effect position-relative overflow-hidden wow fadeInUp flex-grow-1" data-wow-delay=".3s" >
+                        <a href="blog-details.html" class="thumb rounded-12 d-block w-100 overflow-hidden mb-xl-3 mb-lg-3 mb-3">
+                            <img src="assets/img/home-3/blog_1.jpg" alt="img" class="w-100 overflow-hidden">
                         </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-user"></i> By Admin
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-clock"></i> 25 September, 2025
-                                </li>
-                            </ul>
-                            <h3>
-                                <a href="blog-details.html" class="fw-semibold">
-                                    Unveiling Michelin-Starred Restaurants at Top
-                                    Online Food Orders
-                                </a>
-                            </h3>
-                            <a href="blog-details.html" class="view-more d-flex align-items-center gap-3">
-                                <span class="view-text">View More</span>
-                                <span class="icon black-bg d-center"><i
-                                        class="fa-solid fa-arrow-right white-clr fs-14"></i></span>
-                            </a>
+                        <div class="content z-1 bg-white rounded-12">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-xxl-2 mb-2">
+                                    <span style="display: block; width: 24px; height: 1px; background-color: #C19D56;"></span>
+                                    <h5 class="text-dark fs-20 heading-font-afasad">James Milson</h5>
+                                </div>
+                                <h3 class="heading-font-edensor letter-spacing-05 lh-1 fs-30 fw-medium mb-xxl-3 mb-sm-3 mb-2">
+                                    <a href="blog-details.html" class="lh-1 link-effect">Why Freshly Ground Beans Make All the Difference</a>
+                                </h3>
+                                <ul class="blog-admin border-top border-bottom py-2 d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                    <li class="d-flex align-items-center gap-2 text-clr fs-14">
+                                        <i class="fa-regular fa-calendar text-clr"></i> 25 May, 2025 / Cappuccino
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 text-clr fs-14">
+                                        1 min read
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-single-item rounded-3 white-bg p-xxl-4 p-3 wow fadeInUp" data-wow-delay=".6s">
-                        <a href="blog-details.html" class="thumb d-block mb-4 w-100 overflow-hidden rounded-3">
-                            <img src="assets/img/blog/blog-grid8.jpg" alt="img" class="w-100 overflow-hidden">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="blog-single-item4 card-effect position-relative overflow-hidden wow fadeInUp flex-grow-1"
+                        data-wow-delay=".5s">
+                        <a href="blog-details.html" class="thumb rounded-12 d-block w-100 overflow-hidden mb-xl-3 mb-lg-3 mb-3">
+                            <img src="assets/img/home-3/blog_2.jpg" alt="img" class="w-100 overflow-hidden">
                         </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-user"></i> By Admin
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-clock"></i> 25 September, 2025
-                                </li>
-                            </ul>
-                            <h3>
-                                <a href="blog-details.html" class="fw-semibold">
-                                    Top 5 Online Food Orders The Ultimate in Secluded Luxury
-                                </a>
-                            </h3>
-                            <a href="blog-details.html" class="view-more d-flex align-items-center gap-3">
-                                <span class="view-text">View More</span>
-                                <span class="icon black-bg d-center"><i
-                                        class="fa-solid fa-arrow-right white-clr fs-14"></i></span>
-                            </a>
+                        <div class="content z-1 bg-white rounded-12">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-xxl-2 mb-2">
+                                    <span style="display: block; width: 24px; height: 1px; background-color: #C19D56;"></span>
+                                    <h5 class="text-dark fs-20 heading-font-afasad">Admin</h5>
+                                </div>
+                                <h3 class="heading-font-edensor letter-spacing-05 lh-1 fs-30 fw-medium mb-xxl-3 mb-sm-3 mb-2">
+                                    <a href="blog-details.html" class="lh-1 link-effect">Latte vs. Cappuccino: What’s the Real
+                                        Difference?</a>
+                                </h3>
+                                <ul
+                                    class="blog-admin border-top border-bottom py-2 d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                    <li class="d-flex align-items-center gap-2 text-clr fs-14">
+                                        <i class="fa-regular fa-calendar text-clr"></i> 25 May, 2025 / Coffee
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 text-clr fs-14">
+                                        1 min read
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="blog-single-item rounded-3 white-bg p-xxl-4 p-3 wow fadeInUp" data-wow-delay=".7s">
-                        <a href="blog-details.html" class="thumb d-block mb-4 w-100 overflow-hidden rounded-3">
-                            <img src="assets/img/blog/blog-grid9.jpg" alt="img" class="w-100 overflow-hidden">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="blog-single-item4 card-effect position-relative overflow-hidden wow fadeInUp flex-grow-1"
+                        data-wow-delay=".5s">
+                        <a href="blog-details.html" class="thumb rounded-12 d-block w-100 overflow-hidden mb-xl-3 mb-lg-3 mb-3">
+                            <img src="assets/img/home-3/blog_3.jpg" alt="img" class="w-100 overflow-hidden">
                         </a>
-                        <div class="content">
-                            <ul class="blog-admin d-flex align-items-center gap-3">
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-user"></i> By Admin
-                                </li>
-                                <li class="d-flex align-items-center gap-2">
-                                    <i class="fa-regular fa-clock"></i> 25 September, 2025
-                                </li>
-                            </ul>
-                            <h3>
-                                <a href="blog-details.html" class="fw-semibold">
-                                    Unveiling Michelin-Starred Restaurants at Top
-                                    Online Food Orders
-                                </a>
-                            </h3>
-                            <a href="blog-details.html" class="view-more d-flex align-items-center gap-3">
-                                <span class="view-text">View More</span>
-                                <span class="icon black-bg d-center"><i
-                                        class="fa-solid fa-arrow-right white-clr fs-14"></i></span>
-                            </a>
+                        <div class="content z-1 bg-white rounded-12">
+                            <div>
+                                <div class="d-flex align-items-center gap-2 mb-xxl-2 mb-2">
+                                    <span style="display: block; width: 24px; height: 1px; background-color: #C19D56;"></span>
+                                    <h5 class="text-dark fs-20 heading-font-afasad">James Milson</h5>
+                                </div>
+                                <h3 class="heading-font-edensor letter-spacing-05 lh-1 fs-30 fw-medium mb-xxl-3 mb-sm-3 mb-2">
+                                    <a href="blog-details.html" class="lh-1 link-effect">The Rise of Cold Brew: Why Everyone’s Talking
+                                        About It</a>
+                                </h3>
+                                <ul
+                                    class="blog-admin border-top border-bottom py-2 d-flex align-items-center justify-content-between flex-wrap gap-1">
+                                    <li class="d-flex align-items-center gap-2 text-clr fs-14">
+                                        <i class="fa-regular fa-calendar text-clr"></i> 25 May, 2025 / Coffee
+                                    </li>
+                                    <li class="d-flex align-items-center gap-2 text-clr fs-14">
+                                        1 min read
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1841,161 +1106,105 @@
     </section>
 
     <!-- Footer section start -->
-    <footer class="footer-section fix black-bg">
+    <footer class="footer-section position-relative fix black-bg z-1">
+        <img src="assets/img/home-4/footer4-left.png" alt="img" class="position-absolute start-0 top-0 mt-5 pt-5 float-bob-y z-n1 d-lg-block d-none opacity-25">
+        <img src="assets/img/home-4/footer4-right.png" alt="img" class="position-absolute end-0 top-0 pt-100 mt-40 mx-5 float-bob-y z-n1 opacity-25">
+        <img src="assets/img/home-3/footer-ele.png" alt="img" class="position-absolute start-0 mx-5 z-n1 d-sm-block d-none" style="top: -50px;">
         <div class="container">
-            <div class="footer-widget-wrapper">
-                <div class="row g-5">
-                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp" data-wow-delay=".2s">
-                        <div class="single-footer-widget">
-                            <div class="widget-head">
-                                <a href="index.html">
-                                    <img src="assets/img/logo/logo-white.png" alt="logo-img">
-                                </a>
-                            </div>
-                            <div class="footer-content">
-                                <p class="fs-16 text-clr">
-                                    Pharetra maecenas felis vestibulum
-                                    convallis mollis nullam congue sit.d rivers of Finland Quebec.
-                                </p>
-                                <form action="#" class="adjust-form d-flex align-items-center">
-                                    <input type="text" placeholder="Enter your mail">
-                                    <button type="submit" class="theme-btn py-2 px-2 d-center">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
-                                </form>
-                                <div class="social-cmn d-flex align-items-center gap-2 wow fadeInUp"
-                                    data-wow-delay=".5s">
-                                    <a href="#" class="d-center rounded-circle"><i class="fab fa-facebook-f"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i class="fab fa-twitter"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i
-                                            class="fa-brands fa-instagram"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i
-                                            class="fa-brands fa-pinterest-p"></i></a>
-                                    <a href="#" class="d-center rounded-circle"><i class="fa-brands fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-sm-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".4s">
-                        <div class="single-footer-widget">
-                            <div class="widget-head fs-20 white-clr fw-semibold">
-                                Quick Links
-                            </div>
+            <div class="footer-widget-wrapper pb-80">
+                <div class="d-flex align-items-center justify-content-between gap-3 pb-100">
+                    <img src="assets/img/home-4/f-lin-dot.png" alt="img" class="w-100 d-xl-block d-none">
+                    <a href="index.html">
+                        <img src="assets/img/logo/logo-white.png" alt="img">
+                    </a>
+                    <img src="assets/img/home-4/f-lin-dot.png" alt="img" class="w-100 d-xl-block d-none">
+                </div>
+                <div class="row g-4">
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="single-footer-widget py-0">
+                            <h5 class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
+                                Help
+                            </h5>
                             <ul class="important-link d-grid gap-sm-2 gap-1">
                                 <li>
-                                    <a href="room-grid.html">Rooms</a>
+                                    <a href="faqs.html" class="text-white opacity-75 fw-light link-effect">FAQs</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">About Us</a>
+                                    <a href="#0" class="text-white opacity-75 fw-light link-effect">Delivery</a>
                                 </li>
                                 <li>
-                                    <a href="service.html">Services</a>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light link-effect">Contact</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Transport Guide</a>
-                                </li>
-                                <li>
-                                    <a href="contact.html">Transport Guide</a>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light link-effect">Store Locator</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-sm-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".3s">
-                        <div class="single-footer-widget">
-                            <div class="widget-head fs-20 white-clr fw-semibold">
-                                Information
-                            </div>
-                            <ul class="adredd-info d-grid gap-xxl-4 gap-xl-3 gap-2">
-                                <li class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <svg width="20" height="24" viewBox="0 0 20 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M18.9998 10.0608C18.9998 16.8486 10.3332 22.6668 10.3332 22.6668C10.3332 22.6668 1.6665 16.8486 1.6665 10.0608C1.6665 7.74615 2.5796 5.52634 4.20491 3.88965C5.83023 2.25297 8.03463 1.3335 10.3332 1.3335C12.6317 1.3335 14.8361 2.25297 16.4614 3.88965C18.0867 5.52634 18.9998 7.74615 18.9998 10.0608Z"
-                                            stroke="white" stroke-width="1.73333" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path
-                                            d="M10.3332 12.9699C11.9287 12.9699 13.2221 11.6674 13.2221 10.0608C13.2221 8.45412 11.9287 7.15168 10.3332 7.15168C8.73768 7.15168 7.44428 8.45412 7.44428 10.0608C7.44428 11.6674 8.73768 12.9699 10.3332 12.9699Z"
-                                            stroke="white" stroke-width="1.73333" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                    </svg>
-                                    <a href="#">
-                                        8502 Preston Rd. Inglewood, Maine 98380
-                                    </a>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="single-footer-widget py-0">
+                            <h5 class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
+                                about US
+                            </h5>
+                            <ul class="important-link d-grid gap-sm-2 gap-1">
+                                <li>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light link-effect">Our Story</a>
                                 </li>
-                                <li class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <svg width="20" height="24" viewBox="0 0 694 694" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M522.484 691.077C455.147 674.207 317.297 626.644 192.326 501.674C67.3552 376.704 19.7936 238.853 2.92257 171.517C-6.77276 132.82 10.6862 95.4782 40.2899 74.3326L117.898 18.8979C163.308 -13.5371 226.478 -2.53076 258.242 43.3506L307.1 113.926C327.84 143.884 320.687 184.944 291.037 206.122L252.078 233.95C257.975 256.504 276.313 302.82 333.747 360.254C391.18 417.687 437.497 436.024 460.05 441.92L487.877 402.96C509.057 373.314 550.117 366.157 580.074 386.897L650.65 435.757C696.53 467.524 707.537 530.69 675.1 576.1L619.667 653.71C598.52 683.314 561.18 700.774 522.484 691.077ZM239.466 454.534C353.114 568.18 478.527 611.337 538.684 626.41C547.477 628.61 558.107 625.194 565.417 614.96L620.854 537.35C631.664 522.217 627.997 501.16 612.7 490.57L542.127 441.71L512.264 483.52C500.06 500.607 477.49 514.007 451.21 508.337C418.41 501.26 357.777 478.564 286.607 407.394C215.437 336.224 192.74 275.59 185.663 242.79C179.993 216.51 193.394 193.941 210.48 181.736L252.288 151.873L203.429 81.2979C192.841 66.0039 171.784 62.3352 156.648 73.1469L79.0392 128.582C68.8046 135.892 65.3876 146.522 67.5906 155.315C82.6632 215.473 125.82 340.887 239.466 454.534Z"
-                                            fill="#fff" />
-                                    </svg>
-
-
-                                    <a href="#">
-                                        (603) 555-0123
-                                    </a>
+                                <li>
+                                    <a href="#0" class="text-white opacity-75 fw-light link-effect">Delivery</a>
                                 </li>
-                                <li class="d-flex align-items-center gap-xl-3 gap-2">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_1_247601)">
-                                            <path
-                                                d="M12.0002 5.60006V12.0001L16.2668 14.1334M22.6668 12.0002C22.6668 17.8912 17.8912 22.6668 12.0002 22.6668C6.10912 22.6668 1.3335 17.8912 1.3335 12.0002C1.3335 6.10912 6.10912 1.3335 12.0002 1.3335C17.8912 1.3335 22.6668 6.10912 22.6668 12.0002Z"
-                                                stroke="white" stroke-width="1.6" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="clip0_1_247601">
-                                                <rect width="24" height="24" fill="white" />
-                                            </clipPath>
-                                        </defs>
-                                    </svg>
-                                    <a href="#">
-                                        Mon – Sat: 8 am – 5 pm,
-                                        <span class="d-flex align-items-center gap-1 fs-16 text-clr">
-                                            Sunday: <span class="text-white text-uppercase">CLOSED</span>
-                                        </span>
-                                    </a>
+                                <li>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light link-effect">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html" class="text-white opacity-75 fw-light link-effect">Store Locator</a>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="d-flex justify-content-sm-center col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
-                        data-wow-delay=".5s">
-                        <div class="single-footer-widget">
-                            <div class="widget-head fs-20 white-clr fw-semibold">
-                                Payments Methods
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp" data-wow-delay=".5s">
+                        <div class="single-footer-widget py-0">
+                            <h5 class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
+                                address
+                            </h5>
+                            <div class="footer-content">
+                                <p class="fs-16 white-clr opacity-75 mb-xl-3 mb-2">
+                                    1487 Rocky Horse Carre 1487Rocky
+                                    Arlington, TX 16819 United
+                                </p>
+                                <h5 class="text-white mb-lg-3 mb-2">1800 6565 222</h5>
+                                <p class="fs-16 white-clr opacity-75">info@gmail.com</p>
                             </div>
-                            <p class="mb-4 fs-16 white-clr fw-500">
-                                Pay any way choose , No matter whether its cash or an international payment card ,
-                                we support all options.
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 wow fadeInUp"
+                        data-wow-delay=".7s">
+                        <div class="single-footer-widget py-0">
+                            <h5 class="widget-head text-white text-uppercase fs-20 white-clr fw-semibold">
+                                CONNECT
+                            </h5>
+                            <p class="fs-16 white-clr opacity-75 mb-xl-3 mb-2">
+                                Absolutely loved the cozy vibe and Rich aroma! The coffee was perfectly brewed
                             </p>
-                            <div class="d-flex align-items-center gap-xxl-3 gap-2 flex-wrap">
-                                <button type="button">
-                                    <img src="assets/img/hero/payneer.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/master.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/paypal.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/app-master.png" alt="payment">
-                                </button>
-                                <button type="button">
-                                    <img src="assets/img/hero/stripe.png" alt="payment">
-                                </button>
-                            </div>
+                            <form action="#0" class="d-flex form-outline">
+                                <input type="text" placeholder="Email Address">
+                                <button type="button" class="btn p-0 border-0"><img src="assets/img/icons/arrow-right-long.png" alt="icon"></button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <p class="footer-bottom fs-16 text-center">
-                Copyright &copy; <a href="#" class="theme-clr">mozzoa</a> | All Right Reserved
-            </p>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-sm-between justify-content-center flex-wrap gap-2 fs-16 text-center">
+                    <p class="fs-16 text4-clr">Copyright &copy; 2025 <a href="#" class="theme-clr">Mozzo</a> all Right Reserved</p>
+                    <div class="d-flex align-items-center flex-wrap gap-lg-4 gap-sm-3 gap-2">
+                        <a href="contact.html" class="fs-16 text3-clr link-effect heading-font-afasad">Privacy Policy</a>
+                        <a href="contact.html" class="fs-16 text3-clr link-effect heading-font-afasad">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 
