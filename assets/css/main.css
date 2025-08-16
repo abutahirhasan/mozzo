@@ -207,6 +207,10 @@
   background: var(--text);
 }
 
+.bg-gray {
+  background-color: #D9D9D9;
+}
+
 .text2-clr {
   color: var(--text2);
 }
@@ -611,6 +615,12 @@ i {
 .theme-btn:hover::after, .theme-btn:hover::before {
   height: 410px;
   width: 410px;
+}
+.theme-btn.btn-dark-common {
+  background-color: var(--black);
+}
+.theme-btn.btn-dark-common::after, .theme-btn.btn-dark-common::before {
+  background-color: var(--theme);
 }
 .theme-btn.btn-outline-blak {
   border: 1px solid #c5c5c5;
@@ -3705,6 +3715,90 @@ input::placeholder {
 .search-adjust1.style2 {
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
   padding: 16px;
+}
+
+.hero-style4 {
+  padding: 210px 4px 130px;
+}
+.hero-style4 .hero-content4 {
+  gap: 50px;
+}
+.hero-style4 .hero-content4 .thumb-hero4 {
+  max-width: unset;
+  direction: rtl;
+  position: relative;
+  left: -24px;
+}
+.hero-style4 .hero-content4 .thumb-hero4 img {
+  max-width: unset;
+}
+@media (max-width: 1399px) {
+  .hero-style4 {
+    padding: 190px 4px 100px;
+  }
+  .hero-style4 .hero-content4 {
+    gap: 24px;
+  }
+  .hero-style4 .hero-content4 h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero-style4 .hero-content4 h1 {
+    font-size: 75px;
+  }
+  .hero-style4 .shape {
+    width: 200px;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 1199px) {
+  .hero-style4 {
+    padding: 190px 4px 80px;
+  }
+  .hero-style4 .hero-content4 {
+    gap: 16px;
+  }
+  .hero-style4 .hero-content4 h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero-style4 .hero-content4 h1 {
+    font-size: 55px;
+  }
+  .hero-style4 .shape {
+    width: 200px;
+    opacity: 0.5;
+  }
+}
+@media (max-width: 991px) {
+  .hero-style4 {
+    padding: 150px 4px 80px;
+  }
+  .hero-style4 .thumb-hero4 {
+    max-width: 100%;
+    direction: rtl;
+    position: static;
+    left: 0px;
+  }
+  .hero-style4 .thumb-hero4 img {
+    max-width: 100% !important;
+  }
+}
+@media (max-width: 575px) {
+  .hero-style4 .hero-content4 {
+    gap: 16px;
+  }
+  .hero-style4 .hero-content4 h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hero-style4 .hero-content4 h1 {
+    font-size: 38px;
+  }
+  .hero-style4 .shape {
+    width: 200px;
+    opacity: 0.5;
+  }
 }
 
 .hero-style5 .hero-content1 {

@@ -34,6 +34,83 @@
 		padding: 16px;
 	}
 }
+.hero-style4 {
+	padding: 210px 4px 130px;
+	.hero-content4 {
+		gap: 50px;
+		.thumb-hero4 {
+			max-width: unset;
+			direction: rtl;
+			position: relative;
+			left: -24px;
+			img {
+				max-width: unset;
+			}
+		}
+	}
+	@include breakpoint(max-xxl) {
+		padding: 190px 4px 100px;
+		.hero-content4 {
+			gap: 24px;
+			h3 {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			h1 {
+				font-size: 75px;
+			}
+		}
+		.shape {
+			width: 200px;
+			opacity: 0.5;
+		}
+	}
+	@include breakpoint(max-xl) {
+		padding: 190px 4px 80px;
+		.hero-content4 {
+			gap: 16px;
+			h3 {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			h1 {
+				font-size: 55px;
+			}
+		}
+		.shape {
+			width: 200px;
+			opacity: 0.5;
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 150px 4px 80px;
+		.thumb-hero4 {
+			max-width: 100%;
+			direction: rtl;
+			position: static;
+			left: 0px;
+			img {
+				max-width: 100% !important;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.hero-content4 {
+			gap: 16px;
+			h3 {
+				font-size: 20px;
+				line-height: 24px;
+			}
+			h1 {
+				font-size: 38px;
+			}
+		}
+		.shape {
+			width: 200px;
+			opacity: 0.5;
+		}
+	}
+}
 .hero-style5 {
 	.hero-content1 {
 		padding: 175px 0 175px;
@@ -176,7 +253,7 @@
 			h1 {
 				font-size: 38px;
 				line-height: 48px;
-				&::before{
+				&::before {
 					top: 30px;
 					height: 1px;
 				}
@@ -185,7 +262,7 @@
 	}
 }
 .hero-section {
-	.dots{
+	.dots {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-end;
@@ -194,7 +271,7 @@
 		width: 99%;
 		inset-inline-end: 50px;
 		top: 50%;
-		.swiper-pagination-bullet{
+		.swiper-pagination-bullet {
 			width: 26px;
 			height: 26px;
 			border-radius: 50%;
@@ -202,21 +279,21 @@
 			align-items: center;
 			justify-content: center;
 			background-color: transparent;
-			border: 1.2px solid rgba(255, 255, 255, 0.50);
+			border: 1.2px solid rgba(255, 255, 255, 0.5);
 			opacity: 1;
-			&::before{
+			&::before {
 				position: absolute;
 				content: "";
 				width: 10px;
 				height: 10px;
 				border-radius: 50%;
 				background-color: $theme-color;
-				opacity: 0;				
+				opacity: 0;
 			}
 		}
-		.swiper-pagination-bullet.swiper-pagination-bullet-active{
+		.swiper-pagination-bullet.swiper-pagination-bullet-active {
 			border-color: $white;
-			&::before{
+			&::before {
 				opacity: 1;
 			}
 		}
@@ -239,8 +316,8 @@
 			transition: all 2500ms ease;
 		}
 	}
-	@include breakpoint(max-sm){
-		.dots{
+	@include breakpoint(max-sm) {
+		.dots {
 			top: initial;
 			bottom: 10px;
 		}

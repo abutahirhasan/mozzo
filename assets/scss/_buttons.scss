@@ -52,6 +52,13 @@
 			width: 410px;
 		}
 	}
+	&.btn-dark-common {
+		background-color: $black;
+		&::after,
+		&::before {
+			background-color: $theme-color;
+		}
+	}
 	&.btn-outline-blak {
 		border: 1px solid #c5c5c5;
 		padding: 10px 20px 11px;
