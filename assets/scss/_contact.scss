@@ -284,3 +284,60 @@
 	}
 }
 //Contact Section
+
+//Mozzo
+.book-table-section3{
+	.container{
+		max-width: 1750px;
+		margin: 0 auto;
+	}
+	.book-table-init{
+		max-width: 700px;
+		margin-left: auto;
+	}
+}
+.book-table-wrap3 {
+	border-radius: 9px 0 300px 300px;
+	border: 4px solid var(--Primary_coffee, #c19d56);
+	background: rgba(17, 14, 14, 0.5);
+	backdrop-filter: blur(28.700000762939453px);
+	max-width: 640px;
+	padding: 40px 60px 60px;
+	.nice-select,
+	input,
+	textarea {
+		width: 100%;
+		background-color: transparent;
+		border: unset;
+		border-bottom: 2px solid rgb(217 217 217 / 28%);
+		font-size: 19px;
+		color: rgb(255, 255, 255, 0.8);
+		padding-bottom: 10px;
+		outline: none;
+		&::placeholder {
+			color: rgb(255, 255, 255, 0.8);
+		}
+	}
+	::placeholder {
+		color: rgb(255, 255, 255, 0.8) !important;
+	}
+	.nice-select {
+		border-bottom: 2px solid rgb(217 217 217 / 28%);
+		&:hover{
+			border-bottom: 2px solid rgb(217 217 217 / 28%);
+		}
+		.current {
+			color: rgb(255, 255, 255, 0.8) !important;
+		}
+		&::after {
+			border-color: rgb(255, 255, 255, 0.8) !important;
+			border-bottom: 2px solid rgb(255, 255, 255, 0.8) !important;
+			border-right: 2px solid rgb(255, 255, 255, 0.8) !important;
+		}
+		.list {
+		}
+	}
+	@include breakpoint(max-sm){
+		padding: 40px 30px 50px;
+	}
+}

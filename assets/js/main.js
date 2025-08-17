@@ -178,6 +178,41 @@
 		});
 
 		//<< Super Deals Slide >>//
+		const aboutSaysSlider = new Swiper(".about-says-slider", {
+			spaceBetween: 24,
+			speed: 1000,
+			loop: true,
+			autoplay: {
+				delay: 1000,
+				// disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: ".array-prev",
+				prevEl: ".array-next",
+			},
+			breakpoints: {
+				1199: {
+					slidesPerView: 3,
+				},
+				991: {
+					slidesPerView: 3,
+				},
+				767: {
+					slidesPerView: 2,
+				},
+				575: {
+					slidesPerView: 2,
+				},
+				400: {
+					slidesPerView: 1,
+				},
+				0: {
+					slidesPerView: 1,
+				},
+			},
+		});
+
+		//<< Super Deals Slide >>//
 		const menuSlidWrap = new Swiper(".menu-slid-wrap", {
 			spaceBetween: 24,
 			speed: 1000,
@@ -342,7 +377,7 @@
 				},
 			},
 		});
-		
+
 		const sponsor__text__slide2 = new Swiper(".sponsor-text-slide2", {
 			speed: 6000,
 			loop: true,

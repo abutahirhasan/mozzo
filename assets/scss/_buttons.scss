@@ -59,6 +59,10 @@
 			background-color: $theme-color;
 		}
 	}
+	&.btn--secondary{		
+		color: $white;
+		background-color: $text-secondary;
+	}
 	&.btn-outline--seconday{
 		border: 1px solid $text-secondary;
 		color: $text-secondary;

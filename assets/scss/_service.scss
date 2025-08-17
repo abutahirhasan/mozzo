@@ -141,3 +141,14 @@
 }
 //Service Section
 
+//order-card_box03
+.order-card_box03{
+	.icons{
+		border-color: $theme-color-5;
+	}
+	&:hover{
+		.step-badge{
+			background-color: $theme-color-5 !important;
+		}
+	}
+}
