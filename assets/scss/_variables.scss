@@ -103,6 +103,9 @@ $section-bg2: var(--section-bg2);
 .text-secondary{
     color: $text-secondary !important;
 }
+.bg-secondarys{
+    background-color: $text-secondary;
+}
 .border-secondary{
     border: 1px solid $text-secondary !important;
 }
