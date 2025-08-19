@@ -76,6 +76,14 @@
 	("use strict");
 
 	$(document).ready(function () {
+		
+		//<< Menu Offcanvas >>//
+		$(".menu-style-offcanvas .submenu").hide();
+		$(".menu-style-offcanvas").on("click", ".clickAble", function (e) {
+			e.preventDefault();
+			$(this).next(".submenu").slideToggle(200);
+		});
+
 		//<< 01 >> Mobile Menu Js Start <<//
 		$("#mobile-menu").meanmenu({
 			meanMenuContainer: ".mobile-menu",

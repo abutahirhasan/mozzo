@@ -34,6 +34,10 @@
 			}
 		}
 	}
+	&.style02{
+		background-color: #262626;
+		border-bottom: 1px solid #262626;
+	}
 	&.style3 {
 		background: $white;
 		.located {
@@ -52,6 +56,24 @@
 				a {
 					color: rgb(7, 10, 1, 0.9);
 				}
+			}
+		}
+	}
+}
+
+.menu-style-offcanvas{
+	.has-toggle{
+		& > a{
+			width: 100%;
+			display: block;
+		}
+		.submenu{
+			li,a{
+				font-size: 18px;
+				text-transform: capitalize;
+				font-family: $heading-font-cormorant;
+				font-weight: 700;
+				color: $black;
 			}
 		}
 	}
@@ -228,7 +250,7 @@
 									visibility: hidden;
 									@include transition;
 									margin-top: 20px;
-									span{
+									span {
 										text-align: center;
 									}
 									.theme-btn {
@@ -348,14 +370,23 @@
 			display: block;
 			border-radius: 50%;
 			background: $white;
-			font-size: 11px;
+			font-size: 9px;
 			line-height: 12px;
 			padding: 3px;
 			font-weight: 600;
-
 			font-family: $body-font;
 		}
 	}
+}
+.fix-area-header01 {
+	right: auto !important;
+	left: -100% !important;
+	// transform: translateX(-100%) !important;
+}
+.fix-area-header01 .info-open {
+	right: auto !important;
+	left: 0 !important;
+	// transform: translateX(-100%) !important;
 }
 
 .header-1 {
@@ -364,13 +395,13 @@
 	z-index: 9;
 	background: rgb(245, 178, 69, 0.05);
 	transition: all 0.5s;
-	&.sticky{
+	&.sticky {
 		position: sticky;
 		top: 0;
-		background: #353844 !important;
+		background: $theme-color !important;
 	}
-	&.header-5{
-		&.sticky{
+	&.header-5 {
+		&.sticky {
 			position: sticky !important;
 		}
 	}
@@ -527,23 +558,13 @@
 	}
 }
 
-.header-style2 {
-	&.sticky {
-		position: fixed !important;
-		top: 0 !important;
-		left: 0;
-		width: 100%;
-		z-index: 100;
-		transition: all 0.9s;
-		-webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-		animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	}
+.header-style02 {
+	background-color: #111111;
 }
+
 
 //>>>>> Offcanvas Start <<<<<//
 .fix-area {
-	
 }
 .offcanvas__info {
 	background: $white none repeat scroll 0 0;
@@ -717,17 +738,16 @@
 	}
 }
 
-
-.blar-comming{
-	img{
+.blar-comming {
+	img {
 		filter: blur(4px);
 	}
 }
 
-//Bars 
-.bars__one{
+//Bars
+.bars__one {
 	transition: all 0.4s;
-	&:hover{
+	&:hover {
 		border-color: $theme-color-3 !important;
 	}
 }
