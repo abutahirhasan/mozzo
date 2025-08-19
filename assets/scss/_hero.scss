@@ -34,6 +34,125 @@
 		padding: 16px;
 	}
 }
+.hero-style3 {
+	padding: 120px 10px 92px;
+	.heading3-title {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 130px;
+		line-height: 160px;
+		letter-spacing: -1.6px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		z-index: 1;
+		max-width: 900px;
+		color: $black;
+	}
+	@include breakpoint(max-xxxl) {
+		.heading3-title {
+			font-weight: 400;
+			font-size: 110px;
+			line-height: 120px;
+			letter-spacing: -1.6px;
+			position: static;
+			top: initial;
+			transform: translateY(-0%);
+			max-width: 900px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		.heading3-title {
+			font-weight: 400;
+			font-size: 80px;
+			line-height: 90px;
+			letter-spacing: -1.6px;
+			position: static;
+			top: initial;
+			transform: translateY(-0%);
+			max-width: 900px;
+		}
+	}
+	@include breakpoint(max-xl) {
+		.heading3-title {
+			font-weight: 400;
+			font-size: 70px;
+			line-height: 90px;
+			letter-spacing: -1.6px;
+			position: static;
+			top: initial;
+			transform: translateY(-0%);
+			max-width: 900px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		.heading3-title {
+			font-weight: 400;
+			font-size: 100px;
+			line-height: 90px;
+			letter-spacing: -1.6px;
+			position: static;
+			top: initial;
+			transform: translateY(-0%);
+			max-width: 900px;
+			br {
+				display: none;
+			}
+		}
+	}
+	@include breakpoint(max-md) {
+		.heading3-title {
+			font-weight: 400;
+			font-size: 70px;
+			line-height: 90px;
+			letter-spacing: -1.6px;
+			position: static;
+			top: initial;
+			transform: translateY(-0%);
+			max-width: 900px;
+			br {
+				display: none;
+			}
+		}
+	}
+	@include breakpoint(max-sm) {
+		.heading3-title {
+			font-weight: 400;
+			font-size: 58px;
+			line-height: 65px;
+			letter-spacing: -1.6px;
+			position: static;
+			top: initial;
+			transform: translateY(-0%);
+			max-width: 900px;
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+.hero-thumb__wrapper03 {
+	.price25 {
+		width: 170px;
+		top: 95px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.thumb1 {
+		border-radius: 0 200px 0 0;
+		overflow: hidden;
+		position: relative;
+		&::before {
+			position: absolute;
+		}
+	}
+	.thumb2 {
+		border-radius: 200px 0 0 0;
+		overflow: hidden;
+	}
+}
+
 .hero-style4 {
 	padding: 210px 4px 130px;
 	.hero-content4 {

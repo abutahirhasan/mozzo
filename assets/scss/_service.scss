@@ -100,6 +100,16 @@
 		line-height: 24px;
 	}
 }
+.text-slide-section03{
+	transform: rotate(4deg);
+	width: 101%;
+	margin-left: -20px;
+	@media screen and (max-width: 1919px) {
+		margin-left: 0;
+		width: 100%;
+		transform: translate(0);
+	}
+}
 //Mozzo
 
 //Service Section
