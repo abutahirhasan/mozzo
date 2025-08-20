@@ -106,6 +106,9 @@ $section-bg2: var(--section-bg2);
 .bg-secondarys{
     background-color: $text-secondary;
 }
+.border-theme5{
+    border: 1px solid $theme-color-3 !important;
+}
 .border-secondary{
     border: 1px solid $text-secondary !important;
 }

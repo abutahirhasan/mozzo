@@ -173,6 +173,10 @@
   background-color: var(--text-secondary);
 }
 
+.border-theme5 {
+  border: 1px solid var(--theme3) !important;
+}
+
 .border-secondary {
   border: 1px solid var(--text-secondary) !important;
 }
@@ -1749,6 +1753,10 @@ i {
   z-index: 99;
   background: var(--bg4);
 }
+.header-top-section .container {
+  max-width: 1790px;
+  margin: 0 auto;
+}
 .header-top-section .header-top-wrapper {
   display: flex;
   align-items: center;
@@ -1802,6 +1810,28 @@ i {
 }
 .header-top-section.style3 .contact-list li a {
   color: rgba(7, 10, 1, 0.9);
+}
+.header-top-section.style05 {
+  background-color: #fff !important;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.login-theme3:hover {
+  background-color: var(--theme3);
+  color: var(--white) !important;
+}
+
+.language-area .nice-select {
+  min-width: 50px;
+}
+.language-area .nice-select .list li {
+  background-color: var(--white);
+}
+.language-area .nice-select .option:hover,
+.language-area .nice-select .option:focus,
+.language-area .nice-select .option.selected.focus {
+  background-color: transparent;
+  color: var(--white);
 }
 
 .menu-style-offcanvas .has-toggle > a {
@@ -2305,6 +2335,16 @@ i {
 }
 .header-style03 .tolly-icon img {
   filter: brightness(0);
+}
+
+.header-style05 .main-menu ul li a {
+  font-family: "Outfit", sans-serif;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+}
+.header-style05 .main-menu ul li a i {
+  font-size: 12px;
 }
 
 .offcanvas__info {
