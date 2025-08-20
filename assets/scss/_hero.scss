@@ -444,16 +444,14 @@
 }
 //Header White Area
 .white-variation {
-	.header-right {
-		.mean__menu-wrapper {
-			.main-menu {
-				ul {
-					li {
-						a {
-							color: $white;
-							&:hover {
-								color: $theme-color;
-							}
+	.mean__menu-wrapper {
+		.main-menu {
+			ul {
+				li {
+					a {
+						color: $white;
+						&:hover {
+							color: $theme-color;
 						}
 					}
 				}

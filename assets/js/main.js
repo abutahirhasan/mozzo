@@ -76,7 +76,6 @@
 	("use strict");
 
 	$(document).ready(function () {
-		
 		//<< Menu Offcanvas >>//
 		$(".menu-style-offcanvas .submenu").hide();
 		$(".menu-style-offcanvas").on("click", ".clickAble", function (e) {
@@ -148,6 +147,36 @@
 
 		//<< 09 >> Nice Select Start <<//
 		$("select").niceSelect();
+
+		//>> 10 Search Popup Start <<//
+		const $searchWrap = $(".search-wrap");
+		const $navSearch = $(".nav-search");
+		const $searchClose = $("#search-close");
+
+		$(".search-trigger").on("click", function (e) {
+			e.preventDefault();
+			$searchWrap.animate({ opacity: "toggle" }, 500);
+			$navSearch.add($searchClose).addClass("open");
+		});
+
+		$(".search-close").on("click", function (e) {
+			e.preventDefault();
+			$searchWrap.animate({ opacity: "toggle" }, 500);
+			$navSearch.add($searchClose).removeClass("open");
+		});
+
+		function closeSearch() {
+			$searchWrap.fadeOut(200);
+			$navSearch.add($searchClose).removeClass("open");
+		}
+
+		$(document.body).on("click", function (e) {
+			closeSearch();
+		});
+
+		$(".search-trigger, .main-search-input").on("click", function (e) {
+			e.stopPropagation();
+		});
 
 		//<< Mozzo >>//
 		//<< Super Deals Slide >>//
