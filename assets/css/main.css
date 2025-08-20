@@ -2081,6 +2081,9 @@ i {
 .header-main .tolly-icon .count-quan-theme {
   background-color: var(--theme);
 }
+.header-main .tolly-icon .count-quan-black {
+  background-color: var(--black);
+}
 
 .fix-area-header01 {
   right: auto !important;
@@ -2103,12 +2106,6 @@ i {
   position: sticky;
   top: 0;
   background: var(--theme) !important;
-}
-.header-1.header-5.sticky {
-  position: sticky !important;
-}
-.header-1.style3 {
-  background: rgba(255, 255, 255, 0.07);
 }
 .header-1 .container {
   max-width: 1810px;
@@ -2264,6 +2261,10 @@ i {
 .header-style02 {
   background-color: #111111;
 }
+.header-style02.sticky {
+  background-color: #111111 !important;
+  position: sticky !important;
+}
 .header-style02 .line {
   width: 1px;
   height: 90px;
@@ -2286,6 +2287,24 @@ i {
 
 .header-icon-bg2 {
   background-color: #252525;
+}
+
+.header-style03.sticky {
+  background-color: #fff !important;
+  position: sticky !important;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.header-style03 .main-menu ul li a {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Afacad", sans-serif;
+}
+.header-style03 .search-trigger img {
+  filter: brightness(0);
+}
+.header-style03 .tolly-icon img {
+  filter: brightness(0);
 }
 
 .offcanvas__info {
