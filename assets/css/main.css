@@ -5772,19 +5772,19 @@ input.main-search-input::placeholder {
   color: var(--black);
 }
 
-.testimonial-items {
+.testimonial-items.testimonial-style03 {
   background-color: #C19D56;
   border-radius: 20px;
   padding: 40px;
 }
-.testimonial-items p {
+.testimonial-items.testimonial-style03 p {
   font-style: italic;
 }
-.testimonial-items .admin {
+.testimonial-items.testimonial-style03 .admin {
   border: 3px solid var(--white);
 }
 @media (max-width: 1399px) {
-  .testimonial-items {
+  .testimonial-items.testimonial-style03 {
     padding: 24px;
   }
 }/*# sourceMappingURL=main.css.map */

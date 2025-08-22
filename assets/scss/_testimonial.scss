@@ -133,16 +133,18 @@
 
 //testimonial-items
 .testimonial-items{
-	background-color: #C19D56;
-	border-radius: 20px;
-	padding: 40px;
-	p{
-		font-style: italic;
-	}
-	.admin{
-		border: 3px solid $white;
-	}
-	@include breakpoint(max-xxl){
-		padding: 24px;
+	&.testimonial-style03{
+		background-color: #C19D56;
+		border-radius: 20px;
+		padding: 40px;
+		p{
+			font-style: italic;
+		}
+		.admin{
+			border: 3px solid $white;
+		}
+		@include breakpoint(max-xxl){
+			padding: 24px;
+		}
 	}
 }
