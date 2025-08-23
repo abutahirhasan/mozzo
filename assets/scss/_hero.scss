@@ -442,6 +442,7 @@
 		}
 	}
 }
+
 //Header White Area
 .white-variation {
 	.mean__menu-wrapper {
@@ -463,43 +464,62 @@
 
 //Breadcrumb Section
 .breadcrumb-section {
-	background: url(../../assets/img/hero/breadcrumb-bg.jpg) no-repeat center
-		center;
-	background-size: cover;
-	padding: 250px 0 150px;
+	padding: 150px 0 150px;
 	position: relative;
 	z-index: 1;
-	&::before {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		content: "";
-		opacity: 0.38;
-		background: #1c210c;
+	h2 {
+		font-size: 64px;
+	}
+	.breadcrumb {
+		li {
+			font-size: 16px;
+			font-weight: 500;
+			color: $white;
+			font-family: "Outfit", sans-serif;
+			a {
+				font-family: "Outfit", sans-serif;
+				font-size: 16px;
+				font-weight: 500;
+				color: $white;
+			}
+		}
+	}
+	.bread-shape-start {
+		left: -280px;
+		bottom: -220px;
+		z-index: -1;
+	}
+	.bread-shape-end {
+		right: -40px;
+		bottom: -40px;
 		z-index: -1;
 	}
 	@include breakpoint(max-xl) {
-		padding: 220px 0 150px;
+		padding: 110px 0 130px;
+		.bread-shape-start {
+			left: -80px;
+			bottom: -80px;
+			z-index: -1;
+			max-width: 300px;
+		}
+		.bread-shape-end {
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			max-width: 200px;
+		}
 	}
 	@include breakpoint(max-md) {
-		padding: 150px 0 80px;
+		padding: 80px 0 90px;
+		h2 {
+			font-size: 44px;
+		}
 	}
-	&.restaurant-bread {
-		background: url(../../assets/img/hero/restaurant-bread.jpg) no-repeat
-			center center;
-		background-size: cover;
-	}
-	&.rooms-bread {
-		background: url(../../assets/img/hero/room-bread.jpg) no-repeat center
-			center;
-		background-size: cover;
-	}
-	&.reservation-bread {
-		background: url(../../assets/img/hero/restaurant-bread.jpg) no-repeat
-			center center;
-		background-size: cover;
+	@include breakpoint(max-md) {
+		padding: 70px 0 90px;
+		h2 {
+			font-size: 40px;
+		}
 	}
 }
 .breadcrumb-black-header {

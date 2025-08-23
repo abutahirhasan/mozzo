@@ -1,176 +1,23 @@
-//Rooms Section
-.aprtment-rooms4 {
-	.apartment-cont {
-		background: $white !important;
-		.theme-btn {
-			border: 1px solid $black !important;
-			color: $black;
-			&:hover {
-				color: $white;
-			}
-		}
-		.apartment-cont-inner {
-			.invirment {
-				li {
-					font-size: 20px;
-					font-weight: 500;
-					img {
-						filter: brightness(0);
-					}
-				}
-			}
-		}
-	}
-	&.aprtment-rooms-small {
-		.apartment-cont {
-			width: 94%;
-			bottom: 18px;
-			.theme-btn {
-				font-size: 14px;
-				text-wrap: nowrap;
-			}
-			.apartment-cont-inner {
-				.invirment {
-					li {
-						span {
-							font-size: 12px;
-						}
-						font-weight: 500;
-						img {
-							width: 18px;
-							filter: brightness(0);
-						}
-					}
-				}
-			}
-		}
-	}
-	@include breakpoint(max-lg) {
-		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-		display: grid !important;
-		.apartment-cont {
-			position: initial !important;
-		}
-	}
-}
-//Rooms Section
 
-//drining Section
-.dining-room-section {
-	.room-head-area {
-		.drink-dining-pra {
-			max-width: 349px;
-		}
-	}
-}
 
-.offer-room-item {
-	z-index: 1;
-	.content {
-		position: absolute;
-		.offer-title {
-			background: $white;
-			width: 90px;
-			height: 90px;
-			border-radius: 50%;
-			padding: 21px 5px 0;
-			text-align: center;
-			margin: 0 auto 14px;
-			span {
-				line-height: 14px;
-			}
+.order-customize-wrapper{
+	.line{
+		width: 1px;
+		height: 154px;
+		display: block;
+		background-color: $theme-color;
+	}
+	@include breakpoint(max-md){
+		.line{
+			display: none;
 		}
-		.theme-btn {
-			border: 1px solid $white;
-			&:hover {
-				border-color: $theme-color;
-				color: $black;
-			}
+		.max-w-300{
+			width: calc(90% / 2);
 		}
 	}
-	&::before {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		content: "";
-		border-radius: 15px;
-		background: radial-gradient(
-			51.84% 51.84% at 50% 51.84%,
-			rgba(0, 0, 0, 0.7) 34.5%,
-			rgba(0, 0, 0, 0.9) 78.5%
-		);
-	}
-	&:hover {
-		.content {
-			.offer-title {
-				background: $bg-color;
-			}
+	@media screen and (max-width: 470px) {
+		.max-w-300{
+			width: 100%;
 		}
 	}
-}
-
-//Team Section
-.team-items {
-    background: $white;
-    transition: all 0.4s;
-	.content {
-		h6 {
-			a {
-				color: #0a165e;
-			}
-		}
-		.icon {
-			width: 32px;
-			height: 32px;
-			border: 0.5px solid rgb(7, 10, 1, 0.5);
-			transition: all 0.4s;
-			i {
-				color: $black;
-				font-size: 14px;
-				transition: all 0.4s;
-			}
-			&:hover {
-				background: $theme-color-3;
-				color: $white;
-				border-color: $theme-color-3;
-				i {
-					color: $white;
-				}
-			}
-		}
-		.team-link {
-			border: 0.5px solid rgb(7, 10, 1, 0.5);
-			transition: all 0.4s;
-			font-size: 12px;
-			font-weight: 500;
-			color: $black;
-			border-radius: 100px;
-			padding: 1px 10px;
-            transition: all 0.4s;
-			&:hover {
-				background: $theme-color-3;
-				color: $white;
-				border-color: $theme-color-3;
-			}
-		}
-	}
-    .thumbs{
-        display: block;
-        width: 100%;
-        img{
-            width: 100%;
-            transition: all 0.4s;
-        }
-    }
-    &.active,
-    &:hover{
-        box-shadow: 0px 12px 40px 4px rgba(10, 22, 94, 0.08);
-        .thumbs{
-            img{
-                transform: scale(1.05);
-            }
-        }
-    }
 }

@@ -659,7 +659,7 @@
 					text-transform: capitalize;
 					font-size: 16px;
 					font-weight: 700;
-					i{
+					i {
 						font-size: 12px;
 					}
 				}
@@ -667,7 +667,66 @@
 		}
 	}
 }
-
+.header-style-inner {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+	background: $theme-color;
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+	.main-menu {
+		ul {
+			li {
+				a {
+					font-family: "Inter", sans-serif;
+					text-transform: capitalize;
+					font-size: 16px;
+					font-weight: 600;
+					i {
+						font-size: 12px;
+					}
+				}
+				> a {
+					&:hover {
+						color: $white !important;
+					}
+				}
+			}
+		}
+	}
+	.login-white{
+		background-color: $white;
+		border: 1px solid $black;
+		transition: all 0.4s;
+		&:hover{
+			background-color: $black;
+			color: $white;
+		}
+	}
+	.language-area{
+		.globe{
+			filter: brightness(25);
+		}
+		.nice-select{
+			.current{
+				color: $white;
+				font-size: 14px;
+			}
+			&::after{
+				border-color: $white;
+				border-bottom: 2px solid $white;
+				border-right: 2px solid $white;
+			}
+			.list{
+				li{
+					font-size: 14px;
+					
+				}
+			}
+		}
+	}
+	.tolly-icon{
+		background-color: $white;
+		border-color: $black !important;
+	}
+}
 //>>>>> Offcanvas Start <<<<<//
 .offcanvas__info {
 	background: $white none repeat scroll 0 0;
