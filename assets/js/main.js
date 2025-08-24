@@ -904,5 +904,23 @@
 		});
 	}
 
+	$(document).ready(function () {
+		// When accordion opens
+		$(".accordion-collapse").on("show.bs.collapse", function () {
+			$(this).closest(".accordion-item").addClass("active");
+		});
+
+		// When accordion closes
+		$(".accordion-collapse").on("hide.bs.collapse", function () {
+			$(this).closest(".accordion-item").removeClass("active");
+		});
+
+		// On page load: check if any item is already open
+		$(".accordion-collapse.show").each(function () {
+			$(this).closest(".accordion-item").addClass("active");
+		});
+	});
+
+
 	loader();
 })(jQuery); // End jQuery

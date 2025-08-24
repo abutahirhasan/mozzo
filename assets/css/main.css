@@ -672,6 +672,15 @@ i {
 .theme-btn.btn-outline-blak:hover {
   color: var(--white);
 }
+.theme-btn.btn-outline-theme {
+  color: var(--theme);
+  border: 1px solid var(--theme);
+  background-color: transparent;
+  transition: all 0.4s;
+}
+.theme-btn.btn-outline-theme:hover {
+  color: var(--white);
+}
 .theme-btn.btn-outline-white {
   border: 1px solid #fff;
   padding: 10px 20px 11px;
@@ -1599,6 +1608,75 @@ i {
 
 .faq-section.faq-main {
   background: rgba(245, 178, 69, 0.4);
+}
+
+.faq-quote-wrap {
+  padding: 40px 30px;
+  border-radius: 16px;
+  border: 1px solid var(--primary_2, #ff5200);
+  background: rgba(255, 82, 0, 0.02);
+  backdrop-filter: blur(13.5px);
+}
+.faq-quote-wrap input,
+.faq-quote-wrap textarea {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: #fbfbfb;
+  padding: 7px 12px 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.accordion-custom-wrapper .accordion-button:not(.collapsed) {
+  color: var(--black);
+  box-shadow: none;
+  outline: none;
+}
+.accordion-custom-wrapper .accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-custom-wrapper .accordion-item {
+  border-radius: 12px;
+  background: rgba(246, 247, 249, 0.8) !important;
+  border: 1px solid rgba(246, 247, 249, 0.8);
+  border: unset;
+  transition: all 0.4s;
+}
+.accordion-custom-wrapper .accordion-item .accordion-header {
+  line-height: 24px;
+}
+.accordion-custom-wrapper .accordion-item .accordion-header .accordion-button {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  padding: 20px 26px;
+  transition: all 0.4s;
+}
+.accordion-custom-wrapper .accordion-item.active {
+  background-color: var(--white);
+  border: 1px solid var(--theme) !important;
+}
+.accordion-custom-wrapper .accordion-item.active .accordion-header {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.accordion-custom-wrapper .accordion-item.active .accordion-header .accordion-button {
+  color: var(--theme);
+}
+.accordion-custom-wrapper .accordion-item.active .accordion-body {
+  background-color: var(--white);
+  border-radius: 10px;
+}
+.accordion-custom-wrapper .accordion-body {
+  padding: 0 26px 22px;
+}
+.accordion-custom-wrapper .accordion-body p {
+  font-size: 16px;
+  color: var(--header);
+  text-transform: capitalize;
 }
 
 .open-table-section::before {
