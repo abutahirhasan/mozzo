@@ -837,8 +837,8 @@
 				100;
 
 			// Update the background gradient to show the active track color
-			minSlider.style.background = `linear-gradient(to right, #000 ${minPercent}%, #ff5722 ${minPercent}%, #ff5722 ${maxPercent}%, #000 ${maxPercent}%)`;
-			maxSlider.style.background = `linear-gradient(to right, #000 ${minPercent}%, #ff5722 ${minPercent}%, #ff5722 ${maxPercent}%, #000 ${maxPercent}%)`;
+			minSlider.style.background = `linear-gradient(to right, #000 ${minPercent}%, #000 ${minPercent}%, #000 ${maxPercent}%, #000 ${maxPercent}%)`;
+			maxSlider.style.background = `linear-gradient(to right, #000 ${minPercent}%, #000 ${minPercent}%, #000 ${maxPercent}%, #000 ${maxPercent}%)`;
 		}
 
 		// Initialize the sliders and track with default values

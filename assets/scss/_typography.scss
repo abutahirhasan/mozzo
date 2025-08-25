@@ -305,3 +305,18 @@ i {
 		}
 	}
 }
+
+
+.pagination{
+	li{
+		a{
+			transition: all 0.4s;
+			display: inline-block;
+			&.active,
+			&:hover{
+				color: $white !important;
+				background: $theme-color !important;
+			}
+		}
+	}
+}

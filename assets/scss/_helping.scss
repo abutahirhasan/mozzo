@@ -200,12 +200,11 @@ br {
 		-webkit-appearance: none;
 		appearance: none;
 		width: 100%;
-		height: 6px;
+		height: 4px;
 		background: #ddd; /* Default background */
 		outline: none;
 		position: absolute;
 		top: 0;
-		// z-index: 1;
 		pointer-events: none;
 	}
 
@@ -215,9 +214,10 @@ br {
 		appearance: none;
 		width: 18px;
 		height: 18px;
-		background: #ff5722;
+		background: #fff;
 		cursor: pointer;
-		border: 2px solid #fff;
+		border: 2px solid #000;
+		border-radius: 50%;
 		position: relative;
 		z-index: 2;
 		pointer-events: all;
@@ -226,9 +226,8 @@ br {
 	.slider::-moz-range-thumb {
 		width: 20px;
 		height: 20px;
-		background: #ff5722;
 		cursor: pointer;
-		border-radius: 4px;
+		border-radius: 50%;
 		border: 2px solid #000;
 		z-index: 2;
 		position: relative;
@@ -237,9 +236,8 @@ br {
 	.slider::-ms-thumb {
 		width: 20px;
 		height: 20px;
-		background: #ff5722;
 		cursor: pointer;
-		border-radius: 4px;
+		border-radius: 50%;
 		border: 2px solid #000;
 		z-index: 2;
 		position: relative;

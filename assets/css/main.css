@@ -141,6 +141,10 @@
   background: var(--bg7);
 }
 
+.pagination-bg {
+  background-color: #DCE1E8;
+}
+
 .bg-gradient {
   background: linear-gradient(90deg, #EA0000 0%, #FC692A 100%) !important;
 }
@@ -591,6 +595,15 @@ i {
 .chef-single-item:hover .content {
   opacity: 1;
   visibility: visible;
+}
+
+.pagination li a {
+  transition: all 0.4s;
+  display: inline-block;
+}
+.pagination li a.active, .pagination li a:hover {
+  color: var(--white) !important;
+  background: var(--theme) !important;
 }
 
 .theme-btn {
@@ -1493,7 +1506,55 @@ i {
 }
 
 .book-table-inner {
-  border-color: #FF5200 !important;
+  border-color: #ff5200 !important;
+}
+
+.cmn-shadow-shop {
+  border-radius: 12px;
+  border: 1px solid #e9e9e9;
+  background: var(--white, #fff);
+  box-shadow: 0 0 15px 0 #efefef;
+  padding: 30px 30px;
+}
+@media (max-width: 1600px) {
+  .cmn-shadow-shop {
+    padding: 24px 22px;
+  }
+}
+@media (max-width: 1199px) {
+  .cmn-shadow-shop {
+    padding: 20px 18px;
+  }
+}
+
+.price-range-area input {
+  color: var(--text);
+  width: 100%;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 6px 11px;
+  border: 1px solid rgba(75, 75, 75, 0.22);
+}
+
+.shop-filter-area .nice-select .current {
+  font-size: 15px;
+}
+.shop-filter-area .nice-select .list {
+  background-color: var(--white);
+  min-width: 120px;
+}
+.shop-filter-area .nice-select .list li {
+  font-size: 14px;
+  border: 0.5px solid rgba(75, 75, 75, 0.22);
+}
+.shop-filter-area .nice-select::after {
+  right: -12px;
+}
+.shop-filter-area .shop-filter-inner {
+  gap: 40px;
+}
+.shop-filter-area .nav .nav-item .nav-link.active svg path {
+  stroke: #FF5200;
 }
 
 .custom-accordion .accordion-item {
@@ -2822,7 +2883,7 @@ i {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 6px;
+  height: 4px;
   background: #ddd; /* Default background */
   outline: none;
   position: absolute;
@@ -2834,9 +2895,10 @@ i {
   appearance: none;
   width: 18px;
   height: 18px;
-  background: #ff5722;
+  background: #fff;
   cursor: pointer;
-  border: 2px solid #fff;
+  border: 2px solid #000;
+  border-radius: 50%;
   position: relative;
   z-index: 2;
   pointer-events: all;
@@ -2844,9 +2906,8 @@ i {
 .price-range-wrapper .slider::-moz-range-thumb {
   width: 20px;
   height: 20px;
-  background: #ff5722;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
   border: 2px solid #000;
   z-index: 2;
   position: relative;
@@ -2854,9 +2915,8 @@ i {
 .price-range-wrapper .slider::-ms-thumb {
   width: 20px;
   height: 20px;
-  background: #ff5722;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 50%;
   border: 2px solid #000;
   z-index: 2;
   position: relative;
