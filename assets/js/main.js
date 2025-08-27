@@ -179,6 +179,30 @@
 		});
 
 		//<< Mozzo >>//
+		var swiper = new Swiper(".mySwiper", {
+			loop: true,
+			spaceBetween: 10,
+			freeMode: true,
+			slidesPerView: 2,
+			watchSlidesProgress: true,
+			breakpoints: {
+				470: {
+					slidesPerView: 4,
+				},
+			},
+		});
+		var swiper2 = new Swiper(".mySwiper2", {
+			loop: true,
+			spaceBetween: 10,
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+			thumbs: {
+				swiper: swiper,
+			},
+		});
+
 		//<< Super Deals Slide >>//
 		const superDealsSlider = new Swiper(".superDeals-slider", {
 			spaceBetween: 24,
@@ -920,7 +944,6 @@
 			$(this).closest(".accordion-item").addClass("active");
 		});
 	});
-
 
 	loader();
 })(jQuery); // End jQuery

@@ -12,12 +12,18 @@
 }
 //Blog Section
 
-.blog-single-item-middle{
-	@include breakpoint(lg){
+.blog-single-item-middle {
+	@include breakpoint(lg) {
 		max-width: 550px;
 	}
 }
 
+.table-cart-inner {
+	border-radius: 20px;
+	border: 1px solid #e9e9e9;
+	background: rgba(255, 82, 0, 0.02);
+	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.05);
+}
 
 //Mozzo end
 
@@ -96,7 +102,7 @@
 	background: #f3f7fc;
 	padding: 40px 40px;
 	border-radius: 10px;
-	.post-grp{
+	.post-grp {
 		textarea,
 		input {
 			width: 100%;
@@ -112,8 +118,7 @@
 			}
 		}
 	}
-	@include breakpoint(max-md){
+	@include breakpoint(max-md) {
 		padding: 30px 20px;
 	}
 }
-
