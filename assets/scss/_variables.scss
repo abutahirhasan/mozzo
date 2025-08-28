@@ -211,3 +211,7 @@ $section-bg2: var(--section-bg2);
 .shadow-cus{
     box-shadow: 0 0 15px 0 #EFEFEF;
 }
+
+.bg-theme-opacity5{
+    background-color: rgba(255, 82, 0, 0.05) !important;
+}
