@@ -24,6 +24,82 @@
 	background: rgba(255, 82, 0, 0.02);
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.05);
 }
+.details-common-box {
+	padding: 45px;
+	border-radius: 30px;
+	border: 1px solid rgba(12, 30, 27, 0.1);
+	.search-area {
+		input {
+			width: 100%;
+			border: unset;
+			padding: 6px 2px;
+			font-size: 18px;
+			background-color: transparent;
+		}
+	}
+	@include breakpoint(max-xxxl) {
+		padding: 35px;
+	}
+	@include breakpoint(max-xxl) {
+		padding: 24px;
+	}
+	@include breakpoint(max-xl) {
+		padding: 20px;
+	}
+}
+.cate-item {
+	transition: all 0.4s;
+	.icon {
+		transition: all 0.4s;
+		background: #ffe6da;
+	}
+	&:hover {
+		background-color: $theme-color;
+		span {
+			color: $white !important;
+		}
+		.icon {
+			background: $white;
+		}
+	}
+}
+.details-tags {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 6px;
+	li {
+		a {
+			border-radius: 100px;
+			border: 1px solid rgba(12, 30, 27, 0.1);
+			font-size: 14px;
+			font-weight: 500;
+			color: $black;
+			display: inline-block;
+			text-align: center;
+			padding: 6px 14px;
+			background: #fff;
+			text-transform: capitalize;
+			&:hover {
+				background: $theme-color;
+				color: $white;
+			}
+		}
+	}
+}
+.blog-big-single{
+	.video-popup{
+		border-color: $theme-color;
+		color: $theme-color !important;
+		&::before{
+			border-color: $theme-color !important;
+			border-radius: 12px !important;
+		}
+		i{
+			color: $theme-color;
+		}
+	}
+}
 
 //Mozzo end
 
