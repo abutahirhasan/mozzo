@@ -346,7 +346,7 @@
         <div class="container">
             <div class="breadcrumb-content">
                 <h2 class="white-clr fw-semibold text-center heading-font mb-2">
-                    Contact page
+                    Restaurant Details 02
                 </h2>
                 <ul class="breadcrumb align-items-center justify-content-center flex-wrap gap-3">
                     <li>
@@ -366,7 +366,7 @@
                         <i class="fa-solid fa-angle-right"></i>
                     </li>
                     <li>
-                        Contact page
+                        Restaurant Details
                     </li>
                 </ul>
             </div>
@@ -376,115 +376,145 @@
             class="bread-shape-end position-absolute d-sm-block d-none">
     </section>
 
-    <!-- contact hero start -->
-    <section class="contact-section fix section-padding position-relative">
-        <div class="container">        
+    <!-- Reservation hero start -->
+    <section class="reservation-section fix section-padding position-relative">
+        <div class="container">
+            <div class="section-title-style mx-auto mb-40 text-center">
+                <h2 class="wow fadeInUp mb-sm-3 fw-bold mb-2 white-clr text-black lh-1 fw-semibold text-capitalize text-capitalize"
+                    data-wow-delay=".4s">
+                    Make a Reservation
+                </h2>
+                <p class="fs-16 max-w-650 mx-auto wow fadeInUp" data-wow-delay="0.6s">
+                    Make a reservation today to ensure your spot at our restaurant. Enjoy hassle-free booking and get ready for a memorable
+                    dining experience.
+                </p>
+            </div>
             <div class="row g-4">
-                <div class="col-xl-5 col-lg-6">
-                    <div class="wow fadeInUp" data-wow-delay="0.9s">
-                        <div class="section-title-style mb-30">
-                            <h2 class="wow fadeInUp mb-sm-3 fw-bold fs-32 mb-2 white-clr text-black lh-1 fw-semibold text-capitalize text-capitalize"
-                                data-wow-delay=".4s">
-                                Get In Touch
-                            </h2>
-                            <p class="fs-16 wow fadeInUp" data-wow-delay="0.6s">
-                                Have a question, special request, or want to book a table?
-                            </p>
+                <div class="col-lg-6">
+                    <div class="calendar h-100 wow fadeInUp" data-wow-delay="0.7s">
+                        <h2 class="text-center sub-font fw-semibold mb-xl-4 mb-3 text-white">Choose Date</h2>
+                        <div class="cal-head">
+                            <button id="prev"></button>
+                            <h3 class="title">Month 0000</h3>
+                            <button id="next"></button>
                         </div>
+                        <div class="cal-body">
+                            <ul class="days">
+                                <li>Sun</li>
+                                <li>Mon</li>
+                                <li>Tue</li>
+                                <li>Wed</li>
+                                <li>Thu</li>
+                                <li>Fri</li>
+                                <li>Sat</li>
+                            </ul>
+                            <ul class="dates">
+                                <li class="old"><span>30</span></li>
+                                <li class="old"><span>31</span></li>
+                                <li><span>1</span></li>
+                                <li><span>2</span></li>
+                                <li><span>3</span></li>
+                                <li><span>4</span></li>
+                                <li><span>5</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="ps-xl-4 wow fadeInUp" data-wow-delay="0.9s">
                         <form action="#0" class="billing-form reservation-form p-0">
-                            <div class="row g-lg-4 g-3">
+                            <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-group m-0">
-                                        <input type="text" placeholder="your Name">
+                                        <label class="fs-14 text-black mb-2">Your Name</label>
+                                        <input type="text" placeholder="First Name">
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group m-0">
-                                        <input type="text" placeholder="your Email">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group m-0">
-                                        <input type="text" placeholder="Website">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="form-group m-0">
-                                        <input type="text" placeholder="Website">
+                                        <label class="fs-14 text-black mb-2">Your Email</label>
+                                        <input type="text" placeholder="Your Email">
                                     </div>
                                 </div>
                                 <div class="col-sm-12">
                                     <div class="form-group m-0">
-                                        <textarea name="message" rows="4" id="" placeholder="Message"></textarea>
+                                        <label class="fs-14 text-black mb-2">How can we contact you?</label>
+                                        <input type="text" placeholder="Phone Number Here">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group m-0">
+                                        <label class="fs-14 text-black mb-2">From</label>
+                                        <input type="text" placeholder="Start Time Here">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group m-0">
+                                        <label class="fs-14 text-black mb-2">To</label>
+                                        <input type="text" placeholder="End Time Here">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group m-0">
+                                        <label class="fs-14 text-black mb-2">Total Guests?</label>
+                                        <input type="text" placeholder="2">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group m-0">
+                                        <label class="fs-14 text-black mb-2">Aditional Information</label>
+                                        <textarea name="message" rows="3" id="" placeholder="Enter your Message Here"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-sm-12 mt-4">
                                     <button type="button" class="theme-btn px-4 rounded-2">
-                                        Send Us Message <i class="fa-solid fa-arrow-right"></i>
+                                        Book Now <i class="fa-solid fa-arrow-right"></i>
                                     </button>
                                 </div>
                             </div>
                         </form>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-6">
-                    <div class="ps-xl-4 d-flex flex-column gap-lg-4 gap-3">
-                        <div class="card-effect contact-office-item d-flex align-items-sm-center align-items-start wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="thumb w-100">
-                                <img src="assets/img/inner/contact-office1.jpg" alt="img" class="w-100">
-                            </div>
-                            <div class="content py-2 px-2">
-                                <h4 class="text-black fw-semibold mb-1">Head Office</h4>
-                                <p class="fs-16 mb-md-3 mb-2">4517 Washington Ave. Manchester, Kentucky 39495</p>
-                                <a href="contact.html" class="text-black fs-18 fw-semibold text-decoration-underline d-block mb-1">
-                                    View on map
-                                </a>
-                                <a href="javascript:void(0)" class="d-flex text-call fs-16 fw-500 align-items-center gap-1">
-                                    <i class="fa-solid fa-phone"></i> +999 3265 464968
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-effect contact-office-item d-flex align-items-sm-center align-items-start wow fadeInUp"
-                            data-wow-delay="0.5s">
-                            <div class="thumb w-100">
-                                <img src="assets/img/inner/contact-office2.png" alt="img" class="w-100">
-                            </div>
-                            <div class="content py-2 px-2">
-                                <h4 class="text-black fw-semibold mb-1">Local Office</h4>
-                                <p class="fs-16 mb-md-3 mb-2">3891 Ranchview Dr. Richardson, California 62639</p>
-                                <a href="contact.html" class="text-black fs-18 fw-semibold text-decoration-underline d-block mb-1">
-                                    View on map
-                                </a>
-                                <a href="javascript:void(0)" class="d-flex text-call fs-16 fw-500 align-items-center gap-1">
-                                    <i class="fa-solid fa-phone"></i> +999 3265 464968
-                                </a>
-                            </div>
-                        </div>
-                        <div class="card-effect contact-office-item d-flex align-items-sm-center align-items-start wow fadeInUp"
-                            data-wow-delay="0.9s">
-                            <div class="thumb w-100">
-                                <img src="assets/img/inner/contact-office3.png" alt="img" class="w-100">
-                            </div>
-                            <div class="content py-2 px-2">
-                                <h4 class="text-black fw-semibold mb-1">Branch Office</h4>
-                                <p class="fs-16 mb-md-3 mb-2">2118 Thornridge Cir. Syracuse, Connecticut 35624</p>
-                                <a href="contact.html" class="text-black fs-18 fw-semibold text-decoration-underline d-block mb-1">
-                                    View on map
-                                </a>
-                                <a href="javascript:void(0)" class="d-flex text-call fs-16 fw-500 align-items-center gap-1">
-                                    <i class="fa-solid fa-phone"></i> +999 3265 464968
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <img src="assets/img/inner-global-pasta.png" alt="img"
             class="position-absolute top-40 end-0 float-bob-y z-n1 d-sm-block d-none">
-        <img src="assets/img/inner-global-left.png" alt="img"
-            class="position-absolute bottom-0 start-0 float-bob-y pt-5 z-n1 d-sm-block d-none">
     </section>
+
+    <!-- Map -->
+    <div class="map-section02">
+        <div class="container-fluid p-0">
+            <div class="row g-md-0 g-3">
+                <div class="col-md-6">
+                    <div class="restaurant-map-info position-relative z-1 text-center h-100">
+                        <div class="inner">
+                            <h2 class="text-uppercase text-black mb-xl-3 mb-2 wow fadeInUp" data-wow-delay="0.3s">VISIT OUR RESTAURANT</h2>
+                            <p class="fs-18 text-center max-w-350 mx-auto text-black wow fadeInUp" data-wow-delay="0.4s">4517 Washington Ave. Manchester, Kentucky 39495</p>
+                            <div class="mx-auto my-xxl-5 my-xl-4 my-3" style="width: 1px; height: 70px; background-color: #FF5200;"></div>
+                            <div class="text-center mb-2">
+                                <p class="text-black fs-18 mb-1 wow fadeInUp" data-wow-delay="0.5s">Monday to Saturday : 06.00 - 10.00</p>
+                                <p class="text-black fs-18 mb-2 wow fadeInUp" data-wow-delay="0.6s">Sunday is the Holiday</p>
+                            </div>
+                            <div class="social-theme d-flex gap-2 justify-content-center align-items-center wow fadeInUp" data-wow-delay="0.7s">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                        <img src="assets/img/restaurant-ex-shape.png" alt="img" class="position-absolute start-0 bottom-0 pb-100 mb-5 ms-5 float-bob-y">
+                        <img src="assets/img/restaurant-ex.png" alt="img"
+                            class="position-absolute bottom-0 ms-5 d-sm-block d-none float-bob-y restaurant-shape">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52808140.21705447!2d-161.46429918210544!3d36.11412792251988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1756438029281!5m2!1sen!2sbd"
+                        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer section start -->
     <footer class="footer-section position-relative fix black-bg z-1">

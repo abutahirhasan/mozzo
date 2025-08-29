@@ -402,7 +402,7 @@ table {
 	background: rgba(255, 82, 0, 0.02);
 	box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.05);
 	padding: 60px 60px;
-	@include breakpoint(max-sm){
+	@include breakpoint(max-sm) {
 		padding: 30px 30px;
 	}
 }
@@ -451,6 +451,276 @@ table {
 			&::after {
 				right: 14px;
 				top: 19px;
+			}
+		}
+	}
+}
+.restaurant-hero-text {
+	border-radius: 20px;
+	border-left: 1px solid $theme-color;
+	background: $white;
+	padding: 50px;
+	max-width: 440px;
+	@include breakpoint(xl) {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		left: -60px;
+		width: 450px;
+	}
+
+	@include breakpoint(max-xl) {
+		padding: 30px;
+		@include breakpoint(md) {
+			left: 10px;
+			position: absolute;
+			bottom: 10px;
+		}
+	}
+	@include breakpoint(max-lg) {
+		padding: 24px;
+	}
+	@include breakpoint(max-md) {
+		margin-top: 12px;
+		border: 1px solid $theme-color;
+		width: 100%;
+	}
+}
+
+.map-section {
+	iframe {
+		width: 100%;
+		height: 650px;
+		@include breakpoint(max-xxl) {
+			height: 500px;
+		}
+		@include breakpoint(max-lg) {
+			height: 400px;
+		}
+		@include breakpoint(max-md) {
+			height: 300px;
+		}
+	}
+}
+.map-section02 {
+	iframe {
+		height: 610px;
+		width: 100%;
+		margin-bottom: -16px;
+		@include breakpoint(max-md) {
+			height: 400px;
+		}
+		@include breakpoint(max-sm) {
+			height: 300px;
+		}
+	}
+}
+
+.restaurant-map-info {
+	background-color: #ffd8c5;
+	padding: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.inner {
+		width: 100%;
+		border: 4px solid $white;
+		padding: 60px 10px;
+		border-radius: 20px;
+	}
+	.restaurant-shape {
+		inset-inline-end: -12px;
+	}
+	@include breakpoint(max-xxxl) {
+		.restaurant-shape {
+			inset-inline-end: -12px;
+			width: 150px;
+		}
+	}
+	@include breakpoint(max-xxl) {
+		padding: 20px;
+	}
+}
+
+.reservation-form {
+	textarea {
+		font-size: 14px;
+		width: 100%;
+		padding: 6px 14px;
+	}
+	input,
+	textarea {
+		border-radius: 8px;
+		border: 1px solid rgba(225, 228, 231, 0.5) !important;
+		background: rgba(75, 75, 75, 0.05) !important;
+	}
+	.nice-select {
+		background: rgba(75, 75, 75, 0.05) !important;
+		border: 1px solid rgba(225, 228, 231, 0.5) !important;
+	}
+}
+
+//calender
+.calendar {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	width: 100%;
+	background: #111;
+	box-shadow: 0px 5px 5px #ccc;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.cal-head {
+	text-align: center;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.cal-head h3 {
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	background: #fff;
+	padding: 13px 25px;
+	border-radius: 10px;
+}
+
+.cal-head #prev,
+.cal-head #next {
+	position: absolute;
+	top: 20px;
+	width: 40px;
+	height: 40px;
+	border: 0;
+	background: rgba(255, 255, 255, 0.15);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.cal-head #prev:hover,
+.cal-head #next:hover,
+.cal-head #prev:focus,
+.cal-head #next:focus {
+	opacity: 0.8;
+	box-shadow: 3px 0px 3px #ccc;
+}
+
+.cal-head #prev:before,
+.cal-head #next:before {
+	content: "";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 2px 2px 0 0;
+}
+
+.cal-head #prev {
+	left: 20px;
+	transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+.cal-head #next {
+	right: -20px;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.days,
+.dates {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: start;
+}
+
+.days li,
+.dates li {
+	width: calc(100% / 7);
+	text-align: center;
+	font-size: 18px;
+}
+
+.days {
+	margin-bottom: 15px;
+}
+
+.days li {
+	font-weight: 500;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.dates li span {
+	background: rgba(255, 255, 255, 0.15);
+	width: 100%;
+	height: 50px;
+	display: inline-block;
+	padding-top: 6px;
+	border-radius: 10px;
+	border: 2px solid rgba(255, 255, 255, 0.15);
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+	color: $white;
+}
+
+.dates li span:hover {
+	color: #ff5200;
+}
+
+.dates li.old span {
+	background: transparent;
+	color: #bdbdbd;
+}
+
+.dates li.today span {
+	background: #ff5200;
+	color: #fff;
+}
+
+.delivery-box-indetails {
+	padding: 40px;
+	@include breakpoint(max-xxl) {
+		padding: 24px;
+	}
+	@include breakpoint(max-xl) {
+		padding: 20px;
+	}
+}
+.progress {
+	height: 10px;
+	.progress-bar {
+		background-color: $theme-color;
+	}
+}
+
+//preparetion-traking
+.preparetion-traking {
+	li {
+		&:not(:last-child) {
+			padding-bottom: 50px;
+			&::before {
+				position: absolute;
+				left: 10px;
+				top: 9px;
+				content: "";
+				background-color: rgb(89, 89, 89, 0.5);
+				width: 1px;
+				height: 100%;
+				z-index: -1;
+			}
+		}
+		&.active {
+			&:not(:last-child) {
+				&::before {
+					background-color: $theme-color;
+				}
+			}
+			i{
+				color: $theme-color !important;
 			}
 		}
 	}
