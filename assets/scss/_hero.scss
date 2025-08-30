@@ -444,6 +444,20 @@
 		}
 	}
 }
+.hero-section-style02{
+	.dots{
+		width: 200px !important;
+		height: 150px !important;
+		left: auto;
+	}
+}
+.standar-icon{
+	transition: all 0.4s;
+	&:hover{
+		background-color: #86624A !important;
+		color: $white !important;
+	}
+}
 
 //Header White Area
 .white-variation {

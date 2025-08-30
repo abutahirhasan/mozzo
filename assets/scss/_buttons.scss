@@ -203,5 +203,15 @@
 		}
 	}
 }
+.theme-btn-coffee{
+	&:hover{
+		&::before{
+			background-color: #86624A !important;
+		}
+		&::after{
+			background-color: #86624A !important;
+		}
+	}
+}
 
 //>>>>> Component Button End <<<<<//

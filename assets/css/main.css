@@ -805,6 +805,13 @@ i {
   background: var(--theme);
 }
 
+.theme-btn-coffee:hover::before {
+  background-color: #86624A !important;
+}
+.theme-btn-coffee:hover::after {
+  background-color: #86624A !important;
+}
+
 .choose-thumb3 .thumb {
   max-width: 434px;
 }
@@ -3008,6 +3015,76 @@ table .quantity-wrapper button {
   color: var(--white);
 }
 
+.offcanvas__contact {
+  margin-top: 20px;
+}
+.offcanvas__contact ul {
+  margin-top: 20px;
+}
+.offcanvas__contact ul li {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 22px;
+}
+.offcanvas__contact ul li a {
+  color: var(--black);
+}
+.offcanvas__contact ul li:not(:last-child) {
+  margin-bottom: 14px;
+}
+.offcanvas__contact ul li .offcanvas__contact-icon {
+  margin-right: 10px;
+}
+.offcanvas__contact ul li .offcanvas__contact-icon i {
+  color: var(--black);
+  font-size: 21px;
+}
+.offcanvas__contact span {
+  text-transform: initial;
+}
+.offcanvas__contact .header-button {
+  margin-top: 20px;
+}
+.offcanvas__contact .header-button .theme-btn {
+  width: 100%;
+  padding: 16px 40px;
+  text-transform: capitalize !important;
+  background: var(--theme) !important;
+  border-radius: 100px;
+  overflow: hidden;
+  padding: 9px 16px 10px;
+}
+.offcanvas__contact .header-button .theme-btn span,
+.offcanvas__contact .header-button .theme-btn i {
+  color: var(--white) !important;
+}
+.offcanvas__contact .social-icon {
+  margin-top: 30px;
+  gap: 10px;
+}
+.offcanvas__contact .social-icon a {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  font-size: 16px;
+  display: block;
+  background: var(--white);
+  color: var(--black);
+  border-radius: 8px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.offcanvas__contact .social-icon a:hover {
+  border-color: var(--theme);
+  background-color: var(--theme);
+  color: var(--white);
+}
+
 @media (max-width: 1199px) {
   .offcanvas__overlay {
     position: fixed;
@@ -4830,6 +4907,20 @@ input::placeholder {
     top: initial;
     bottom: 10px;
   }
+}
+
+.hero-section-style02 .dots {
+  width: 200px !important;
+  height: 150px !important;
+  left: auto;
+}
+
+.standar-icon {
+  transition: all 0.4s;
+}
+.standar-icon:hover {
+  background-color: #86624A !important;
+  color: var(--white) !important;
 }
 
 .white-variation .mean__menu-wrapper .main-menu ul li a {
