@@ -25,9 +25,9 @@
 		@include flex;
 		gap: 30px;
 		justify-content: space-between;
-
 		@include breakpoint(max-xl) {
 			flex-wrap: wrap;
+			gap: 1px;
 		}
 
 		.homemenu {

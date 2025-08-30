@@ -381,6 +381,7 @@
 	}
 }
 .hero-section {
+	position: relative;
 	.dots {
 		display: flex;
 		flex-direction: column;
@@ -390,6 +391,7 @@
 		width: 99%;
 		inset-inline-end: 50px;
 		top: 50%;
+		z-index: 1;
 		.swiper-pagination-bullet {
 			width: 26px;
 			height: 26px;

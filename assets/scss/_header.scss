@@ -902,6 +902,17 @@
 		padding: 20px;
 	}
 }
+.mean-nav ul li .menu-inside-style{
+	border: unset !important;
+	width: 100% !important;
+	border-bottom: unset !important;
+}
+.menu-inside-style{
+	border-bottom: unset !important;
+	.menu-inside{
+		padding: 0 0 10px 0 !important;
+	}
+}
 
 .blar-comming {
 	img {
