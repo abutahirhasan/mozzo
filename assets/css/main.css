@@ -2898,6 +2898,11 @@ table .quantity-wrapper button {
 .offcanvas__info::-webkit-scrollbar {
   display: none;
 }
+@media (max-width: 575px) {
+  .offcanvas__info {
+    width: 100% !important;
+  }
+}
 
 .offcanvas__info.info-open {
   opacity: 1;
@@ -5208,26 +5213,59 @@ input::placeholder {
   color: var(--theme);
 }
 
+.title-blog {
+  font-size: 40px;
+}
+@media (max-width: 1199px) {
+  .title-blog {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .title-blog {
+    font-size: 26px;
+  }
+}
+
+.middle-style-blog h2 {
+  font-size: 38px;
+}
+@media (max-width: 1199px) {
+  .middle-style-blog h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .middle-style-blog h2 {
+    font-size: 26px;
+  }
+}
+
 .quote-text {
   position: relative;
-  border-left: 4px solid var(--theme);
-  padding: 40px 40px;
-  background: #ecf3ff;
+  padding: 40px 50px;
+  background: #f5f5f5;
   color: var(--black2);
+  border-radius: 10px;
 }
-.quote-text .quote-icons {
-  position: absolute;
-  right: 24px;
-  bottom: 24px;
-  font-size: 36px;
-  color: var(--theme);
+.quote-text h3 {
+  font-size: 38px;
+  font-weight: 600;
+}
+@media (max-width: 1199px) {
+  .quote-text h3 {
+    font-size: 29px;
+  }
+}
+@media (max-width: 575px) {
+  .quote-text h3 {
+    font-size: 20px;
+    font-weight: 500;
+  }
 }
 @media (max-width: 500px) {
   .quote-text {
     padding: 24px 19px;
-  }
-  .quote-text .quote-icons {
-    display: none;
   }
 }
 
@@ -5264,18 +5302,21 @@ input::placeholder {
   display: inline-block;
   text-align: center;
   padding: 8px 14px;
-  background: #ecf3ff;
-  border-radius: 8px;
+  border: unset;
+  color: #ff5200;
+  background: #fff6f2;
+  border-radius: 6px;
 }
 .taging-share .details-tags li a:hover {
   background: var(--theme);
+  color: var(--white) !important;
 }
 
 .perker-author {
   display: flex;
   align-items: center;
   gap: 28px;
-  background: #f3f7fc;
+  background: rgba(255, 82, 0, 0.05);
   padding: 34px 36px;
 }
 @media (max-width: 500px) {
@@ -5287,8 +5328,8 @@ input::placeholder {
 }
 
 .post-comment {
-  background: #f3f7fc;
-  padding: 40px 40px;
+  background: rgba(255, 82, 0, 0.05);
+  padding: 32px 40px;
   border-radius: 10px;
 }
 .post-comment .post-grp textarea,
@@ -5296,10 +5337,10 @@ input::placeholder {
   width: 100%;
   outline: none;
   padding: 11px 16px;
-  color: #7c8392;
-  border-radius: 8px;
-  border: 1px solid #cfd9e5;
-  background: var(--white);
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  background: rgba(75, 75, 75, 0.05);
+  box-shadow: 0 4px 4px 0 rgba(168, 0, 0, 0.02);
   font-size: 14px;
 }
 .post-comment .post-grp textarea::placeholder,
