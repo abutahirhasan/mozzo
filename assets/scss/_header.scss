@@ -1006,3 +1006,15 @@
 		border-color: $theme-color-3 !important;
 	}
 }
+
+
+.tolly-icon-hover{
+	transition: all 0.4s;
+	&:hover{
+		border-color: $black !important;
+		background-color: $black !important;
+		i{
+			color: $white !important;
+		}
+	}
+}

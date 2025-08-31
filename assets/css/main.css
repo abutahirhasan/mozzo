@@ -3140,6 +3140,17 @@ table .quantity-wrapper button {
   border-color: var(--theme3) !important;
 }
 
+.tolly-icon-hover {
+  transition: all 0.4s;
+}
+.tolly-icon-hover:hover {
+  border-color: var(--black) !important;
+  background-color: var(--black) !important;
+}
+.tolly-icon-hover:hover i {
+  color: var(--white) !important;
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
