@@ -3151,6 +3151,16 @@ table .quantity-wrapper button {
   color: var(--white) !important;
 }
 
+.size_available {
+  transition: all 0.4s;
+  background-color: #D9D9D9;
+  font-size: 14px;
+}
+.size_available.active {
+  background-color: var(--theme) !important;
+  color: var(--white);
+}
+
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;
@@ -5359,6 +5369,16 @@ input::placeholder {
   .middle-style-blog h2 {
     font-size: 26px;
   }
+}
+
+.view-new-cart {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.4s;
+}
+.view-new-cart:hover {
+  border-color: var(--theme);
 }
 
 .quote-text {

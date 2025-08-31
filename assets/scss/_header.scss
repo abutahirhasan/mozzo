@@ -1018,3 +1018,12 @@
 		}
 	}
 }
+.size_available{
+	transition: all 0.4s;
+	background-color: #D9D9D9;
+	font-size: 14px;
+	&.active{
+		background-color: $theme-color !important;
+		color: $white;
+	}
+}

@@ -126,6 +126,16 @@
 }
 //Mozzo end
 
+.view-new-cart{
+	border: 1px solid rgba(0, 0, 0, 0.05);
+	border-radius: 10px;
+	text-align: center;
+	transition: all 0.4s;
+	&:hover{
+		border-color: $theme-color;
+	}
+}
+
 //Blog Details
 .quote-text {
 	position: relative;
